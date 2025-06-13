@@ -31,7 +31,7 @@ export default function LocaleSwitcher() {
             {
                 languages.map((item) => (
                     <p
-                        className='h-13 flex items-center leading-13 text-base border-t border-8'
+                        className='h-12 pl-4 flex items-center leading-13 text-base border-t border-gray-300'
                         key={item.value}
                         onClick={() => handleSwitch(item.value)}
                     >

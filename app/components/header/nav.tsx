@@ -95,7 +95,7 @@ export function Navigation() {
                                     visible: { opacity: 1, x: 0 },
                                 }}
                                 transition={{ duration: 0.5 }}
-                                className="mb-0 w-full  pl-4 flex items-center border-b border-8" >
+                                className="mb-0 w-full flex items-center border-b border-8" >
                                 <LangSwitcher />
                             </motion.li>
 
