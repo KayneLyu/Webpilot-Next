@@ -17,6 +17,7 @@ module.exports = {
         5: '#293993',
         6: '#0382E0',
         7: '#00004E',
+        8: "#ececec"
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],

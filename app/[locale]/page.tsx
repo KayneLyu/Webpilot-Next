@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function HomePage() {
   return (
     <section className="px-4 py-12 text-center">

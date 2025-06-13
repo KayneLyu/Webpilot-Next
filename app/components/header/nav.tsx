@@ -78,10 +78,10 @@ export function Navigation() {
                                     }}
                                     transition={{ duration: 0.5 }}
                                     key={item.href}
-                                    className="mb-0 w-full h-14 pl-4 flex items-center border-b border-b-neutral-100" >
+                                    className="mb-0 w-full h-14 pl-4 flex items-center border-b border-8" >
                                     <Link
                                         href={item.href}
-                                        className="uppercase block w-full text-base text-gray-700 hover:text-primary"
+                                        className="uppercase block w-full text-base text-gray-950 hover:text-primary"
                                         onClick={() => setOpen(false)}
                                     >
                                         {t(item.name)}
@@ -95,7 +95,7 @@ export function Navigation() {
                                     visible: { opacity: 1, x: 0 },
                                 }}
                                 transition={{ duration: 0.5 }}
-                                className="mb-0 w-full  pl-4 flex items-center border-b border-b-neutral-100" >
+                                className="mb-0 w-full  pl-4 flex items-center border-b border-8" >
                                 <LangSwitcher />
                             </motion.li>
 
