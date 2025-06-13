@@ -16,13 +16,6 @@ export default function HomePage() {
         </a>
       </div>
 
-      <div className={
-        `w-full
-        bg- 
-        h-full 
-        `
-      }>1233</div>
-
     </section>
   )
 }
