@@ -50,11 +50,11 @@ export function Navigation() {
             </nav>
 
             {/* 移动端菜单按钮 */}
-            <div className="md:hidden">
+            <div className="md:hidden h-full w-12 text-center">
                 <Sheet open={open} onOpenChange={setOpen}>
                     <SheetTrigger asChild>
-                        <button aria-label="打开菜单" className="transition duration-300 ease-in-ou">
-                            <Menu size={26} className="text-primary" />
+                        <button aria-label="打开菜单" className="h-full transition duration-300 ease-in-ou">
+                            <Menu size={28} className="text-primary" />
                         </button>
                     </SheetTrigger>
                     <SheetContent side="left" className="w-[250px]">

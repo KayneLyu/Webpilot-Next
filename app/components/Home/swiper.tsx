@@ -1,11 +1,12 @@
 'use client'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation, EffectFade } from 'swiper/modules';
 import Image from 'next/image';
 
 import 'swiper/css';                  // 必须引入基础样式
 import 'swiper/css/pagination';     // 分页器样式
 import 'swiper/css/navigation';     // 导航按钮样式
+import 'swiper/css/effect-fade';
 
 export default function Carousel() {
   return (
@@ -22,8 +23,10 @@ export default function Carousel() {
         clickable: true,
       }}
       speed={1000}
-      modules={[Autoplay, Pagination, Navigation]}
+      modules={[Autoplay, Pagination, Navigation, EffectFade]}
       className="mySwiper"
+      effect= "fade"
+      fadeEffect={{crossFade: true}}
     >
       <SwiperSlide>
         <Image

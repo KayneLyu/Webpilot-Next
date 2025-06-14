@@ -1,4 +1,5 @@
 import SwiperComponent from '@/components/Home/swiper';
+import { useTranslations } from 'next-intl'
 export default function HomePage() {
   return (
     <section className="text-center">
@@ -15,7 +16,7 @@ export default function HomePage() {
         </a>
       </div> */}
 
-<SwiperComponent />
+      <SwiperComponent />
     </section>
   )
 }
