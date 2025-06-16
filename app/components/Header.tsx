@@ -6,7 +6,7 @@ import Image from "next/image";
 export function Header() {
 
   return (
-    <header className="w-full border-b bg-white shadow-sm">
+    <header className="sticky w-full border-b bg-white shadow-md">
       <div className="h-14 md:h-19 container mx-auto flex items-center justify-between px-4 ">
         <Link href="/" className="text-xl font-bold text-primary">
           <Image

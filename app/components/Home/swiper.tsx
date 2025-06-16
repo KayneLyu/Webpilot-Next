@@ -32,7 +32,7 @@ export default function Carousel() {
         <Image
           src="/swiper/banner1.jpg"
           alt="Banner 1"
-          width={1200}
+          width={1500}
           height={400}
           className="w-full h-auto"
         />
@@ -41,7 +41,7 @@ export default function Carousel() {
         <Image
           src="/swiper/banner2.jpg"
           alt="Banner 2"
-          width={1200}
+          width={1500}
           height={400}
           className="w-full h-auto"
         />
@@ -50,7 +50,7 @@ export default function Carousel() {
         <Image
           src="/swiper/banner3.jpg"
           alt="Banner 3"
-          width={1200}
+          width={1500}
           height={400}
           className="w-full h-auto"
         />

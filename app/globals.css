@@ -142,3 +142,9 @@
   }
 }
 
+.h1-tittle {
+  @apply flex h-10 text-start text-size18 ml-l10 font-[family-name:var(--font-geist-mono)] font-semibold 
+}
+.h1-span {
+  @apply font-[family-name:var(--font-Recursive)] leading-10 pl-4 pr-10 rounded-b-lg 
+}

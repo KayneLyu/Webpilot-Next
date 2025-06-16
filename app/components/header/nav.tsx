@@ -20,7 +20,6 @@ import {
 import { useTranslations } from 'next-intl'
 import LangSwitcher from '@/components/Header/LocaleSwitcher';
 export function Navigation() {
-
     const t = useTranslations('nav')
     const navItems = [
         { name: "home", href: "/" },
@@ -41,7 +40,7 @@ export function Navigation() {
                         {navItems.map((item) => (
                             <NavigationMenuItem key={item.href}>
                                 <NavigationMenuLink asChild>
-                                    <Link href={item.href}> {t(`${item.name}`)}</Link>
+                                    <Link href={item.href} className="font-[family-name:var(--font-Public-Sans)]"> {t(`${item.name}`)}</Link>
                                 </NavigationMenuLink>
                             </NavigationMenuItem>
                         ))}
@@ -78,7 +77,7 @@ export function Navigation() {
                                     }}
                                     transition={{ duration: 0.5 }}
                                     key={item.href}
-                                    className="mb-0 w-full h-14 pl-4 flex items-center border-b border-8" >
+                                    className="font-[family-name:var(--font-Recursive)]  mb-0 w-full h-14 pl-4 flex items-center border-b border-8" >
                                     <Link
                                         href={item.href}
                                         className="uppercase block w-full text-base text-gray-950 hover:text-primary"

@@ -19,9 +19,16 @@ module.exports = {
         7: '#00004E',
         8: "#ececec"
       },
+      margin:{
+        l10: "10vw",
+      },
       fontFamily: {
         sans: ["Inter", "sans-serif"],
       },
+      fontSize: {
+        size18: "18px",
+        size22: "22px",
+      }
     },
   },
   darkMode: "class",

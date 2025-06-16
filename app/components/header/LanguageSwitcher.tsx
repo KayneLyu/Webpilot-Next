@@ -1,7 +1,6 @@
 
 import Image from "next/image";
 import { usePathname, useRouter } from 'next/navigation';
-
 export default function LocaleSwitcher() {
     const pathname = usePathname();
     const router = useRouter();
@@ -41,7 +40,7 @@ export default function LocaleSwitcher() {
                             height={1}
                             className="mr-4 w-8 md:w-20 h-auto  md:h-15"
                         />
-                        <span>{item.label}</span>
+                        <span className="font-[family-name:var(--font-Recursive)]">{item.label}</span>
                     </p>
                 ))
             }

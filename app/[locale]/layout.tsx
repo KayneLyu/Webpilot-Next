@@ -1,6 +1,6 @@
 import { NextIntlClientProvider, hasLocale } from 'next-intl'
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist_Mono, Public_Sans, Lexend_Exa } from "next/font/google";
 import { Header } from "@/components/Header"
 import { Footer } from "@/components/Footer"
 import { notFound } from 'next/navigation'
@@ -8,8 +8,13 @@ import {routing} from '../../i18n/routing';
 import { getTranslations } from 'next-intl/server'
 import "../globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const PublicSans = Public_Sans({
+  variable: "--font-Public-Sans",
+  subsets: ["latin"],
+});
+
+const RecursiveFont = Lexend_Exa({
+  variable: "--font-Recursive",
   subsets: ["latin"],
 });
 
@@ -49,14 +54,13 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${PublicSans.variable} ${RecursiveFont.variable} ${geistMono.variable} antialiased`}
       >
         <NextIntlClientProvider>
           <Header />
-          <main className="flex-1">{children}</main>
+            <main className="flex-1">{children}</main>
           <Footer />
         </NextIntlClientProvider>
-
       </body>
     </html>
   );
