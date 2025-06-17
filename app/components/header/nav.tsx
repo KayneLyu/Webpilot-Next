@@ -19,7 +19,7 @@ import {
 } from "../ui/navigation-menu"
 import { useTranslations } from 'next-intl'
 import LangSwitcher from '@/components/Header/LocaleSwitcher';
-export function Navigation() {
+export default function Navigation() {
     const t = useTranslations('nav')
     const navItems = [
         { name: "home", href: "/" },
