@@ -18,7 +18,7 @@ import {
     NavigationMenuList,
 } from "../ui/navigation-menu"
 import { useTranslations } from 'next-intl'
-import LangSwitcher from '@/components/Header/LocaleSwitcher';
+import LangSwitcher from '@/components/navigation/LocaleSwitcher';
 export default function Navigation() {
     const t = useTranslations('nav')
     const navItems = [

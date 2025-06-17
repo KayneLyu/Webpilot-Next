@@ -1,5 +1,5 @@
 import Link from "next/link"
-import Navigation from './Header/nav';
+import Navigation from '@/components/navigation/nav';
 import Logo from '@/assets/images/logo/logo.webp';
 import Image from "next/image";
 
