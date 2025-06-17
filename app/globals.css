@@ -130,7 +130,7 @@
 @layer base {
   html,
   body {
-    @apply h-full;
+    @apply h-full relative;
   }
 
   body {
@@ -143,8 +143,8 @@
 }
 
 .h1-tittle {
-  @apply flex h-10 text-start text-size18 ml-l10 font-[family-name:var(--font-geist-mono)] font-semibold 
+  @apply flex h-9 md:h-13  text-start text-size18
 }
 .h1-span {
-  @apply font-[family-name:var(--font-Recursive)] leading-10 pl-4 pr-10 rounded-b-lg 
+  @apply font-[family-name:var(--font-Recursive)] leading-9 md:leading-13 pl-4 pr-10 rounded-b-lg md:pl-8 md:pr-24 font-semibold md:text-[24px]
 }

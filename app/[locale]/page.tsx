@@ -15,7 +15,7 @@ export default function HomePage() {
       <section>
         <SolutionComponent />
       </section>
-      <section>
+      <section className='mt-10'>
         <ProductsComponent />
       </section>
     </>

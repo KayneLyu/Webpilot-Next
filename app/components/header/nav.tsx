@@ -26,7 +26,7 @@ export function Navigation() {
         { name: "about", href: "/about" },
         { name: "product", href: "/products" },
         { name: "news", href: "/news" },
-        { name: "concat", href: "/contact" },
+        { name: "contact", href: "/contact" },
     ]
 
     const [open, setOpen] = useState(false)

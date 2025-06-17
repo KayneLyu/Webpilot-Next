@@ -4,8 +4,32 @@
         "product": "产品中心",
         "about": "关于我们",
         "news": "新闻动态",
-        "concat": "联系我们",
-        "menu": "导航菜单"
+        "contact": "联系我们",
+        "menu": "导航菜单",
+        "case": "客户案例",
+        "follow": "关注我们",
+        "email": "邮件订阅",
+        "address1": "中国广东省",
+        "address2": "东莞市万江区",
+        "address3": "新谷涌管理区",
+        "address4": "合丰工业区8号"
+    },
+    "home": {
+        "service": "我们的服务",
+        "solution": "解决方案",
+        "product": "核心产品",
+        "contact": "联系我们",
+        "offer": "我们专注于塑料薄膜智能装备，提供集测厚、风环、智能控制于一体的整体解决方案。",
+        "more": "了解更多"
+    },
+    "product": {
+        "ring": "自动风环",
+        "lift_ring": "升降自动风环",
+        "horizon": "横扫测厚仪",
+        "round": "环扫测厚仪",
+        "dosing": "称重配料系统",
+        "XRayRing":"X光环扫测厚仪",
+        "product": "核心产品"
     },
     "news": {
         "title": "我司成功参加2025年国际橡塑展",

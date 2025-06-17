@@ -4,8 +4,32 @@
         "product": "Product",
         "about": "About",
         "news": "News & Events",
-        "concat": "Concat",
-        "menu": "Menu"
+        "contact": "Contact",
+        "menu": "Menu",
+        "case": "Case",
+        "follow": "Follow us on",
+        "email": "News letter",
+        "address1": "No. 8 Hefeng Industrial Zone,",
+        "address2": "Xingu Chong Management Area,",
+        "address3": "Wanjiang District, Dongguan City,",
+        "address4": "Guangdong Province, China."
+    },
+    "home": {
+        "service": "What we Offer",
+        "solution": "Solutions",
+        "product": "Products",
+        "contact": "Contact",
+        "offer": "We specialize in intelligent plastic film equipment, offering integrated solutions for thickness measurement, air ring control, and automation.",
+        "more": "Learn More"
+    },
+    "product": {
+        "ring": "Profile control",
+        "lift_ring": "Lift profile control",
+        "horizon": "Profile measurement",
+        "round": "Profile measurement",
+        "dosing": "Dosing",
+        "XRayRing":"X-Ray profile measurement",
+        "product": "Products"
     },
     "news": {
         "title": "我司成功参加2025年国际橡塑展",

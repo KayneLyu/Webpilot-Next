@@ -1,14 +1,14 @@
 import Image from "next/image";
 import { useTranslations } from 'next-intl'
+import SectionTittle from '@/components/common/Section-title';
 export default function SolutionSection() {
+    const t = useTranslations('home')
     return (
         <>
             <div>
-                <div> 
-                    <h1 className="h1-tittle text-white"
-                    ><span className="h1-span bg-5">Solutions</span></h1>
+                <div>
+                    <SectionTittle text={t("solution")} />
                 </div>
-
                 <div className="mt-10">
                     <Image
                         src="/images/solution.png"

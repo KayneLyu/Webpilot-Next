@@ -16,11 +16,13 @@ module.exports = {
         4: '#000055',
         5: '#293993',
         6: '#0382E0',
-        7: '#00004E',
+        7: '#0a0a36',
         8: "#ececec"
       },
       margin:{
         l10: "10vw",
+        l12: "12vw",
+        l15: "15vw",
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],
