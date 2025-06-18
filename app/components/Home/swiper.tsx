@@ -1,7 +1,6 @@
 'use client'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation, EffectFade } from 'swiper/modules';
-import Image from 'next/image';
 
 import 'swiper/css';                  // 必须引入基础样式
 import 'swiper/css/pagination';     // 分页器样式
@@ -11,8 +10,8 @@ import 'swiper/css/effect-fade';
 export default function Carousel() {
   return (
     <Swiper
-    //   navigation={true}
-    //   spaceBetween={0}
+      //   navigation={true}
+      //   spaceBetween={0}
       centeredSlides
       loop
       autoplay={{
@@ -25,35 +24,59 @@ export default function Carousel() {
       speed={1000}
       modules={[Autoplay, Pagination, Navigation, EffectFade]}
       className="mySwiper"
-      effect= "fade"
-      fadeEffect={{crossFade: true}}
+      effect="fade"
+      fadeEffect={{ crossFade: true }}
     >
       <SwiperSlide>
-        <Image
-          src="/swiper/banner1.jpg"
-          alt="Banner 1"
-          width={1500}
-          height={400}
-          className="w-full h-auto"
-        />
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcSet="/swiper/banner1.jpg"
+          />
+          <source
+            media="(max-width: 1023px)"
+            srcSet="/swiper/banner1_m.webp"
+          />
+          <img
+            src="/swiper/banner1_m.webp"
+            alt="solutions"
+            className="w-full object-cover"
+          />
+        </picture>
       </SwiperSlide>
       <SwiperSlide>
-        <Image
-          src="/swiper/banner2.jpg"
-          alt="Banner 2"
-          width={1500}
-          height={400}
-          className="w-full h-auto"
-        />
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcSet="/swiper/banner2.jpg"
+          />
+          <source
+            media="(max-width: 1023px)"
+            srcSet="/swiper/banner2_m.webp"
+          />
+          <img
+            src="/swiper/banner2_m.webp"
+            alt="solutions"
+            className="w-full object-cover"
+          />
+        </picture>
       </SwiperSlide>
       <SwiperSlide>
-        <Image
-          src="/swiper/banner3.jpg"
-          alt="Banner 3"
-          width={1500}
-          height={400}
-          className="w-full h-auto"
-        />
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcSet="/swiper/banner3.jpg"
+          />
+          <source
+            media="(max-width: 1023px)"
+            srcSet="/swiper/banner3_m.webp"
+          />
+          <img
+            src="/swiper/banner3_m.webp"
+            alt="solutions"
+            className="w-full object-cover"
+          />
+        </picture>
       </SwiperSlide>
     </Swiper>
   );
