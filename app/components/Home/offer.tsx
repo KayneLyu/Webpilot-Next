@@ -39,14 +39,14 @@ export default function OfferSection() {
                     <motion.p
                         initial={{ opacity: 0, x: -100 }}
                         animate={isInView ? { opacity: 1, x: 0 } : {}}
-                        transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
+                        transition={{ duration: 0.6, ease: 'easeOut', delay: 0.3 }}
                         className="text-start leading-9 md:leading-[80px] font-[family-name:var(--font-Recursive)]">
                         {t("offer")}
                     </motion.p>
                     <motion.div
                         initial={{ opacity: 0, x: -100 }}
                         animate={isInView ? { opacity: 1, x: 0 } : {}}
-                        transition={{ duration: 0.6, ease: 'easeOut', delay: 1 }}
+                        transition={{ duration: 0.6, ease: 'easeOut', delay: 0.6 }}
                     >
                         <Button className="mt-5" variant="outline" size={"lg"}>
                             <Link href="/">{t("more")} +</Link>

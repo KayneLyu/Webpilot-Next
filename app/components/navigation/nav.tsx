@@ -19,17 +19,27 @@ import {
 } from "../ui/navigation-menu"
 import { useTranslations } from 'next-intl'
 import LangSwitcher from '@/components/navigation/LocaleSwitcher';
+import { usePathname } from 'next/navigation'
+import { useLocale } from 'next-intl'
+import { cn } from "@/lib/utils" // shadcn 提供的合并类名工具
+
 export default function Navigation() {
     const t = useTranslations('nav')
+    const pathname = usePathname()
+    const locale = useLocale()
+    // 去掉语言前缀后的路径
+    const logicalPath = pathname.replace(`/${locale}`, '') || '/'
     const navItems = [
         { name: "home", href: "/" },
         { name: "about", href: "/about" },
-        { name: "product", href: "/products" },
+        { name: "product", href: "/product" },
+        { name: "case", href: "/case" },
         { name: "news", href: "/news" },
         { name: "contact", href: "/contact" },
     ]
 
     const [open, setOpen] = useState(false)
+
 
     return (
         <>
@@ -37,13 +47,26 @@ export default function Navigation() {
             <nav className="hidden md:block">
                 <NavigationMenu>
                     <NavigationMenuList className="flex gap-6">
-                        {navItems.map((item) => (
-                            <NavigationMenuItem key={item.href}>
-                                <NavigationMenuLink asChild>
-                                    <Link href={item.href} className="font-[family-name:var(--font-Public-Sans)]"> {t(`${item.name}`)}</Link>
-                                </NavigationMenuLink>
-                            </NavigationMenuItem>
-                        ))}
+                        {navItems.map((item) => {
+                            const isActive =
+                                item.href === '/'
+                                    ? logicalPath === '/'
+                                    : logicalPath.startsWith(item.href)
+
+                            return (
+                                <NavigationMenuItem key={item.href} >
+                                    <NavigationMenuLink asChild className={cn(
+                                        "transition-colors",
+                                        isActive
+                                            ? "bg-accent text-primary font-semibold"
+                                            : "text-muted-foreground"
+                                    )}  >
+                                        <Link href={item.href} className="font-[family-name:var(--font-Public-Sans)] text-[18px] py-2 px-2"> {t(`${item.name}`)}</Link>
+                                    </NavigationMenuLink>
+                                </NavigationMenuItem>
+                            )
+                        }
+                        )}
                     </NavigationMenuList>
                 </NavigationMenu>
             </nav>
@@ -86,7 +109,6 @@ export default function Navigation() {
                                         {t(item.name)}
                                     </Link>
                                 </motion.li>
-
                             ))}
                             <motion.li
                                 variants={{
@@ -97,7 +119,6 @@ export default function Navigation() {
                                 className="mb-0 w-full flex items-center border-b border-8" >
                                 <LangSwitcher />
                             </motion.li>
-
                         </motion.ul>
                     </SheetContent>
                 </Sheet>

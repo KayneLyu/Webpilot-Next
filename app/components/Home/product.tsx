@@ -57,12 +57,20 @@ export default function ProductSection() {
             hover: ''
         },
         {
+            src: xRing_gauge,
+            alt: 'profile_measurement',
+            name: 'XRayRing',
+            link: '/',
+            hover: ''
+        },
+        {
             src: dosing,
             alt: 'dosing',
             name: 'dosing',
             link: '/',
             hover: ''
         },
+
     ]
     const t = useTranslations('product')
     return (
@@ -76,29 +84,18 @@ export default function ProductSection() {
                     <ul className='w-[80%] gap-5 md:gap-10 m-[auto] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:w-[76%]'>
                         {products.map((product, index) => (
                             <AnimatedListItem key={index}>
-                                <Image
-                                    src={product.src}
-                                    alt={product.alt}
-                                    width={1500}
-                                    height={1000}
-                                    className="m-auto w-full md:w-400 h-auto rounded-lg"
-                                />
-                                <p className="font-semibold md:text-2xl font-[family-name:var(--font-Public-Sans)] text-white text-center my-5">{ t(product.name) }</p>
+                                <div className={`${index === 1 || index === 4 ? 'hidden' : ''} sm:block`}>
+                                    <Image
+                                        src={product.src}
+                                        alt={product.alt}
+                                        width={1500}
+                                        height={1000}
+                                        className="m-auto w-full md:w-400 h-auto rounded-lg"
+                                    />
+                                    <p className="font-semibold md:text-2xl font-[family-name:var(--font-Public-Sans)] text-white text-center my-5">{t(product.name)}</p>
+                                </div>
                             </AnimatedListItem>
                         ))}
-
-                        <AnimatedListItem>
-                            <div className='hidden sm:block '>
-                                <Image
-                                    src={xRing_gauge}
-                                    alt="solution"
-                                    width={1500}
-                                    height={1000}
-                                    className="m-auto w-full md:w-400 h-auto rounded-lg"
-                                />
-                                <p className="font-semibold md:text-2xl font-[family-name:var(--font-Public-Sans)] text-white text-center my-5">{t('XRayRing')}</p>
-                            </div>
-                        </AnimatedListItem>
                     </ul>
                 </div>
             </div>

@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl'
 export function Footer() {
   const t = useTranslations('nav')
   return (
-    <footer className="px-10 md:px-20 text-[18px] bg-7 py-[85px] md:h-[605px] text-white text-center text-sm font-[family-name:var(--font-Public-Sans)]">
+    <footer className="pl-10 md:px-20 text-[18px] bg-7 py-[85px] md:h-[605px] text-white text-center text-sm font-[family-name:var(--font-Public-Sans)]">
       <section className="flex flex-wrap justify-between gap-y-10 text-start">
         <div className="w-full sm:w-1/2 md:w-auto max-w-xs">
           <h1 className="font-bold text-lg">{t("contact")}</h1>
@@ -26,7 +26,7 @@ export function Footer() {
 
         <div className="w-full sm:w-1/2 md:w-auto max-w-xs">
           <h1 className="font-bold text-lg">{t("menu")}</h1>
-          <ul className="grid gap-2 text-white/85">
+          <ul className="grid gap-3 text-white/85">
             <li className="mt-6">
               <Link href="#">{t("home")}</Link>
             </li>
@@ -69,7 +69,7 @@ export function Footer() {
       </section>
 
       <section className="text-start mt-20">
-        © 2035 by Kane. Powered and secured by JJSK
+        © 2025 by Kane. Powered and secured by JJSK
       </section>
 
 

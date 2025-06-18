@@ -58,7 +58,7 @@ export default async function RootLayout({
       >
         <NextIntlClientProvider>
           <Header />
-            <main className="flex-1">{children}</main>
+            <main className="flex-1 mt-14 md:mt-19">{children}</main>
           <Footer />
         </NextIntlClientProvider>
       </body>
