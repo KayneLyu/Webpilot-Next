@@ -6,7 +6,7 @@ import LetterComponent from "@/components/common/Letter";
 export function Footer() {
   const t = useTranslations('nav')
   return (
-    <footer className="pl-10 md:px-20 text-[18px] bg-7 py-[85px] md:h-[605px] text-white text-center text-sm font-[family-name:var(--font-Public-Sans)]">
+    <footer className="pl-10 md:px-20 text-[18px] bg-7 py-[85px] text-white text-center text-sm font-[family-name:var(--font-Public-Sans)]">
       <section className="flex flex-wrap justify-between gap-y-10 text-start">
         <div className="w-full sm:w-1/2 md:w-auto max-w-xs">
           <h1 className="font-bold text-lg">{t("contact")}</h1>
