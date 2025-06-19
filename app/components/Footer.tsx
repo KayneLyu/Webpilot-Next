@@ -1,6 +1,8 @@
 // components/Footer.tsx
 import Link from "next/link"
 import { useTranslations } from 'next-intl'
+import EmailComponent from "@/components/common/EAddress";
+import LetterComponent from "@/components/common/Letter";
 export function Footer() {
   const t = useTranslations('nav')
   return (
@@ -15,13 +17,18 @@ export function Footer() {
               {t("address3")}<br />
               {t("address4")}
             </address>
-            <p className="cursor-pointer mt-5 underline md:no-underline hover:underline font-bold"> sales@jinjiutech.com </p>
+            <div className="mt-5">
+              <EmailComponent />
+            </div>
             <p className="mt-5">+86 0769-22991396</p>
           </div>
         </div>
 
-        <div className="w-full sm:w-1/2 md:w-auto max-w-xs">
+        <div className="w-full sm:w-1/2 md:w-full max-w-xs">
           <h1 className="font-bold text-lg">{t("email")}</h1>
+          <div className="mt-6">
+            <LetterComponent />
+          </div>
         </div>
 
         <div className="w-full sm:w-1/2 md:w-auto max-w-xs">
@@ -55,25 +62,22 @@ export function Footer() {
               <Link href="#">Facebook</Link>
             </li>
             <li>
-              <Link  href="#">Youtube</Link>
+              <Link href="#">Youtube</Link>
             </li>
             <li>
-              <Link  href="#">X</Link>
+              <Link href="#">X</Link>
             </li>
             <li>
-              <Link  href="#">Instagram</Link>
+              <Link href="#">Instagram</Link>
             </li>
 
           </ul>
         </div>
       </section>
 
-      <section className="text-start mt-20">
+      <section className="text-start mt-20 pr-5">
         © 2025 by Kane. Powered and secured by JJSK
       </section>
-
-
-
     </footer>
   )
 }
