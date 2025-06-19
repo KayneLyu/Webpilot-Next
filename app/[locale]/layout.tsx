@@ -1,6 +1,6 @@
 import { NextIntlClientProvider, hasLocale } from 'next-intl'
 import type { Metadata } from "next";
-import { Geist_Mono, Public_Sans, Lexend_Exa } from "next/font/google";
+import { Geist_Mono, Public_Sans, Lexend_Exa, Roboto } from "next/font/google";
 import { Header } from "@/components/Header"
 import { Footer } from "@/components/Footer"
 import { notFound } from 'next/navigation'
@@ -20,6 +20,11 @@ const RecursiveFont = Lexend_Exa({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const RobotoFont = Roboto({
+  variable: "--font-Roboto",
   subsets: ["latin"],
 });
 
@@ -54,7 +59,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${PublicSans.variable} ${RecursiveFont.variable} ${geistMono.variable} antialiased`}
+        className={`${RobotoFont.variable} ${PublicSans.variable} ${RecursiveFont.variable} ${geistMono.variable} antialiased`}
       >
         <NextIntlClientProvider>
           <Header />

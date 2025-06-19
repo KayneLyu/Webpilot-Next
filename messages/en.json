@@ -29,7 +29,14 @@
         "round": "Profile measurement",
         "dosing": "Dosing",
         "XRayRing":"X-Ray profile measurement",
-        "product": "Products"
+        "product": "Products",
+        "more": "Learn More"
+    },
+    "slogan": {
+        "s1": "Used in 100+ Lines Worldwide",
+        "s2": "Smart. Efficient. Reliable.",
+        "s3": "Global Support. Local Service",
+        "s4": "Built for Modern Film Lines"
     },
     "news": {
         "title": "我司成功参加2025年国际橡塑展",

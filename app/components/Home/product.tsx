@@ -1,6 +1,8 @@
 'use client';
 import { motion, useInView } from 'motion/react';
 import { useRef } from 'react';
+import { Button } from "@/components/ui/button"
+import Link from "next/link"
 import Image from "next/image";
 import profile_control from "@/assets/images/products/profile_control.jpg";
 import lift_control from "@/assets/images/products/lift_profile_control.jpg";
@@ -75,7 +77,7 @@ export default function ProductSection() {
     const t = useTranslations('product')
     return (
         <>
-            <div className="bg-5/90">
+            <div className="bg-5/90 pb-10">
                 <div>
                     <SectionTittle text={t("product")} textColor='text-black' spanBgColor='bg-white' />
                 </div>
@@ -97,6 +99,11 @@ export default function ProductSection() {
                             </AnimatedListItem>
                         ))}
                     </ul>
+                </div>
+                <div className='w-full mt-8 text-center'>
+                    <Button variant="secondary"  size={"lg"}>
+                        <Link href="/">{t("more")} +</Link>
+                    </Button>
                 </div>
             </div>
         </>
