@@ -1,4 +1,7 @@
 {
+    "company": {
+        "name": "Welcome to JinJiu Website"
+    },
     "nav": {
         "home": "Home",
         "product": "Product",
@@ -9,6 +12,7 @@
         "case": "Case",
         "follow": "Follow us on",
         "email": "News letter",
+        "lang": "Language",
         "address1": "No. 8 Hefeng Industrial Zone,",
         "address2": "Xingu Chong Management Area,",
         "address3": "Wanjiang District, Dongguan City,",

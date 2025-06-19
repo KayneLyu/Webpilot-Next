@@ -18,11 +18,10 @@ import {
     NavigationMenuList,
 } from "../ui/navigation-menu"
 import { useTranslations } from 'next-intl'
-import LangSwitcher from '@/components/navigation/LocaleSwitcher';
 import { usePathname } from 'next/navigation'
 import { useLocale } from 'next-intl'
 import { cn } from "@/lib/utils" // shadcn 提供的合并类名工具
-
+import LanguageComponent from '@/components/common/Language';
 export default function Navigation() {
     const t = useTranslations('nav')
     const pathname = usePathname()
@@ -45,83 +44,91 @@ export default function Navigation() {
         <>
             {/* 桌面导航 */}
             <nav className="hidden md:block">
-                <NavigationMenu>
-                    <NavigationMenuList className="flex gap-6">
-                        {navItems.map((item) => {
-                            const isActive =
-                                item.href === '/'
-                                    ? logicalPath === '/'
-                                    : logicalPath.startsWith(item.href)
+                <div className="flex">
+                    <NavigationMenu>
+                        <NavigationMenuList className="flex gap-6">
+                            {navItems.map((item) => {
+                                const isActive =
+                                    item.href === '/'
+                                        ? logicalPath === '/'
+                                        : logicalPath.startsWith(item.href)
 
-                            return (
-                                <NavigationMenuItem key={item.href} >
-                                    <NavigationMenuLink asChild className={cn(
-                                        "transition-colors",
-                                        isActive
-                                            ? "bg-accent text-primary font-semibold"
-                                            : "text-muted-foreground"
-                                    )}  >
-                                        <Link href={item.href} className="font-[family-name:var(--font-Public-Sans)] text-[18px] py-2 px-2"> {t(`${item.name}`)}</Link>
-                                    </NavigationMenuLink>
-                                </NavigationMenuItem>
-                            )
-                        }
-                        )}
-                    </NavigationMenuList>
-                </NavigationMenu>
+                                return (
+                                    <NavigationMenuItem key={item.href} >
+                                        <NavigationMenuLink asChild className={cn(
+                                            "transition-colors",
+                                            isActive
+                                                ? "bg-accent text-primary font-semibold"
+                                                : "text-muted-foreground"
+                                        )}  >
+                                            <Link href={item.href} className="font-[family-name:var(--font-Public-Sans)] text-[18px] py-2 px-2"> {t(`${item.name}`)}</Link>
+                                        </NavigationMenuLink>
+                                    </NavigationMenuItem>
+                                )
+                            }
+                            )}
+                        </NavigationMenuList>
+                    </NavigationMenu>
+                    <div >
+                        <LanguageComponent />
+                    </div>
+                </div>
             </nav>
 
             {/* 移动端菜单按钮 */}
-            <div className="md:hidden h-full w-16 text-center">
-                <Sheet open={open} onOpenChange={setOpen}>
-                    <SheetTrigger asChild>
-                        <button aria-label="打开菜单" className="h-full transition duration-300 ease-in-ou">
-                            <Menu size={32} className="text-primary" />
-                        </button>
-                    </SheetTrigger>
-                    <SheetContent side="left" className="w-[250px]">
-                        <SheetHeader>
-                            <SheetTitle className="text-lg font-semibold text-primary">{t('menu')}</SheetTitle>
-                            <SheetDescription></SheetDescription>
-                        </SheetHeader>
-                        <motion.ul
-                            initial="hidden"
-                            animate="visible"
-                            variants={{
-                                visible: { transition: { staggerChildren: 0.1 } },
-                                hidden: {},
-                            }}
-                            className="space-y-4">
-                            {navItems.map((item) => (
-                                <motion.li
+            <div className="flex items-center md:hidden h-full">
+                <LanguageComponent />
+                <div className="h-full w-16 ">
+                    <Sheet open={open} onOpenChange={setOpen}>
+                        <SheetTrigger asChild>
+                            <div className="h-full w-full flex justify-center items-center">
+                                <Menu size={34} className="text-primary" />
+                            </div>
+                        </SheetTrigger>
+                        <SheetContent side="left" className="w-[250px]">
+                            <SheetHeader>
+                                <SheetTitle className="text-lg font-semibold text-primary">{t('menu')}</SheetTitle>
+                                <SheetDescription></SheetDescription>
+                            </SheetHeader>
+                            <motion.ul
+                                initial="hidden"
+                                animate="visible"
+                                variants={{
+                                    visible: { transition: { staggerChildren: 0.1 } },
+                                    hidden: {},
+                                }}
+                                className="space-y-4">
+                                {navItems.map((item) => (
+                                    <motion.li
+                                        variants={{
+                                            hidden: { opacity: 0, x: -80 },
+                                            visible: { opacity: 1, x: 0 },
+                                        }}
+                                        transition={{ duration: 0.5 }}
+                                        key={item.href}
+                                        className="font-[family-name:var(--font-Recursive)]  mb-0 w-full h-14 pl-4 flex items-center border-b border-8" >
+                                        <Link
+                                            href={item.href}
+                                            className="uppercase block w-full text-base text-gray-950 hover:text-primary"
+                                            onClick={() => setOpen(false)}
+                                        >
+                                            {t(item.name)}
+                                        </Link>
+                                    </motion.li>
+                                ))}
+                                {/* <motion.li
                                     variants={{
                                         hidden: { opacity: 0, x: -80 },
                                         visible: { opacity: 1, x: 0 },
                                     }}
                                     transition={{ duration: 0.5 }}
-                                    key={item.href}
-                                    className="font-[family-name:var(--font-Recursive)]  mb-0 w-full h-14 pl-4 flex items-center border-b border-8" >
-                                    <Link
-                                        href={item.href}
-                                        className="uppercase block w-full text-base text-gray-950 hover:text-primary"
-                                        onClick={() => setOpen(false)}
-                                    >
-                                        {t(item.name)}
-                                    </Link>
-                                </motion.li>
-                            ))}
-                            <motion.li
-                                variants={{
-                                    hidden: { opacity: 0, x: -80 },
-                                    visible: { opacity: 1, x: 0 },
-                                }}
-                                transition={{ duration: 0.5 }}
-                                className="mb-0 w-full flex items-center border-b border-8" >
-                                <LangSwitcher />
-                            </motion.li>
-                        </motion.ul>
-                    </SheetContent>
-                </Sheet>
+                                    className="mb-0 w-full flex items-center border-b border-8" >
+                                    <LangSwitcher />
+                                </motion.li> */}
+                            </motion.ul>
+                        </SheetContent>
+                    </Sheet>
+                </div>
             </div >
         </>
     )

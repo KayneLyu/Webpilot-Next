@@ -44,7 +44,7 @@ export default function Slogans() {
                         <motion.li key={index}
                             variants={itemVariants}
                             transition={{ duration: 0.5 }}
-                            className={ `${index ===3 ? '' : 'border-b-[3px] border-black'} flex items-center bg-7 h-20 overflow-hidden` }
+                            className={ `${index ===3 ? '' : 'border-b-[3px] border-black'} flex items-center bg-7 h-21 overflow-hidden` }
                         >
                             <div className='bg-6 w-[8px] h-[60%] ml-5 rounded-2xl'></div>
                             <p className="ml-3 text-white text-start text-[22px] text-nowrap font-[family-name:var(--font-Roboto)]">{t(slogan)}</p>
