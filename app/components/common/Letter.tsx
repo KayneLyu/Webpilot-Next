@@ -1,4 +1,5 @@
 "use client"
+import { useState } from 'react';
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { toast } from "sonner"
@@ -16,6 +17,7 @@ import {
 import { Input } from "@/components/ui/input"
 import { Textarea } from '@/components/ui/textarea'
 import { Button } from "@/components/ui/button"
+import ReCAPTCHA from 'react-google-recaptcha'
 
 const FormSchema = z.object({
     name: z.string().min(1, { message: '请输入姓名' }),
@@ -24,14 +26,13 @@ const FormSchema = z.object({
 })
 
 export default function Letter() {
-
+    const [captchaToken, setCaptchaToken] = useState<string | null>(null)
 
     // const FormSchema = z.object({
     //     username: z.string().min(2, {
     //         message: "Username must be at least 2 characters.",
     //     }),
     // })
-
 
     const form = useForm<z.infer<typeof FormSchema>>({
         resolver: zodResolver(FormSchema),
@@ -55,11 +56,11 @@ export default function Letter() {
     return (
         <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="w-full space-y-6">
-                {/* <FormField
+                <FormField
                     control={form.control}
                     name="name"
                     render={({ field }) => (
-                        <FormItem className="flex">
+                        <FormItem className='w-[50%]'>
                             <FormLabel>姓名</FormLabel>
                             <FormControl>
                                 <Input placeholder="请输入您的姓名" {...field} />
@@ -67,7 +68,7 @@ export default function Letter() {
                             <FormMessage />
                         </FormItem>
                     )}
-                /> */}
+                />
 
                 <FormField
                     control={form.control}
@@ -100,6 +101,12 @@ export default function Letter() {
                         </FormItem>
                     )}
                 />
+                <ReCAPTCHA
+                    sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
+                    onChange={(token:string) => setCaptchaToken(token)}
+                    className="mx-auto"
+                />
+
                 <Button type="submit" className="bg-6 cursor-pointer" size={"lg"}>提交</Button>
             </form>
         </Form>
