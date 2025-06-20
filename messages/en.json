@@ -24,7 +24,10 @@
         "product": "Products",
         "contact": "Contact",
         "offer": "We specialize in intelligent plastic film equipment, offering integrated solutions for thickness measurement, air ring control, and automation.",
-        "more": "Learn More"
+        "more": "Learn More",
+        "about1": "Jinjiu Automation Technology Co., Ltd. is a leading provider of intelligent control systems for the blown film industry, specializing in automatic air ring control systems, sweep thickness gauges, rotary thickness gauges, and gravimetric dosing systems. Our solutions are designed to improve film uniformity, reduce material waste, and enhance production efficiency.",
+        "about2": "With a strong R&D team and a number of independent intellectual property rights, JINJIU Automation has developed proprietary technologies that integrate precision sensors, closed-loop control algorithms, and industrial communication protocols. Our products are widely used across China and exported to Southeast Asia, the Middle East, and other regions.",
+        "about3": "JINJIU Automation is committed to advancing the digitalization and automation of the film extrusion process, helping our partners achieve higher quality, smarter manufacturing, and sustainable growth."
     },
     "product": {
         "ring": "Profile control",

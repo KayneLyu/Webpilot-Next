@@ -2,7 +2,7 @@
 import { motion } from "motion/react"
 import Link from "next/link"
 import { useState } from "react"
-import { Menu } from "lucide-react"
+import { AlignJustify } from "lucide-react"
 import {
     Sheet,
     SheetContent,
@@ -22,6 +22,8 @@ import { usePathname } from 'next/navigation'
 import { useLocale } from 'next-intl'
 import { cn } from "@/lib/utils" // shadcn 提供的合并类名工具
 import LanguageComponent from '@/components/common/Language';
+import LangSwitcher from '@/components/common/LocaleSwitcher';
+import EmailAddress from '@/components/common/EAddress';
 export default function Navigation() {
     const t = useTranslations('nav')
     const pathname = usePathname()
@@ -61,7 +63,7 @@ export default function Navigation() {
                                                 ? "bg-accent text-primary font-semibold"
                                                 : "text-muted-foreground"
                                         )}  >
-                                            <Link href={item.href} className="font-[family-name:var(--font-Public-Sans)] text-[18px] py-2 px-2"> {t(`${item.name}`)}</Link>
+                                            <Link href={item.href} className=" uppercase font-semibold font-[family-name:var(--font-Roboto-Condensed)] text-[18px] py-2 px-2"> {t(`${item.name}`)}</Link>
                                         </NavigationMenuLink>
                                     </NavigationMenuItem>
                                 )
@@ -69,7 +71,10 @@ export default function Navigation() {
                             )}
                         </NavigationMenuList>
                     </NavigationMenu>
-                    <div >
+                    <div className="ml-10">
+                        <EmailAddress variant={true} />
+                    </div>
+                    <div>
                         <LanguageComponent />
                     </div>
                 </div>
@@ -78,14 +83,15 @@ export default function Navigation() {
             {/* 移动端菜单按钮 */}
             <div className="flex items-center md:hidden h-full">
                 <LanguageComponent />
+                <EmailAddress variant={true} />
                 <div className="h-full w-16 ">
                     <Sheet open={open} onOpenChange={setOpen}>
                         <SheetTrigger asChild>
                             <div className="h-full w-full flex justify-center items-center">
-                                <Menu size={34} className="text-primary" />
+                                <AlignJustify color="#1C1E87" size={34} className="text-primary" />
                             </div>
                         </SheetTrigger>
-                        <SheetContent side="left" className="w-[250px]">
+                        <SheetContent side="left" className="bg-9 w-[250px]">
                             <SheetHeader>
                                 <SheetTitle className="text-lg font-semibold text-primary">{t('menu')}</SheetTitle>
                                 <SheetDescription></SheetDescription>
@@ -106,10 +112,10 @@ export default function Navigation() {
                                         }}
                                         transition={{ duration: 0.5 }}
                                         key={item.href}
-                                        className="font-[family-name:var(--font-Recursive)]  mb-0 w-full h-14 pl-4 flex items-center border-b border-8" >
+                                        className="font-[family-name:var(--font-Roboto-Condensed)]  mb-0 w-full h-14 pl-4 flex items-center border-b border-8" >
                                         <Link
                                             href={item.href}
-                                            className="uppercase block w-full text-base text-gray-950 hover:text-primary"
+                                            className="uppercase   font-semibold block w-full text-[20px] text-gray-950 hover:text-primary"
                                             onClick={() => setOpen(false)}
                                         >
                                             {t(item.name)}

@@ -42,7 +42,7 @@ export default function DropdownMenuRadioGroupDemo() {
     return (
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
-                <div className="h-[90%] md:h-hull md:ml-6 cursor-pointer px-4 flex mr-1 items-center">
+                <div className="h-[90%] md:h-hull md:ml-3 cursor-pointer px-4 flex items-center">
                     <Image src="/i18n.svg" alt="change lang"
                         aria-hidden
                         width={28}

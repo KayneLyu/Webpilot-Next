@@ -6,8 +6,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import LangSwitcher from './LanguageSwitcher';
-
+import { useLocale } from 'next-intl'
 export default function LocaleSwitcher() {
+  const locale = useLocale()
   return (
     <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">
@@ -19,6 +20,7 @@ export default function LocaleSwitcher() {
               height={40}
               className="h-10 md:h-15 ml-4"
             />
+            <span className="uppercase ml-2 text-[16px]">{locale}</span>
           </div>
         </AccordionTrigger>
         <AccordionContent className="bg-black/5">
