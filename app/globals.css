@@ -38,6 +38,9 @@
   --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
   --sidebar-border: oklch(0.929 0.013 255.508);
   --sidebar-ring: oklch(0.704 0.04 256.788);
+  --border-color: #4C4D4F;
+  --bg-color: #ffffff;
+  /* --bg-color: #141414; */
 }
 
 @theme inline {
@@ -147,4 +150,12 @@
 }
 .h1-span {
   @apply font-[family-name:var(--font-Recursive)] leading-9 md:leading-13 pl-4 pr-10 rounded-b-lg md:pl-8 md:pr-24 font-semibold md:text-[24px]
+}
+
+.custom-bg {
+  background-image: radial-gradient(transparent 1px, #fff 1px);
+  background-size: 4px 4px;
+  backdrop-filter: saturate(50%) blur(4px);
+  --bg-color: transparent; /* 可根据需要修改为你的主题色 */
+  border-bottom: 1px solid var(--border-color);
 }
