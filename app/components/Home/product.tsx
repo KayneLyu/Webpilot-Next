@@ -77,7 +77,7 @@ export default function ProductSection() {
     const t = useTranslations('product')
     return (
         <>
-            <div className="bg-5/90 pb-10">
+            <div className="bg-black pb-10">
                 <div>
                     <SectionTittle text={t("product")} textColor='text-black' spanBgColor='bg-white' />
                 </div>

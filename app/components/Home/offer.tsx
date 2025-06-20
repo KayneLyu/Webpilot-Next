@@ -48,7 +48,7 @@ export default function OfferSection() {
                         animate={isInView ? { opacity: 1, x: 0 } : {}}
                         transition={{ duration: 0.6, ease: 'easeOut', delay: 0.6 }}
                     >
-                        <Button className="mt-5" variant="outline" size={"lg"}>
+                        <Button className="mt-5" variant="secondary" size={"lg"}>
                             <Link href="/">{t("more")} +</Link>
                         </Button>
                     </motion.div>
