@@ -61,7 +61,7 @@ export default function Letter() {
                     name="name"
                     render={({ field }) => (
                         <FormItem className='w-[50%]'>
-                            <FormLabel>姓名</FormLabel>
+                            <FormLabel>Name</FormLabel>
                             <FormControl>
                                 <Input placeholder="请输入您的姓名" {...field} />
                             </FormControl>
@@ -84,7 +84,7 @@ export default function Letter() {
                     )}
                 />
 
-                <FormField
+                {/* <FormField
                     control={form.control}
                     name="message"
                     render={({ field }) => (
@@ -100,7 +100,7 @@ export default function Letter() {
                             <FormMessage />
                         </FormItem>
                     )}
-                />
+                /> */}
                 <ReCAPTCHA
                     sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
                     onChange={(token:string) => setCaptchaToken(token)}

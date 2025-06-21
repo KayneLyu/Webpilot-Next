@@ -31,7 +31,6 @@ export default function Navigation() {
     // 去掉语言前缀后的路径
     const logicalPath = pathname.replace(`/${locale}`, '') || '/'
     const navItems = [
-        { name: "home", href: "/" },
         { name: "about", href: "/about" },
         { name: "product", href: "/product" },
         { name: "case", href: "/case" },
@@ -93,7 +92,7 @@ export default function Navigation() {
                         </SheetTrigger>
                         <SheetContent side="left" className="bg-9 w-[250px]">
                             <SheetHeader>
-                                <SheetTitle className="text-lg font-semibold text-primary">{t('menu')}</SheetTitle>
+                                <SheetTitle className="text-lg font-semibold text-3">{t('menu')}</SheetTitle>
                                 <SheetDescription></SheetDescription>
                             </SheetHeader>
                             <motion.ul
@@ -115,7 +114,7 @@ export default function Navigation() {
                                         className="font-[family-name:var(--font-Roboto-Condensed)]  mb-0 w-full h-14 pl-4 flex items-center border-b border-8" >
                                         <Link
                                             href={item.href}
-                                            className="uppercase   font-semibold block w-full text-[20px] text-gray-950 hover:text-primary"
+                                            className="uppercase block w-full text-[20px] text-3 hover:text-primary"
                                             onClick={() => setOpen(false)}
                                         >
                                             {t(item.name)}

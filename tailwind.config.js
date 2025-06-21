@@ -18,7 +18,7 @@ module.exports = {
         6: '#0382E0',
         7: '#0a0a36',
         8: "#E3E3E3",
-        9: "#F3F0EC",
+        9: "#F3F0ED",
       },
       margin:{
         l10: "10vw",
@@ -32,7 +32,7 @@ module.exports = {
         size18: "18px",
         size22: "22px",
       },
-      width: {
+      maxWidth: {
         main: "1675px"
       }
     },
