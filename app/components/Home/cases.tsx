@@ -2,6 +2,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import JumpComponent from '@/components/common/JumpTo';
+import Image from 'next/image';
 
 import 'swiper/css';                  // 必须引入基础样式
 import 'swiper/css/pagination';     // 分页器样式
@@ -12,7 +13,6 @@ export default function Cases() {
         <div className='w-full mt-10 md:mt-20 py-[40px] md:py-[65px] px-6 xl:px-0 '>
             <div className='max-w-main mx-auto md:px-0'>
                 <h1 className='section-title'>CASES</h1>
-
                 <div>
                     <Swiper
                         navigation={{
@@ -43,32 +43,78 @@ export default function Cases() {
                         }}
                         speed={1000}
                         modules={[Autoplay, Pagination, Navigation]}
-                        className="mySwiper h-50"
+                        className="mySwiper"
                         effect="slide"
                     >
                         <SwiperSlide>
-                            <div className='full bg-5 h-50'></div>
+                            <div className='full group  relative cursor-pointer rounded-2xl overflow-hidden'>
+                                <div className='w-full h-100'>
+                                    <Image
+                                        src= "/case/case1.jpg"
+                                        width={1200}
+                                        height={1200}
+                                        alt='News'
+                                        className='w-full h-full object-cover '
+                                    />
+                                </div>
+
+                                <div className='flex justify-center items-end case-info text-white absolute bottom-0 left-0  w-full h-[40%] group-hover:h-[100%] transition-all duration-300 ease-in'>
+                                    <p className='mb-5 text-2xl group-hover:mb-[30%] transition-all duration-300 ease-in'>在线称重混料系统</p>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <div className='full group  relative cursor-pointer rounded-2xl overflow-hidden'>
+                                <div className='w-full h-100'>
+                                    <Image
+                                        src= "/case/case1.jpg"
+                                        width={1200}
+                                        height={1200}
+                                        alt='News'
+                                        className='w-full h-full object-cover '
+                                    />
+                                </div>
+
+                                <div className='flex justify-center items-end case-info text-white absolute bottom-0 left-0  w-full h-[40%] group-hover:h-[100%] transition-all duration-300 ease-in'>
+                                    <p className='mb-5 text-2xl group-hover:mb-[30%] transition-all duration-300 ease-in'>在线称重混料系统</p>
+                                </div>
+                            </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div className='full bg-5 h-50'></div>
+                            <div className='full group  relative cursor-pointer rounded-2xl overflow-hidden'>
+                                <div className='w-full h-100'>
+                                    <Image
+                                        src= "/case/case1.jpg"
+                                        width={1200}
+                                        height={1200}
+                                        alt='News'
+                                        className='w-full h-full object-cover '
+                                    />
+                                </div>
+
+                                <div className='flex justify-center items-end case-info text-white absolute bottom-0 left-0  w-full h-[40%] group-hover:h-[100%] transition-all duration-300 ease-in'>
+                                    <p className='mb-5 text-2xl group-hover:mb-[30%] transition-all duration-300 ease-in'>在线称重混料系统</p>
+                                </div>
+                            </div>
                         </SwiperSlide>
+
                         <SwiperSlide>
-                            <div className='full bg-5 h-50'></div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className='full bg-5 h-50'></div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className='full bg-5 h-50'></div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className='full bg-5 h-50'></div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className='full bg-5 h-50'></div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className='full bg-5 h-50'></div>
+                            <div className='full group  relative cursor-pointer rounded-2xl overflow-hidden'>
+                                <div className='w-full h-100'>
+                                    <Image
+                                        src= "/case/case1.jpg"
+                                        width={1200}
+                                        height={1200}
+                                        alt='News'
+                                        className='w-full h-full object-cover '
+                                    />
+                                </div>
+
+                                <div className='flex justify-center items-end case-info text-white absolute bottom-0 left-0  w-full h-[40%] group-hover:h-[100%] transition-all duration-300 ease-in'>
+                                    <p className='mb-5 text-2xl group-hover:mb-[30%] transition-all duration-300 ease-in'>在线称重混料系统</p>
+                                </div>
+                            </div>
                         </SwiperSlide>
                     </Swiper>
                 </div>

@@ -1,6 +1,4 @@
 import SwiperComponent from '@/components/Home/swiper';
-import SolutionComponent from '@/components/Home/solution';
-import OfferComponent from '@/components/Home/offer';
 import ProductsComponent from '@/components/Home/product';
 import AboutComponent from '@/components/Home/about';
 import HonorComponent from '@/components/Home/honor';

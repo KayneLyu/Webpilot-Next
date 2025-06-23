@@ -44,38 +44,46 @@ export default function Navigation() {
     return (
         <>
             {/* 桌面导航 */}
-            <nav className="hidden md:block">
+            <nav className="hidden md:block  ">
                 <div className="flex">
                     <NavigationMenu>
-                        <NavigationMenuList className="flex gap-6">
-                            {navItems.map((item) => {
-                                const isActive =
-                                    item.href === '/'
-                                        ? logicalPath === '/'
-                                        : logicalPath.startsWith(item.href)
+                        <NavigationMenuList>
+                            <div>
+                                <div className="my-3 flex justify-end">
+                                    <div className="ml-10">
+                                        <EmailAddress variant={true} />
+                                    </div>
+                                    <div>
+                                        <LanguageComponent />
+                                    </div>
+                                </div>
+                                <div className="flex gap-6">
+                                    {navItems.map((item) => {
+                                        const isActive =
+                                            item.href === '/'
+                                                ? logicalPath === '/'
+                                                : logicalPath.startsWith(item.href)
 
-                                return (
-                                    <NavigationMenuItem key={item.href} >
-                                        <NavigationMenuLink asChild className={cn(
-                                            "transition-colors",
-                                            isActive
-                                                ? "bg-accent text-primary font-semibold"
-                                                : "text-muted-foreground"
-                                        )}  >
-                                            <Link href={item.href} className=" uppercase font-semibold font-[family-name:var(--font-Roboto-Condensed)] text-[18px] py-2 px-2"> {t(`${item.name}`)}</Link>
-                                        </NavigationMenuLink>
-                                    </NavigationMenuItem>
-                                )
-                            }
-                            )}
+                                        return (
+                                            <NavigationMenuItem key={item.href} >
+                                                <NavigationMenuLink asChild className={cn(
+                                                    "transition-colors",
+                                                    isActive
+                                                        ? "bg-accent text-primary font-semibold"
+                                                        : "text-muted-foreground"
+                                                )}  >
+                                                    <Link href={item.href} className=" uppercase font-semibold font-[family-name:var(--font-Roboto-Condensed)] text-[18px] py-2 px-2"> {t(`${item.name}`)}</Link>
+                                                </NavigationMenuLink>
+                                            </NavigationMenuItem>
+                                        )
+                                    }
+                                    )}
+                                </div>
+
+                            </div>
                         </NavigationMenuList>
                     </NavigationMenu>
-                    <div className="ml-10">
-                        <EmailAddress variant={true} />
-                    </div>
-                    <div>
-                        <LanguageComponent />
-                    </div>
+
                 </div>
             </nav>
 
@@ -114,7 +122,7 @@ export default function Navigation() {
                                         className="font-[family-name:var(--font-Roboto-Condensed)]  mb-0 w-full h-14 pl-4 flex items-center border-b border-8" >
                                         <Link
                                             href={item.href}
-                                            className="uppercase block w-full text-[20px] text-3 hover:text-primary"
+                                            className="uppercase block w-full text-[18px] text-3 hover:text-primary"
                                             onClick={() => setOpen(false)}
                                         >
                                             {t(item.name)}

@@ -180,3 +180,12 @@
   background: linear-gradient(to top, #1C1E8CBB ,  transparent) no-repeat padding-box;
   /* background: linear-gradient(180deg,rgba(170, 25, 25, 0) 0,#1C1E8C 100%) no-repeat padding-box; */
 }
+
+.case-info {
+  background: linear-gradient(to top, #1C1E8C ,  transparent) no-repeat padding-box;
+}
+.swiper-pagination-custom .swiper-pagination-bullet {
+}
+
+.swiper-pagination-custom .swiper-pagination-bullet-active {
+}

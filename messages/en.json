@@ -4,7 +4,7 @@
     },
     "nav": {
         "home": "Home",
-        "product": "Product",
+        "product": "Product & Solutions",
         "about": "About",
         "news": "News & Events",
         "contact": "Contact",
@@ -35,7 +35,7 @@
         "horizon": "Profile measurement",
         "round": "Profile measurement",
         "dosing": "Dosing",
-        "XRayRing":"X-Ray profile measurement",
+        "XRayRing": "X-Ray profile measurement",
         "product": "Products",
         "more": "Learn More"
     },
@@ -46,7 +46,39 @@
         "s4": "Built for Modern Film Lines"
     },
     "news": {
-        "title": "我司成功参加2025年国际橡塑展",
-        "content": "我司展示了最新一代X光测厚系统，吸引了众多客户..."
+        "list": [
+            {
+                "id": "news1",
+                "title": "Review of the 2025 Korea International Plastic and Mold Industry Exhibition",
+                "tag": "PRESS RELEASE",
+                "date": "2025-06-10",
+                "content": "From March 11th to 14th, 2025, the 2025 Korea International Plastics and Mold Industry Exhibition (INTERMOLD KOREA&KOPLAS 2025) concluded at the KINTEX Convention and Exhibition Center in Korea.As the top event in the Asian rubber and plastic industry, this exhibition has attracted more than 530 exhibitors from 26 countries around the world, showcasing intelligent molds, energy-saving equipment, and digital solutions.Dongguan Jinjiu Automation Technology Co., Ltd. unveiled its plastic processing auxiliary equipment, intelligent metering system, and green production solutions.",
+                "image": "/news/news-1.jpg"
+            },
+            {
+                "id": "news2",
+                "title": "Retrospect on the 37th Shenzhen Yasi International Plastics & Rubber Exhibition",
+                "date": "2025-04-18",
+                "tag": "PRESS RELEASE",
+                "content": "From April 15 to 18, 2025, the 37th China International Plastics and Rubber Industrial Exhibition (CHINAPLAS 2025) was grandly held at the Shenzhen International Convention and Exhibition Center. Dongguan Jinjiu Automation Technology Co., Ltd. actively participated in this major industry event. At this leading global plastics and rubber exhibition platform, Jinjiu Automation fully showcased its technical capabilities and innovative achievements. As a company dedicated to providing high-quality plastic molding auxiliary production equipment, Jinjiu focused on displaying its core products at the exhibition, including automatic control air rings, batching and weighing systems, and film thickness gauges—automated control equipment that attracted considerable attention from visitors. Many attendees stopped by Jinjiu’s booth to learn more about the performance, features, and application scenarios of the products. The professional team from Jinjiu warmly explained and demonstrated the products to every visitor, patiently answering their questions and helping them better understand the advantages of Jinjiu's solutions in improving production efficiency and ensuring product quality. During the exhibition, Dongguan Jinjiu Automation Technology Co., Ltd.'s booth became a popular hub for interaction and communication. The company not only deepened relationships with many existing clients, reinforcing long-term cooperative partnerships, but also met numerous new clients from both domestic and international markets. Through these interactions, Jinjiu gained valuable insights into market demands for智能化, 高效化, 节能环保 improvements in plastic molding auxiliary equipment, which will serve as important references for the company’s future product development and market expansion strategies.",
+                "image": "/news/news-2.jpg"
+            },
+            {
+                "id": "news3",
+                "title": "Review of the 2025 Korea International Plastic and Mold Industry Exhibition",
+                "date": "2025-05-15",
+                "tag": "PRESS RELEASE",
+                "content": "From March 11th to 14th, 2025, the 2025 Korea International Plastics and Mold Industry Exhibition (INTERMOLD KOREA&KOPLAS 2025) concluded at the KINTEX Convention and Exhibition Center in Korea.As the top event in the Asian rubber and plastic industry, this exhibition has attracted more than 530 exhibitors from 26 countries around the world, showcasing intelligent molds, energy-saving equipment, and digital solutions.Dongguan Jinjiu Automation Technology Co., Ltd. unveiled its plastic processing auxiliary equipment, intelligent metering system, and green production solutions.",
+                "image": "/news/news-3.jpg"
+            },
+            {
+                "id": "news4",
+                "title": "Review of the 2025 Korea International Plastic and Mold Industry Exhibition",
+                "date": "2025-05-15",
+                "tag": "PRESS RELEASE",
+                "content": "From March 11th to 14th, 2025, the 2025 Korea International Plastics and Mold Industry Exhibition (INTERMOLD KOREA&KOPLAS 2025) concluded at the KINTEX Convention and Exhibition Center in Korea.As the top event in the Asian rubber and plastic industry, this exhibition has attracted more than 530 exhibitors from 26 countries around the world, showcasing intelligent molds, energy-saving equipment, and digital solutions.Dongguan Jinjiu Automation Technology Co., Ltd. unveiled its plastic processing auxiliary equipment, intelligent metering system, and green production solutions.",
+                "image": "/news/news-3.jpg"
+            }
+        ]
     }
 }

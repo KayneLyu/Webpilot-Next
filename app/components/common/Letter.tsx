@@ -84,7 +84,7 @@ export default function Letter() {
                     )}
                 />
 
-                {/* <FormField
+                <FormField
                     control={form.control}
                     name="message"
                     render={({ field }) => (
@@ -100,14 +100,14 @@ export default function Letter() {
                             <FormMessage />
                         </FormItem>
                     )}
-                /> */}
+                />
                 <ReCAPTCHA
                     sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
                     onChange={(token:string) => setCaptchaToken(token)}
                     className="mx-auto"
                 />
 
-                <Button type="submit" className="bg-6 cursor-pointer" size={"lg"}>提交</Button>
+                <Button type="submit" className="bg-6 cursor-pointer hover:bg-3" size={"lg"}>提交</Button>
             </form>
         </Form>
     )
