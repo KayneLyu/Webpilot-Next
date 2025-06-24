@@ -1,5 +1,6 @@
 
 import Image from "next/image";
+import Marquee from '@/components/common/marquee';
 export default function Honors() {
     const honors = [
         {
@@ -51,6 +52,9 @@ export default function Honors() {
                             )
                         }
                     </ul>
+                    <div>
+                        <Marquee />
+                    </div>
                 </div>
             </div>
         </>

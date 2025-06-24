@@ -34,6 +34,9 @@ module.exports = {
       },
       maxWidth: {
         main: "1675px"
+      },
+      animation: {
+        marquee: 'marquee 20s linear infinite',
       }
     },
   },

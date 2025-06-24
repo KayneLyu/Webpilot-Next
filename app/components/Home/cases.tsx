@@ -3,17 +3,22 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import JumpComponent from '@/components/common/JumpTo';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl'
 
 import 'swiper/css';                  // 必须引入基础样式
 import 'swiper/css/pagination';     // 分页器样式
 import 'swiper/css/navigation';     // 导航按钮样式
 
 export default function Cases() {
+    const t = useTranslations()
     return (
         <div className='w-full mt-10 md:mt-20 py-[40px] md:py-[65px] px-6 xl:px-0 '>
             <div className='max-w-main mx-auto md:px-0'>
                 <h1 className='section-title'>CASES</h1>
-                <div>
+                <p className='text-2 text-[14px] md:w-[50%] md:text-[18px]'>
+                    {t('home.case')}
+                </p>
+                <div className='mt-5 md:mt-15'>
                     <Swiper
                         navigation={{
                             nextEl: '.custom-next',
@@ -50,7 +55,7 @@ export default function Cases() {
                             <div className='full group  relative cursor-pointer rounded-2xl overflow-hidden'>
                                 <div className='w-full h-100'>
                                     <Image
-                                        src= "/case/case1.jpg"
+                                        src="/case/case1.jpg"
                                         width={1200}
                                         height={1200}
                                         alt='News'
@@ -68,7 +73,7 @@ export default function Cases() {
                             <div className='full group  relative cursor-pointer rounded-2xl overflow-hidden'>
                                 <div className='w-full h-100'>
                                     <Image
-                                        src= "/case/case1.jpg"
+                                        src="/case/case1.jpg"
                                         width={1200}
                                         height={1200}
                                         alt='News'
@@ -85,7 +90,7 @@ export default function Cases() {
                             <div className='full group  relative cursor-pointer rounded-2xl overflow-hidden'>
                                 <div className='w-full h-100'>
                                     <Image
-                                        src= "/case/case1.jpg"
+                                        src="/case/case1.jpg"
                                         width={1200}
                                         height={1200}
                                         alt='News'
@@ -103,7 +108,7 @@ export default function Cases() {
                             <div className='full group  relative cursor-pointer rounded-2xl overflow-hidden'>
                                 <div className='w-full h-100'>
                                     <Image
-                                        src= "/case/case1.jpg"
+                                        src="/case/case1.jpg"
                                         width={1200}
                                         height={1200}
                                         alt='News'

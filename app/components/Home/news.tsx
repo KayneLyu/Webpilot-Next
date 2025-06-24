@@ -76,7 +76,7 @@ export default function News() {
                                         <div className='px-5 md:px-10 text-2'>
                                             <p className='flex justify-between my-3 mt-5'>
                                                 <span>{item.tag}</span>
-                                                <span>{item.date}</span>
+                                                <span className='font-semibold italic'>{item.date}</span>
                                             </p>
                                             <p className='font-semibold  text-[18px] md:text-[22px] line-clamp-2 overflow-hidden text-ellipsis'>{item.title}</p>
                                             <p className='my-3 line-clamp-3 overflow-hidden text-ellipsis'>{item.content}</p>

@@ -79,6 +79,11 @@ export default function ProductSection() {
                 <div>
                     <h1 className='section-title mt-15 md:mt-25 '>{t('product')}</h1>
                 </div>
+                <div>
+                    <p className='text-2 text-[14px] md:w-[50%] md:text-[18px]'>
+                        {t('tips')}
+                    </p>
+                </div>
                 <div className='w-full mt-[40px] md:mt-[60px] '>
                     <ul className='gap-5 md:gap-10 md:w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 '>
                         {products.map((product, index) => (

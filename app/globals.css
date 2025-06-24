@@ -184,8 +184,17 @@
 .case-info {
   background: linear-gradient(to top, #1C1E8C ,  transparent) no-repeat padding-box;
 }
+
+.swiper-slogan {
+  border-radius: 100% 100% 100% 0;;
+}
 .swiper-pagination-custom .swiper-pagination-bullet {
 }
 
 .swiper-pagination-custom .swiper-pagination-bullet-active {
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
 }
