@@ -26,7 +26,7 @@ export default function AboutPage() {
               <div className="w-full md:w-1/2 p-5">
                 <div className="flex flex-col gap-2 h-full xl:mx-[74px] text-[14px] md:text-[18px] leading-[24px]  md:leading-[30px] text-4">
                   <h1 className="about-title mb-5">{t("tittle1")}</h1>
-                  <p>
+                  <p style={{ whiteSpace: 'pre-line' }}>
                     {t('part1')}
                   </p>
                 </div>
@@ -61,8 +61,8 @@ export default function AboutPage() {
               <div className="w-full md:w-1/2 p-5">
                 <div className="flex flex-col gap-2 h-full xl:mx-[74px] text-[14px] leading-[24px] md:text-[18px] md:leading-[30px] text-4">
                   <h1 className="about-title mb-5">{t("tittle2")}</h1>
-                  <p>
-                    {t('part1')}
+                  <p style={{ whiteSpace: 'pre-line' }}>
+                    {t('part2')}
                   </p>
                 </div>
               </div>
@@ -74,17 +74,8 @@ export default function AboutPage() {
               <div className="w-full md:w-1/2 p-5">
                 <div className="flex flex-col gap-2 h-full xl:mx-[74px] text-[14px] leading-[24px] md:text-[18px] md:leading-[30px] text-4">
                   <h1 className="about-title mb-5">{t("tittle3")}</h1>
-                  <p>
-                    {t('part31')}
-                  </p>
-                  <p>
-                    {t('part32')}
-                  </p>
-                  <p>
-                    {t('part33')}
-                  </p>
-                  <p>
-                    {t('part34')}
+                  <p style={{ whiteSpace: 'pre-line' }}>
+                    {t('part3')}
                   </p>
                 </div>
               </div>
