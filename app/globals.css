@@ -152,6 +152,10 @@
   @apply uppercase mb-[20px] font-semibold  text-[28px] md:text-[48px] text-3
 }
 
+.about-title {
+  @apply uppercase mb-[20px] font-semibold  text-[28px] md:text-[40px] text-3 leading-[36px] md:leading-[50px]
+}
+
 .rounded3 {
   @apply rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] 
 }

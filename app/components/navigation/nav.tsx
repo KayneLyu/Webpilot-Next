@@ -31,6 +31,7 @@ export default function Navigation() {
     // 去掉语言前缀后的路径
     const logicalPath = pathname.replace(`/${locale}`, '') || '/'
     const navItems = [
+        { name: "home", href: "/" },
         { name: "about", href: "/about" },
         { name: "product", href: "/product" },
         { name: "case", href: "/case" },
