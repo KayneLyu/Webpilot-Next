@@ -34,7 +34,7 @@ export default function AboutPage() {
 
               <div className="flex items-center w-full md:w-1/2 p-5">
                 <Image
-                  src="/about/3.png"
+                  src="/about/1.webp"
                   alt="about"
                   width={1500}
                   height={1}
@@ -49,7 +49,7 @@ export default function AboutPage() {
             <div className=" max-w-main mx-auto flex flex-wrap w-full ">
               <div className="flex items-center w-full md:w-1/2 p-5">
                 <Image
-                  src="/about/2.png"
+                  src="/about/2.webp"
                   alt="about"
                   width={1500}
                   height={1}
@@ -82,7 +82,7 @@ export default function AboutPage() {
 
               <div className="flex items-center w-full md:w-1/2 p-5">
                 <Image
-                  src="/about/1.png"
+                  src="/about/3.webp"
                   alt="about"
                   width={1500}
                   height={1}
