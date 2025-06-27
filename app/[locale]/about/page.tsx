@@ -5,7 +5,7 @@ export default function AboutPage() {
 
   return (
     <>
-      <div className='w-full'>
+      <div className='w-full '>
         <section className='fixed w-full z-[-1]'>
           <Image
             alt="about"
@@ -19,9 +19,8 @@ export default function AboutPage() {
         <div className='w-full h-90 md:h-180'>
         </div>
 
-        <div className='bg-white'>
-          
-          <div className='w-full pt-10 md:pt-20'>
+        <div className='bg-9'>
+          <div className='w-full pt-10 md:pt-25'>
             <div className=" max-w-main mx-auto flex flex-wrap w-full ">
               <div className="w-full md:w-1/2 p-5">
                 <div className="flex flex-col gap-2 h-full xl:mx-[74px] text-[14px] md:text-[18px] leading-[24px]  md:leading-[30px] text-4">
@@ -45,7 +44,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className='w-full pt-10 md:pt-20'>
+          <div className='w-full pt-10 md:pt-25'>
             <div className=" max-w-main mx-auto flex flex-wrap w-full ">
               <div className="flex items-center w-full md:w-1/2 p-5">
                 <Image
@@ -69,7 +68,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className='w-full pt-10 md:pt-20 pb-20'>
+          <div className='w-full pt-10 md:pt-20 pb-25'>
             <div className=" max-w-main mx-auto flex flex-wrap w-full ">
               <div className="w-full md:w-1/2 p-5">
                 <div className="flex flex-col gap-2 h-full xl:mx-[74px] text-[14px] leading-[24px] md:text-[18px] md:leading-[30px] text-4">

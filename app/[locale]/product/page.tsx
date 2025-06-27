@@ -19,10 +19,10 @@ export default function ProductPage() {
                 <div className='w-full h-90 md:h-180'>
                 </div>
 
-                <div className='bg-white h-500'>
+                <div className='bg-9 h-500'>
+                    <div className='max-w-main mx-auto'>
 
-
-
+                    </div>
                 </div>
             </div>
         </>
