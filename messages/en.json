@@ -25,6 +25,7 @@
         "contact": "Contact",
         "offer": "We specialize in intelligent plastic film equipment, offering integrated solutions for thickness measurement, air ring control, and automation.",
         "more": "Learn More",
+        "jinjiu": "JINJIU",
         "case": "Explore real-world projects where our intelligent control systems have helped customers improve film quality, reduce waste, and boost production efficiency.",
         "about1": "Jinjiu Automation Technology Co., Ltd. is a leading provider of intelligent control systems for the blown film industry, specializing in automatic air ring control systems, sweep thickness gauges, rotary thickness gauges, and gravimetric dosing systems. Our solutions are designed to improve film uniformity, reduce material waste, and enhance production efficiency.",
         "about2": "With a strong R&D team and a number of independent intellectual property rights, JINJIU Automation has developed proprietary technologies that integrate precision sensors, closed-loop control algorithms, and industrial communication protocols. Our products are widely used across China and exported to Southeast Asia, the Middle East, and other regions.",
@@ -45,7 +46,9 @@
         "s1": "Used in 100+ Lines Worldwide",
         "s2": "Smart. Efficient. Reliable.",
         "s3": "Global Support. Local Service",
-        "s4": "Built for Modern Film Lines"
+        "s4": "Built for Modern Film Lines",
+        "s5": "Automated Air, Optimized Output",
+        "s6": "Efficiency Starts with Control"
     },
     "about": {
         "tittle1": "Company Profile",
@@ -55,6 +58,13 @@
         "part1": "Dongguan Jinjiu Automation Technology Co., Ltd. (hereinafter referred to as Jinjiu Technology) is based in Dongguan, the core hinterland of the Guangdong Hong Kong Macao Greater Bay Area. As a national high-tech enterprise, the company focuses on the entire industry chain of research and development, production, sales, and services, and is committed to becoming a leading enterprise in the field of global plastic film intelligent equipment. \n After fifteen years of continuous cultivation, Jinjiu Technology has built a technology matrix with online thickness measurement automatic wind ring system as the core, forming a three in one solution system of hardware equipment software algorithm intelligent control. The AI intelligent closed-loop control technology independently developed by the company breaks through the limitations of traditional blown film processes that rely on manual experience. Through multi-sensor data fusion and machine learning algorithm optimization, it achieves a precision of film thickness deviation control of ≤± 1.5%, which is more than 40% higher than the industry average level.",
         "part2": "Online Thickness & Air Ring System: The Smart Brain of Blown Film Production\nBuilt on three core modules—automatic air ring, online thickness gauge, and intelligent control system—JinJiu Automation offers a one-stop closed-loop solution for consistent film thickness, stable production, and efficient material use.\n1. Smart Air Ring\nMulti-zone closed-loop control adjusts airflow in real-time to respond to bubble fluctuations. Patented airflow design improves uniformity and reduces manual tuning.\n2. High-Precision Thickness Gauge\nNon-contact scanning with 0.1μm resolution enables real-time monitoring, supporting various materials and co-extrusion processes.\n3. Intelligent Control System\nPowered by proprietary algorithms for synchronized optimization of thickness and airflow. Supports data tracking, self-learning, and remote maintenance.",
         "part3": "✅ Leading the way: Our R&D team has over 10 years of industry experience and our core technology has obtained multiple national patent certifications.\n✅ Quality commitment: The core components are made of imported electronic components and have passed ISO9001 quality management system certification\n✅ Cost reduction and efficiency improvement: Improve thickness uniformity by over 50%, reduce raw material waste by 15% -25%, and help customers enhance competitiveness.\n✅ Worry free service: providing customized solution design, installation and debugging, and 24-hour response services to fully escort customer production."
+    },
+    "button": {
+        "us": "ABOUT US",
+        "more": "READ MORE",
+        "news": "SEE MORE NEWS",
+        "cases": "SEE ALL CASES",
+        "product": "SEE MORE PRODUCT"
     },
     "news": {
         "list": [

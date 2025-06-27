@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { useTranslations } from 'next-intl'
 
-
 import JumpComponent from '@/components/common/JumpTo';
 
 import 'swiper/css';                // 必须引入基础样式
@@ -17,18 +16,28 @@ export default function Carousel() {
   const banners = [
     {
       mobile: '/swiper/banner1_m.webp',
-      pc: '/swiper/banner1.webp',
-      slogan: "s1"
-    },
-    {
-      mobile: '/swiper/banner2_m.webp',
-      pc: '/swiper/banner2.webp',
+      pc: '/swiper/banner4.webp',
       slogan: "s2"
     },
     {
+      mobile: '/swiper/banner2_m.webp',
+      pc: '/swiper/banner1.webp',
+      slogan: "s4"
+    },
+    {
       mobile: '/swiper/banner3_m.webp',
+      pc: '/swiper/banner2.webp',
+      slogan: "s1"
+    },
+    {
+      mobile: '/swiper/banner4_m.webp',
       pc: '/swiper/banner3.webp',
       slogan: "s3"
+    },
+    {
+      mobile: '/swiper/banner5_m.webp',
+      pc: '/swiper/banner5.webp',
+      slogan: "s5"
     },
   ]
   return (
@@ -71,10 +80,10 @@ export default function Carousel() {
               />
             </picture>
 
-            <div className="bottom-[30%] left-5 font-semibold w-[80%] flex md:pl-15 justify-center items-center absolute md:bottom-10 md:left-30 text-white  xl:w-[35vw] xl:h-[35vw] xl:border-[4px] border-white swiper-slogan ">
+            <div className="bottom-[10%] left-5 font-semibold w-[80%] flex md:pl-15 justify-center items-center absolute md:bottom-10 md:left-30 text-white  xl:w-[35vw] xl:h-[35vw] xl:border-[4px] border-white swiper-slogan ">
               <div>
                 <p className='text-[26px] mb-5 md:mb-15 sm:text-4xl md:text-6xl line-clamp-2'>{t(item.slogan)}</p>
-                <JumpComponent color='text-white' text='READ MORE' link='' />
+                <JumpComponent color='text-white' text='more' link='' />
               </div>
             </div>
           </SwiperSlide>

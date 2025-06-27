@@ -2,12 +2,12 @@
 import { motion, useInView } from 'motion/react';
 import { useRef } from 'react';
 import Image from "next/image";
-import profile_control from "@/assets/images/products/profile_control.jpg";
-import lift_control from "@/assets/images/products/lift_profile_control.jpg";
-import gauge from "@/assets/images/products/gauge.jpg";
-import ring_gauge from "@/assets/images/products/ring_gauge.jpg";
-import dosing from "@/assets/images/products/dosing.jpg";
-import xRing_gauge from "@/assets/images/products/Xring_gauge.jpg";
+import profile_control from "@/assets/images/products/profile_control.webp";
+import lift_control from "@/assets/images/products/lift_profile_control.webp";
+import gauge from "@/assets/images/products/gauge.webp";
+import ring_gauge from "@/assets/images/products/ring_gauge.webp";
+import dosing from "@/assets/images/products/dosing.webp";
+import xRing_gauge from "@/assets/images/products/Xring_gauge.webp";
 import { useTranslations } from 'next-intl'
 import JumpComponent from '@/components/common/JumpTo';
 import { ChevronRight } from "lucide-react"
@@ -109,7 +109,7 @@ export default function ProductSection() {
                     </ul>
                 </div>
                 <div className='w-full mt-8 text-end'>
-                    <JumpComponent link="/product" text="MORE PRODUCT" />
+                    <JumpComponent link="/product" text="product" />
                 </div>
             </div>
         </div>

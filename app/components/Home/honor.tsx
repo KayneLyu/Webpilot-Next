@@ -27,12 +27,12 @@ export default function Honors() {
     ]
     return (
         <>
-            <div className="w-full bg-5/60 py-[80px]">
+            <div className="w-full bg-5/60 py-[70px] md:py-[80px]">
                 <div className="max-w-main mx-auto text-center px-6 xl:px-0">
                     <div className="w-full text-start">
                         <h1 className="section-title">JINJIU IN BRIEF</h1>
                     </div>
-                    <ul className="overflow-x-auto flex mt-20">
+                    <ul className="overflow-x-auto flex mt-20 pb-3">
                         {
                             honors.map((item, index) => (
                                 <li key={index} className="flex flex-col  items-center">

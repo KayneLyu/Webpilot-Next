@@ -25,10 +25,9 @@ export default function News() {
             <div className='max-w-main mx-auto px-5 lg:px-0'>
                 <h1 className='section-title'>{t("nav.news")}</h1>
                 <div className='my-5 md:my-10'>
-                    <JumpComponent text='SEE MORE NEWS' link='/news' />
+                    <JumpComponent text='news' link='/news' />
                 </div>
                 <div className='relative'>
-
                     <Swiper
                         navigation={{
                             nextEl: '.custom-next',
@@ -81,7 +80,7 @@ export default function News() {
                                             <p className='font-semibold  text-[18px] md:text-[22px] line-clamp-2 overflow-hidden text-ellipsis'>{item.title}</p>
                                             <p className='my-3 line-clamp-3 overflow-hidden text-ellipsis'>{item.content}</p>
                                             <div className='mt-12 mb-8'>
-                                                <JumpComponent text='READ MORE' link='' />
+                                                <JumpComponent text='more' link='' />
                                             </div>
                                         </div>
                                     </div>
@@ -94,8 +93,6 @@ export default function News() {
                         </div>
                     </Swiper>
                 </div>
-
-
             </div>
         </div>
 
