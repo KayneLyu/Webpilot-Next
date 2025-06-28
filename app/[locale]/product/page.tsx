@@ -3,6 +3,12 @@ import { useTranslations } from 'next-intl'
 export default function ProductPage() {
     const t = useTranslations("about")
 
+    const productList = [
+        {
+            
+        }
+    ]
+
     return (
         <>
             <div className='w-full'>

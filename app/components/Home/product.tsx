@@ -2,12 +2,6 @@
 import { motion, useInView } from 'motion/react';
 import { useRef } from 'react';
 import Image from "next/image";
-import profile_control from "@/assets/images/products/profile_control.webp";
-import lift_control from "@/assets/images/products/lift_profile_control.webp";
-import gauge from "@/assets/images/products/gauge.webp";
-import ring_gauge from "@/assets/images/products/ring_gauge.webp";
-import dosing from "@/assets/images/products/dosing.webp";
-import xRing_gauge from "@/assets/images/products/Xring_gauge.webp";
 import { useTranslations } from 'next-intl'
 import JumpComponent from '@/components/common/JumpTo';
 import { ChevronRight } from "lucide-react"
@@ -29,42 +23,42 @@ function AnimatedListItem({ children }: { children: React.ReactNode }) {
 export default function ProductSection() {
     const products = [
         {
-            src: profile_control,
+            src: '/products/profile_control.webp',
             alt: 'profile_control',
             name: 'ring',
             link: '/',
             hover: ''
         },
         {
-            src: lift_control,
+            src: '/products/lift_profile_control.webp',
             alt: 'lift_profile_control',
             name: 'lift_ring',
             link: '/',
             hover: ''
         },
         {
-            src: gauge,
+            src: '/products/gauge.webp',
             alt: 'profile_measurement',
             name: 'horizon',
             link: '/',
             hover: ''
         },
         {
-            src: ring_gauge,
+            src: '/products/ring_gauge.webp',
             alt: 'profile_measurement',
             name: 'round',
             link: '/',
             hover: ''
         },
         {
-            src: xRing_gauge,
+            src: '/products/dosing.webp',
             alt: 'profile_measurement',
             name: 'XRayRing',
             link: '/',
             hover: ''
         },
         {
-            src: dosing,
+            src: '/products/dosing.webp',
             alt: 'dosing',
             name: 'dosing',
             link: '/',

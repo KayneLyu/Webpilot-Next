@@ -1,3 +1,4 @@
+
 import { NextIntlClientProvider, hasLocale } from 'next-intl'
 import type { Metadata } from "next";
 import { Roboto_Condensed, Geist_Mono, Public_Sans, Lexend_Exa, Roboto } from "next/font/google";
@@ -43,7 +44,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const { locale } = await params;
   const t = await getTranslations({ locale: locale })
   return {
-    title: t('company.name'),
+    title: t('company.welcome'),
     description: '',
     icons: "/favicon.ico"
   };

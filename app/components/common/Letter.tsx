@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
-import { toast } from "sonner"
+import { toast, Toaster } from "sonner"
 import { z } from "zod"
 
 import {
@@ -17,22 +17,18 @@ import {
 import { Input } from "@/components/ui/input"
 import { Textarea } from '@/components/ui/textarea'
 import { Button } from "@/components/ui/button"
-import ReCAPTCHA from 'react-google-recaptcha'
+import { useTranslations } from 'next-intl'
 
 const FormSchema = z.object({
     name: z.string().min(1, { message: '请输入姓名' }),
     email: z.string().email({ message: '请输入有效的邮箱地址' }),
-    message: z.string().min(5, { message: '请输入至少5个字的留言内容' }),
+    message: z.string().min(1, { message: '请输入至少5个字的留言内容' }),
 })
 
 export default function Letter() {
-    const [captchaToken, setCaptchaToken] = useState<string | null>(null)
+    const t = useTranslations()
 
-    // const FormSchema = z.object({
-    //     username: z.string().min(2, {
-    //         message: "Username must be at least 2 characters.",
-    //     }),
-    // })
+    const [captchaToken, setCaptchaToken] = useState<string | null>(null)
 
     const form = useForm<z.infer<typeof FormSchema>>({
         resolver: zodResolver(FormSchema),
@@ -44,71 +40,62 @@ export default function Letter() {
     })
 
     function onSubmit(data: z.infer<typeof FormSchema>) {
-        toast("You submitted the following values", {
-            description: (
-                <pre className="mt-2 w-[320px] rounded-md bg-neutral-950 p-4">
-                    <code className="text-white">{JSON.stringify(data, null, 2)}</code>
-                </pre>
-            ),
-        })
+        toast(t("tips.sendSuccess"))
     }
 
     return (
-        <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="w-full space-y-6">
-                <FormField
-                    control={form.control}
-                    name="name"
-                    render={({ field }) => (
-                        <FormItem className='w-[50%]'>
-                            <FormLabel>Name</FormLabel>
-                            <FormControl>
-                                <Input placeholder="请输入您的姓名" {...field} />
-                            </FormControl>
-                            <FormMessage />
-                        </FormItem>
-                    )}
-                />
+        <>
+            <Toaster position='top-center'/>
+            <Form {...form}>
+                <form onSubmit={form.handleSubmit(onSubmit)} className="w-full space-y-6">
+                    <FormField
+                        control={form.control}
+                        name="name"
+                        render={({ field }) => (
+                            <FormItem className='w-[50%]'>
+                                <FormLabel>{t("contact.name")}</FormLabel>
+                                <FormControl>
+                                    <Input placeholder={t("tips.name")} {...field} />
+                                </FormControl>
+                                <FormMessage />
+                            </FormItem>
+                        )}
+                    />
 
-                <FormField
-                    control={form.control}
-                    name="email"
-                    render={({ field }) => (
-                        <FormItem>
-                            <FormLabel>Email</FormLabel>
-                            <FormControl>
-                                <Input placeholder="请输入您的邮箱" type="email" {...field} />
-                            </FormControl>
-                            <FormMessage />
-                        </FormItem>
-                    )}
-                />
+                    <FormField
+                        control={form.control}
+                        name="email"
+                        render={({ field }) => (
+                            <FormItem>
+                                <FormLabel>{t("contact.email")}</FormLabel>
+                                <FormControl>
+                                    <Input placeholder={t("tips.email")} type="email" {...field} />
+                                </FormControl>
+                                <FormMessage />
+                            </FormItem>
+                        )}
+                    />
 
-                <FormField
-                    control={form.control}
-                    name="message"
-                    render={({ field }) => (
-                        <FormItem>
-                            <FormLabel>Content</FormLabel>
-                            <FormControl>
-                                <Textarea
-                                    placeholder="请填写您的留言内容"
-                                    rows={5}
-                                    {...field}
-                                />
-                            </FormControl>
-                            <FormMessage />
-                        </FormItem>
-                    )}
-                />
-                <ReCAPTCHA
-                    sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
-                    onChange={(token:string) => setCaptchaToken(token)}
-                    className="mx-auto"
-                />
-
-                <Button type="submit" className="bg-6 cursor-pointer hover:bg-3" size={"lg"}>提交</Button>
-            </form>
-        </Form>
+                    <FormField
+                        control={form.control}
+                        name="message"
+                        render={({ field }) => (
+                            <FormItem>
+                                <FormLabel>{t("tips.message")}</FormLabel>
+                                <FormControl>
+                                    <Textarea
+                                        placeholder={t("tips.message")}
+                                        rows={5}
+                                        {...field}
+                                    />
+                                </FormControl>
+                                <FormMessage />
+                            </FormItem>
+                        )}
+                    />
+                    <Button type="submit" className="bg-6 cursor-pointer hover:bg-3" size={"lg"}>{t("contact.send")}</Button>
+                </form>
+            </Form>
+        </>
     )
 }

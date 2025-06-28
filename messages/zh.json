@@ -1,6 +1,7 @@
 {
     "company": {
-        "name": "东莞市金久自动化科技有限公司"
+        "name": "东莞市金久自动化科技有限公司",
+        "welcome": "东莞市金久自动化科技有限公司"
     },
     "nav": {
         "home": "首页",
@@ -13,10 +14,7 @@
         "follow": "关注我们",
         "email": "邮件订阅",
         "lang": "语言",
-        "address1": "中国广东省",
-        "address2": "东莞市万江区",
-        "address3": "新谷涌管理区",
-        "address4": "合丰工业区8号"
+        "address": "中国广东省\n东莞市万江区\n新谷涌管理区\n合丰工业区8号"
     },
     "home": {
         "service": "我们的服务",
@@ -65,6 +63,26 @@
         "news": "更多动态",
         "cases": "全部案例",
         "product": "更多产品"
+    },
+    "contact": {
+        "mobile": "手机",
+        "phone": "电话",
+        "fax": "传真",
+        "email": "邮箱",
+        "address": "地址",
+        "name": "名字",
+        "lastName": "姓氏",
+        "content": "内容",
+        "send": "发送",
+        "touch": "与我们取得联系"
+    },
+    "tips": {
+        "name": "请输入你的名字",
+        "last": "请输入你的姓氏",
+        "email": "请输入你的邮箱",
+        "phone": "请输入你的电话",
+        "message": "请填写你的留言内容",
+        "sendSuccess": "发送成功!"
     },
     "news": {
         "list": [

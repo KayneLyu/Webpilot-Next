@@ -1,22 +1,20 @@
 {
     "company": {
-        "name": "Welcome to JINJIU Website"
+        "name": "Dongguan Jinjiu Automation Technology Co., Ltd.",
+        "welcome": "Welcome to JINJIU Website"
     },
     "nav": {
         "home": "Home",
         "product": "Product & Solutions",
         "about": "About",
         "news": "News & Events",
-        "contact": "Contact",
+        "contact": "Contacts",
         "menu": "Menu",
         "case": "Case",
         "follow": "Follow us on",
         "email": "News letter",
         "lang": "Language",
-        "address1": "No. 8 Hefeng Industrial Zone,",
-        "address2": "Xingu Chong Management Area,",
-        "address3": "Wanjiang District, Dongguan City,",
-        "address4": "Guangdong Province, China."
+        "address": "No. 8 Hefeng Industrial Zone, \nXingu Chong Management Area,\nWanjiang District, Dongguan City,\nGuangdong Province, China."
     },
     "home": {
         "service": "What we Offer",
@@ -65,6 +63,26 @@
         "news": "SEE MORE NEWS",
         "cases": "SEE ALL CASES",
         "product": "SEE MORE PRODUCT"
+    },
+    "contact": {
+        "mobile": "Mobile",
+        "phone": "Phone",
+        "fax": "Fax",
+        "email": "Email",
+        "address": "Address",
+        "name": "Name",
+        "lastName": "Last name",
+        "message": "Message",
+        "send": "Send",
+        "touch": "Get In Touch With Us"
+    },
+    "tips": {
+        "name": "Your name",
+        "last": "Your last name",
+        "email": "Your email",
+        "phone": "Your phone number",
+        "message": "Message",
+        "sendSuccess": "Sent successfully"
     },
     "news": {
         "list": [

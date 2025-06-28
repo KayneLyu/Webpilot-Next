@@ -12,11 +12,8 @@ export function Footer() {
           <div className="w-full sm:w-1/2 md:w-auto max-w-xs">
             <h1 className="font-bold text-lg">{t("contact")}</h1>
             <div className="mt-6 text-white/85">
-              <address>
-                {t("address1")}<br />
-                {t("address2")}<br />
-                {t("address3")}<br />
-                {t("address4")}
+              <address style={{ whiteSpace: 'pre-line' }}>
+                {t("address")}
               </address>
               <div className="mt-5">
                 <EmailComponent />
