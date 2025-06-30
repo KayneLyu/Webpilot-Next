@@ -1,3 +1,4 @@
+""
 import fs from 'fs/promises';
 import path from 'path';
 import Link from 'next/link';
@@ -5,12 +6,9 @@ import ReactMarkdown from 'react-markdown';
 import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl'
-
 export default async function NewsPage({ params }: { params: { locale: string } }) {
   const { locale } = await params;
-  console.log(locale);
-
-  const filePath = path.join(process.cwd(), 'public', 'content', locale, `1.md`);
+  const filePath = path.join(process.cwd(), 'content', locale, `1.md`);
   const content = await fs.readFile(filePath, 'utf-8');
 
   // const metadataPath = path.join(process.cwd(), 'public', 'content', locale, 'metadata.json');
