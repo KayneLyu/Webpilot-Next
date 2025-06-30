@@ -1,14 +1,14 @@
 import fs from 'fs';
-import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
 type IMeteData = {
-  title: string,
-  date: string,
-  cover: string,
+  title: string
+  date: string
+  cover: string
   excerpt: string
-  description?: string;
+  tag: string
+  description?: string
 }
 export async function parseMarkdown(filePath: string) {
   const fileContent = fs.readFileSync(filePath, 'utf-8');
