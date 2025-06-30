@@ -28,7 +28,7 @@ export default function Cases() {
                         centeredSlides
                         loop
                         autoplay={{
-                            delay: 3000,
+                            delay: 1500,
                             disableOnInteraction: false,
                         }}
 

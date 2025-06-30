@@ -7,6 +7,7 @@ type IMeteData = {
   title: string,
   date: string,
   cover: string,
+  excerpt: string
   description?: string;
 }
 export async function parseMarkdown(filePath: string) {

@@ -88,7 +88,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className='w-full bg-9 pt-10 md:pt-20'>
+          <div className='w-full bg-9 py-10 md:pt-20'>
             <div className='max-w-main mx-auto'>
               <MapComponent />
             </div>
