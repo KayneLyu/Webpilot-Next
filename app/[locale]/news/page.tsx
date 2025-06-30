@@ -1,53 +1,29 @@
-""
-import fs from 'fs/promises';
-import path from 'path';
+import { getAllNews } from '@/lib/news';
+import { useLocale } from 'next-intl';
 import Link from 'next/link';
-import ReactMarkdown from 'react-markdown';
-import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
-import { useTranslations } from 'next-intl'
-export default async function NewsPage({ params }: { params: Promise<{ locale: string }> }) {
+
+export default async function NewsPage({ params }: { params: { locale: string } }) {
   const { locale } = await params;
-  const filePath = path.join(process.cwd(), 'content', locale, `1.md`);
-  const content = await fs.readFile(filePath, 'utf-8');
-
-  // const metadataPath = path.join(process.cwd(), 'public', 'content', locale, 'metadata.json');
-  // const metadata = JSON.parse(await fs.readFile(metadataPath, 'utf-8'));
+  const newsList = await getAllNews(locale);
   return (
-    <>
-      <div className='w-full'>
-        <section className='fixed w-full z-[-1]'>
-          <Image
-            alt="about"
-            src="/images/product.webp"
-            width={1500}
-            height={1000}
-            className='w-full object-cover h-100 md:h-200'
-          />
-        </section>
-
-        <div className='w-full h-90 md:h-180'>
-        </div>
-
-        <div className='bg-9 h-500'>
-          <div className='max-w-main mx-auto'>
-            <div className="prose max-w-none">
-              <ReactMarkdown
-              // components={{
-              //   img({ node, ...props }) {
-              //     const src = props.src?.startsWith('./')
-              //       ? `/content/${locale}/1/${props.src.slice(2)}`
-              //       : props.src;
-              //     return <img {...props} src={src} alt={props.alt} />;
-              //   }
-              // }}
-              >
-                {content}
-              </ReactMarkdown>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
-  )
+    <div className="max-w-3xl mx-auto p-6">
+      <h1 className="text-3xl font-bold mb-6">News</h1>
+      <ul className="space-y-6">
+        {newsList.map((news) => (
+          <li key={news.slug}>
+            <Link href={`/${locale}/news/${news.slug}`}>
+              <div className="flex space-x-4">
+                <Image src={news.cover} alt={news.title} width={120} height={80} priority  className='w-40 h-auto'/>
+                <div>
+                  <h2 className="text-xl font-semibold">{news.title}</h2>
+                  <p className="text-sm text-gray-500">{news.date.toString()}</p>
+                </div>
+              </div>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
