@@ -6,7 +6,7 @@ import ReactMarkdown from 'react-markdown';
 import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl'
-export default async function NewsPage({ params }: { params: { locale: string } }) {
+export default async function NewsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const filePath = path.join(process.cwd(), 'content', locale, `1.md`);
   const content = await fs.readFile(filePath, 'utf-8');
@@ -33,14 +33,14 @@ export default async function NewsPage({ params }: { params: { locale: string } 
           <div className='max-w-main mx-auto'>
             <div className="prose max-w-none">
               <ReactMarkdown
-                // components={{
-                //   img({ node, ...props }) {
-                //     const src = props.src?.startsWith('./')
-                //       ? `/content/${locale}/1/${props.src.slice(2)}`
-                //       : props.src;
-                //     return <img {...props} src={src} alt={props.alt} />;
-                //   }
-                // }}
+              // components={{
+              //   img({ node, ...props }) {
+              //     const src = props.src?.startsWith('./')
+              //       ? `/content/${locale}/1/${props.src.slice(2)}`
+              //       : props.src;
+              //     return <img {...props} src={src} alt={props.alt} />;
+              //   }
+              // }}
               >
                 {content}
               </ReactMarkdown>
