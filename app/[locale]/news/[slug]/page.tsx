@@ -1,7 +1,14 @@
 import { getNewsBySlug } from '@/lib/news';
 import { notFound } from 'next/navigation';
 
-export default async function NewsDetail({ params }: { params: { locale: string, slug: string } }) {
+type NewsPageProps = {
+    params: Promise<{
+        locale: string;
+        slug: string;
+    }>;
+};
+
+export default async function NewsDetail({ params }: NewsPageProps) {
     const { locale, slug } = await params;
     const news = await getNewsBySlug(locale, slug);
     if (!news) return notFound();

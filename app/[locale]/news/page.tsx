@@ -1,7 +1,7 @@
 import { getAllNews } from '@/lib/news';
 import Link from 'next/link';
 import Image from 'next/image';
-import JumpComponent from '@/components/common/JumpTo';
+import JumpComponent from '@/components/common/Jump';
 import dayjs from 'dayjs';
 export default async function NewsPage({ params }: { params: { locale: string } }) {
   const { locale } = await params;
@@ -47,9 +47,9 @@ export default async function NewsPage({ params }: { params: { locale: string } 
                             <span className='font-semibold italic'>{dayjs(news.date).format("YYYY-MM-DD")}</span>
                           </p>
                           <p className='font-semibold  text-[18px] md:text-[22px] line-clamp-2 overflow-hidden text-ellipsis'>{news.title}</p>
-                          {/* <p className='my-3 line-clamp-3 overflow-hidden text-ellipsis'>{item.content}</p> */}
+                          <p className='my-3 line-clamp-3 overflow-hidden text-ellipsis'>{news.excerpt}</p>
                           <div className='mt-12 mb-8'>
-                            <JumpComponent text='more' link='' />
+                            <JumpComponent text='more'/>
                           </div>
                         </div>
                       </div>
