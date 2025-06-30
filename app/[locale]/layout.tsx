@@ -5,7 +5,7 @@ import { Roboto_Condensed, Geist_Mono, Public_Sans, Lexend_Exa, Roboto } from "n
 import { Header } from "@/components/Header"
 import { Footer } from "@/components/Footer"
 import { notFound } from 'next/navigation'
-import {routing} from '../../i18n/routing';
+import { routing } from '../../i18n/routing';
 import { getTranslations } from 'next-intl/server'
 import "../globals.css";
 
@@ -55,7 +55,7 @@ export default async function RootLayout({
   params,
 }: Readonly<{
   children: React.ReactNode,
-  params: Promise<{locale: string}>;
+  params: Promise<{ locale: string }>;
 }>) {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) {
@@ -69,7 +69,7 @@ export default async function RootLayout({
       >
         <NextIntlClientProvider>
           <Header />
-            <main className="flex-1 mt-15 md:mt-30">{children}</main>
+          <main className="flex-1 mt-15 md:mt-30">{children}</main>
           <Footer />
         </NextIntlClientProvider>
       </body>

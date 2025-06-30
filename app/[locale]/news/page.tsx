@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import JumpComponent from '@/components/common/Jump';
 import dayjs from 'dayjs';
-export default async function NewsPage({ params }: { params: { locale: string } }) {
+export default async function NewsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const newsList = await getAllNews(locale);
   return (
