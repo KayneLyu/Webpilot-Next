@@ -62,7 +62,8 @@
         "more": "READ MORE",
         "news": "SEE MORE NEWS",
         "cases": "SEE ALL CASES",
-        "product": "SEE MORE PRODUCT"
+        "product": "SEE MORE PRODUCT",
+        "back": "BACK"
     },
     "contact": {
         "mobile": "Mobile",

@@ -2,7 +2,6 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl'
 export default function ProductPage() {
     const t = useTranslations("about")
-
     const productList = [
         {
             
@@ -25,7 +24,7 @@ export default function ProductPage() {
                 <div className='w-full h-90 md:h-180'>
                 </div>
 
-                <div className='bg-9 h-500'>
+                <div className='bg-9 h-100'>
                     <div className='max-w-main mx-auto'>
 
                     </div>

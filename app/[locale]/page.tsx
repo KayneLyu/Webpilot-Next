@@ -4,7 +4,10 @@ import AboutComponent from '@/components/Home/about';
 import HonorComponent from '@/components/Home/honor';
 import CaseComponent from '@/components/Home/cases';
 import NewsComponent from '@/components/Home/news';
-export default function HomePage() {
+import { getAllNews } from '@/lib/news';
+export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const newsList = await getAllNews(locale);
   return (
     <>
       <section>
@@ -23,7 +26,7 @@ export default function HomePage() {
         <CaseComponent />
       </section>
       <section>
-        <NewsComponent />
+        <NewsComponent items={newsList}/>
       </section>
     </>
   )

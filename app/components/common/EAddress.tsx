@@ -1,12 +1,10 @@
+"use client"
 import { Mail } from "lucide-react"
 
 export default function Email({
     variant = false
 }) {
-    const email = "sales@jinjiutech.com";
-    const subject = "";
-    const body = ``;
-    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoLink = `mailto:sales@jinjiutech.com`;
     if(variant) {
         return (
             <a href={mailtoLink} className="block w-[36px] rounded-[50%] p-[6px] border-[1px] border-4">

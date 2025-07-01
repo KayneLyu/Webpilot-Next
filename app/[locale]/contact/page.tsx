@@ -33,6 +33,8 @@ export default function ContactPage() {
     },
   ]
 
+  const mailtoLink = `mailto:sales@jinjiutech.com`;
+
   return (
     <>
       <div className='w-full'>
@@ -51,7 +53,7 @@ export default function ContactPage() {
         </div>
 
         <div className='w-full bg-9'>
-          
+
           <div className='max-w-main mx-auto'>
             <div className='pt-10 md:pt-30'>
               <ul className='pl-10 md:pl-0 flex flex-col md:flex-row justify-between '>
@@ -72,7 +74,9 @@ export default function ContactPage() {
                       </div>
                       {
                         contact.value.map((item, k) => (
-                          <p className='font-semibold' style={{ whiteSpace: 'pre-line' }} key={k}>{item}</p>
+                          contact.title == "email" ? <a href={mailtoLink} className='underline font-semibold' key={k}>{item}</a>
+                            :
+                            <p className='font-semibold' style={{ whiteSpace: 'pre-line' }} key={k}>{item}</p>
                         ))
                       }
                     </li>
