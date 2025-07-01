@@ -30,13 +30,14 @@
         "about3": "JINJIU Automation is committed to advancing the digitalization and automation of the film extrusion process, helping our partners achieve higher quality, smarter manufacturing, and sustainable growth."
     },
     "product": {
-        "ring": "Profile control",
-        "lift_ring": "Lift profile control",
-        "horizon": "Profile measurement",
-        "round": "Profile measurement",
+        "ring": "Automatic Air Ring",
+        "lift_ring": "Height-Adjustable Air Ring",
+        "horizon": "Cross-Direction Thickness Gauge",
+        "round": "Rotary Thickness Gauge",
         "dosing": "Dosing",
-        "XRayRing": "X-Ray profile measurement",
+        "XRayRing": "X-Scan Rotating Scanning Thickness Gauge",
         "product": "Products",
+        "solutions": "solutions",
         "more": "Learn More",
         "tips": "We support all types of blown film production lines and offer fully customized automation solutions to meet your specific needs."
     },

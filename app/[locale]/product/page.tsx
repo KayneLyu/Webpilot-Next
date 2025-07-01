@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl'
+import ProductComponent from '@/components/Home/product';
 export default function ProductPage() {
     const t = useTranslations("about")
     const productList = [
         {
-            
+
         }
     ]
 
@@ -21,12 +22,14 @@ export default function ProductPage() {
                     />
                 </section>
 
-                <div className='w-full h-90 md:h-180'>
+                <div className='w-full md:h-180'>
                 </div>
 
-                <div className='bg-9 h-100'>
+                <div className='bg-9  py-10'>
                     <div className='max-w-main mx-auto'>
-
+                        <div>
+                            <ProductComponent />
+                        </div>
                     </div>
                 </div>
             </div>

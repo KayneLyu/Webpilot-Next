@@ -51,7 +51,7 @@ export default function ProductSection() {
             hover: ''
         },
         {
-            src: '/products/dosing.webp',
+            src: '/products/Xring_gauge.webp',
             alt: 'profile_measurement',
             name: 'XRayRing',
             link: '/',
@@ -90,7 +90,7 @@ export default function ProductSection() {
                                         height={1000}
                                         className="m-auto w-full h-auto group-hover:scale-112 transition-all duration-300 ease-in-out"
                                     />
-                                    <p className='w-[50%] uppercase absolute left-4 md:left-10 bottom-3 md:bottom-6 z-1 text-white font-semibold md:text-3xl font-[family-name:var(--font-Public-Sans)]' >
+                                    <p className='w-[60%] uppercase absolute left-4 md:left-10 bottom-3 md:bottom-6 z-1 text-white font-semibold md:text-3xl font-[family-name:var(--font-Public-Sans)]' >
                                         <span>{t(product.name)}</span>
                                     </p>
                                     <div className='opacity-0 absolute  group-hover:opacity-100 transition duration-500 ease-in-out flex items-center justify-center right-4  bottom-7 z-1  w-10  h-10 border-[2px] border-white rounded-[50%]'>
