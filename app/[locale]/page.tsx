@@ -2,9 +2,16 @@ import SwiperComponent from '@/components/Home/swiper';
 import ProductsComponent from '@/components/common/ProductList';
 import AboutComponent from '@/components/Home/about';
 import HonorComponent from '@/components/Home/honor';
-import CaseComponent from '@/components/Home/cases';
 import NewsComponent from '@/components/Home/news';
 import { getAllNews } from '@/lib/news';
+import dynamic from 'next/dynamic'
+
+// 开启懒加载 + 显示加载中占位
+const HomeCase = dynamic(() => import('@/components/Home/cases'), {
+  // ssr: false, // 如果组件是客户端交互的可以加这个
+  loading: () => <p>Loading cases...</p>,
+})
+
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const newsList = await getAllNews(locale);
@@ -67,7 +74,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         <ProductsComponent products={products} tittle='product' showMore />
       </section>
       <section>
-        <CaseComponent />
+        <HomeCase />
       </section>
       <section>
         <NewsComponent items={newsList} />
