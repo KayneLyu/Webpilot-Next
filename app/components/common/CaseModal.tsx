@@ -1,6 +1,5 @@
 'use client'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog"
-import { VisuallyHidden } from "@radix-ui/react-visually-hidden"
 import Image from 'next/image';
 export default function CaseModal({ item, onClose }: { item: any, onClose: any }) {
     return (
