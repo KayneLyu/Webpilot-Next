@@ -1,27 +1,29 @@
 
 import Image from "next/image";
 import Marquee from '@/components/common/marquee';
+import { useTranslations } from 'next-intl'
 export default function Honors() {
+    const t = useTranslations('home')
     const honors = [
         {
             icons: "/focus.svg",
             title: "10+",
-            text: "Years of experience in the film extrusion automation industry."
+            text: "honor1"
         },
         {
             icons: "/iso.svg",
-            title: "CERTIFIED",
-            text: "ISO 9001 certified; core technologies protected by multiple utility model patents."
+            title: "tech",
+            text: "honor2"
         },
         {
             icons: "/line.svg",
             title: "200+",
-            text: "Blown film production lines equipped with Jinjiu's intelligent control systems."
+            text: "honor3"
         },
         {
             icons: "/team.svg",
             title: "30+",
-            text: "Employees specializing in R&D, manufacturing, and technical service."
+            text: "honor4"
         },
 
     ]
@@ -30,7 +32,7 @@ export default function Honors() {
             <div className="w-full bg-5/60 py-[70px] md:py-[80px]">
                 <div className="max-w-main mx-auto text-center px-6 xl:px-0">
                     <div className="w-full text-start">
-                        <h1 className="section-title">JINJIU IN BRIEF</h1>
+                        <h1 className="section-title">{t("brief")}</h1>
                     </div>
                     <ul className="overflow-x-auto flex mt-20 pb-3">
                         {
@@ -41,10 +43,10 @@ export default function Honors() {
                                             <Image className="mx-auto w-[50px] md:w-[100px] h-auto" src={item.icons} alt="honor" width={100} height={100} />
                                         </div>
                                         <div className="text-3  text-[26px] md:text-[46px] mt-8">
-                                            {item.title}
+                                            {index == 1 ? t(item.title) : item.title}
                                         </div>
                                         <div className="text-4  text-[14px] md:text-[18px] mt-8">
-                                            {item.text}
+                                            { t(item.text) }
                                         </div>
                                     </div>
                                 </li>

@@ -17,6 +17,12 @@
         "address": "No. 8 Hefeng Industrial Zone, \nXingu Chong Management Area,\nWanjiang District, Dongguan City,\nGuangdong Province, China."
     },
     "home": {
+        "tech": "CERTIFIED",
+        "brief": "JINJIU IN BRIEF",
+        "honor1": "Years of experience in the film extrusion automation industry.",
+        "honor2": "ISO 9001 certified; core technologies protected by multiple utility model patents.",
+        "honor3": "Blown film production lines equipped with Jinjiu's intelligent control systems.",
+        "honor4": "Employees specializing in R&D, manufacturing, and technical service.",
         "service": "What we Offer",
         "solution": "Solutions",
         "product": "Products",
@@ -30,12 +36,14 @@
         "about3": "JINJIU Automation is committed to advancing the digitalization and automation of the film extrusion process, helping our partners achieve higher quality, smarter manufacturing, and sustainable growth."
     },
     "product": {
-        "ring": "Automatic Air Ring",
-        "lift_ring": "Height-Adjustable Air Ring",
-        "horizon": "Cross-Direction Thickness Gauge",
-        "round": "Rotary Thickness Gauge",
+        "single_Loss-in-Weight": "Single Loss-in-Weight Gravimetric Feeding System",
+        "section": "Product & Solutions",
+        "air_ring": "Automatic Air Ring",
+        "lift_air_ring": "Height-Adjustable Air Ring",
+        "Cross-Direction_Scanning_Thickness_Gauge": "Cross-Direction Thickness Gauge",
+        "rotary_thickness_gauge": "Rotary Thickness Gauge",
         "dosing": "Dosing",
-        "XRayRing": "X-Scan Rotating Scanning Thickness Gauge",
+        "X-Ray_rotary_thickness_gauge": "X-Scan Rotary Thickness Gauge",
         "product": "Products",
         "solutions": "solutions",
         "more": "Learn More",

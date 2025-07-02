@@ -13,7 +13,7 @@ export default async function NewsPage({ params }: { params: Promise<{ locale: s
         <section className='fixed w-full z-[-1]'>
           <Image
             alt="contact"
-            src="/images/contact.webp"
+            src="/images/news.webp"
             width={1500}
             height={1000}
             priority
