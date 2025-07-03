@@ -45,14 +45,14 @@ export default function ProductPage() {
             hover: ''
         },
         {
-            src: '/products/Single_Loss-in-Weight.webp',
+            src: '/products/single_Loss-in-Weight.webp',
             alt: 'single_Loss-in-Weight',
             name: 'single_Loss-in-Weight',
             link: '/',
             hover: ''
         },
         {
-            src: '/products/solution.webp',
+            src: '/products/solutions.webp',
             alt: 'solution',
             name: 'solutions',
             link: '/',
