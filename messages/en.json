@@ -38,8 +38,8 @@
     "product": {
         "single_Loss-in-Weight": "Single Loss-in-Weight Gravimetric Feeding System",
         "section": "Product & Solutions",
-        "air_ring": "Automatic Air Ring",
-        "lift_air_ring": "Height-Adjustable Air Ring",
+        "auto_air_ring": "Automatic Air Ring",
+        "lift_auto_air_ring": "Height-Adjustable Air Ring",
         "Cross-Direction_Scanning_Thickness_Gauge": "Cross-Direction Thickness Gauge",
         "rotary_thickness_gauge": "Rotary Thickness Gauge",
         "dosing": "Dosing",
@@ -92,42 +92,54 @@
         "email": "Your email",
         "phone": "Your phone number",
         "message": "Message",
-        "sendSuccess": "Sent successfully"
+        "sendSuccess": "Sent successfully",
+        "sendFail": "Failed to send! Please try another method of contact.",
+        "inputName": "Please enter your name",
+        "inputEmail": "Please enter a valid email address",
+        "inputLetters": "Please enter your message content",
+        "privacy": "You have not agreed to the Privacy Policy and Terms of Service for user messages",
+        "agree": "I agree to the",
+        "policy": "Privacy Policy"
     },
-    "news": {
-        "list": [
-            {
-                "id": "news1",
-                "title": "Review of the 2025 Korea International Plastic and Mold Industry Exhibition",
-                "tag": "PRESS RELEASE",
-                "date": "2025-06-10",
-                "content": "From March 11th to 14th, 2025, the 2025 Korea International Plastics and Mold Industry Exhibition (INTERMOLD KOREA&KOPLAS 2025) concluded at the KINTEX Convention and Exhibition Center in Korea.As the top event in the Asian rubber and plastic industry, this exhibition has attracted more than 530 exhibitors from 26 countries around the world, showcasing intelligent molds, energy-saving equipment, and digital solutions.Dongguan Jinjiu Automation Technology Co., Ltd. unveiled its plastic processing auxiliary equipment, intelligent metering system, and green production solutions.",
-                "image": "/news/news-1.jpg"
-            },
-            {
-                "id": "news2",
-                "title": "Retrospect on the 37th Shenzhen Yasi International Plastics & Rubber Exhibition",
-                "date": "2025-04-18",
-                "tag": "PRESS RELEASE",
-                "content": "From April 15 to 18, 2025, the 37th China International Plastics and Rubber Industrial Exhibition (CHINAPLAS 2025) was grandly held at the Shenzhen International Convention and Exhibition Center. Dongguan Jinjiu Automation Technology Co., Ltd. actively participated in this major industry event. At this leading global plastics and rubber exhibition platform, Jinjiu Automation fully showcased its technical capabilities and innovative achievements. As a company dedicated to providing high-quality plastic molding auxiliary production equipment, Jinjiu focused on displaying its core products at the exhibition, including automatic control air rings, batching and weighing systems, and film thickness gauges—automated control equipment that attracted considerable attention from visitors. Many attendees stopped by Jinjiu’s booth to learn more about the performance, features, and application scenarios of the products. The professional team from Jinjiu warmly explained and demonstrated the products to every visitor, patiently answering their questions and helping them better understand the advantages of Jinjiu's solutions in improving production efficiency and ensuring product quality. During the exhibition, Dongguan Jinjiu Automation Technology Co., Ltd.'s booth became a popular hub for interaction and communication. The company not only deepened relationships with many existing clients, reinforcing long-term cooperative partnerships, but also met numerous new clients from both domestic and international markets. Through these interactions, Jinjiu gained valuable insights into market demands for智能化, 高效化, 节能环保 improvements in plastic molding auxiliary equipment, which will serve as important references for the company’s future product development and market expansion strategies.",
-                "image": "/news/news-2.jpg"
-            },
-            {
-                "id": "news3",
-                "title": "Review of the 2025 Korea International Plastic and Mold Industry Exhibition",
-                "date": "2025-05-15",
-                "tag": "PRESS RELEASE",
-                "content": "From March 11th to 14th, 2025, the 2025 Korea International Plastics and Mold Industry Exhibition (INTERMOLD KOREA&KOPLAS 2025) concluded at the KINTEX Convention and Exhibition Center in Korea.As the top event in the Asian rubber and plastic industry, this exhibition has attracted more than 530 exhibitors from 26 countries around the world, showcasing intelligent molds, energy-saving equipment, and digital solutions.Dongguan Jinjiu Automation Technology Co., Ltd. unveiled its plastic processing auxiliary equipment, intelligent metering system, and green production solutions.",
-                "image": "/news/news-3.jpg"
-            },
-            {
-                "id": "news4",
-                "title": "Review of the 2025 Korea International Plastic and Mold Industry Exhibition",
-                "date": "2025-05-15",
-                "tag": "PRESS RELEASE",
-                "content": "From March 11th to 14th, 2025, the 2025 Korea International Plastics and Mold Industry Exhibition (INTERMOLD KOREA&KOPLAS 2025) concluded at the KINTEX Convention and Exhibition Center in Korea.As the top event in the Asian rubber and plastic industry, this exhibition has attracted more than 530 exhibitors from 26 countries around the world, showcasing intelligent molds, energy-saving equipment, and digital solutions.Dongguan Jinjiu Automation Technology Co., Ltd. unveiled its plastic processing auxiliary equipment, intelligent metering system, and green production solutions.",
-                "image": "/news/news-3.jpg"
-            }
-        ]
+    "PrivacyPolicy": {
+        "title": "Privacy Policy & Terms of Service",
+        "section1": {
+            "title": "1. Information Collection",
+            "content": "We collect the following information you voluntarily provide via our contact form: your name, email address, and message content."
+        },
+        "section2": {
+            "title": "2. Purpose of Use",
+            "list": [
+                "To respond to your inquiries or requests",
+                "To provide information related to our products or services",
+                "To improve our service quality"
+            ],
+            "note": "We will not use your personal information for any unauthorized commercial purposes."
+        },
+        "section3": {
+            "title": "3. Information Storage & Security",
+            "content": "We adopt reasonable technical and administrative measures to protect your personal information from unauthorized access, disclosure, use, or loss."
+        },
+        "section4": {
+            "title": "4. Third-party Disclosure",
+            "list": [
+                "With your explicit consent",
+                "As required by law or by governmental request",
+                "To protect our legitimate rights and interests"
+            ]
+        },
+        "section5": {
+            "title": "5. Your Rights",
+            "content": "You have the right to access, correct, or delete the personal information you have submitted. Please contact us via the details below if needed."
+        },
+        "section6": {
+            "title": "6. Changes to Terms",
+            "content": "These terms may be updated from time to time due to company policy or legal requirements. Updated terms will be published on this website and take effect immediately."
+        },
+        "section7": {
+            "title": "7. Contact Us",
+            "content": "Company Name: Dongguan Jinjiu Automation Technology Co., Ltd.\nEmail: sales@jinjiutech.com"
+        },
+        "confirm": "✅ By checking the box, you confirm that you have read and agreed to the above terms."
     }
 }

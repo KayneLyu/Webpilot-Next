@@ -60,10 +60,10 @@ export function Footer() {
                 <Link href="#">Facebook</Link>
               </li>
               <li>
-                <Link href="#">Youtube</Link>
+                <Link href="https://www.youtube.com/@Jinjiu999" target="_blank" rel="noopener noreferrer">Youtube</Link>
               </li>
               <li>
-                <Link href="#">X</Link>
+                <Link  href="https://x.com/AmeliaGu60137" target="_blank" rel="noopener noreferrer">X</Link>
               </li>
               <li>
                 <Link href="#">Instagram</Link>

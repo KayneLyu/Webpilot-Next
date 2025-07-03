@@ -38,8 +38,8 @@
     "product": {
         "single_Loss-in-Weight": "单失重计量喂料系统",
         "section": "产品 & 解决方案",
-        "air_ring": "自动风环",
-        "lift_air_ring": "升降自动风环",
+        "auto_air_ring": "自动风环",
+        "lift_auto_air_ring": "升降自动风环",
         "Cross-Direction_Scanning_Thickness_Gauge": "横扫测厚仪",
         "rotary_thickness_gauge": "环扫测厚仪",
         "dosing": "称重配料系统",
@@ -92,42 +92,54 @@
         "email": "请输入你的邮箱",
         "phone": "请输入你的电话",
         "message": "请填写你的留言内容",
-        "sendSuccess": "发送成功!"
+        "sendSuccess": "发送成功!",
+        "sendFail": "发送失败！请尝试其他联系方式。",
+        "inputName": "请输入姓名",
+        "inputEmail": "请输入有效的邮箱地址",
+        "inputLetters": "请输入留言内容",
+        "privacy": "未同意用户留言隐私政策与服务条款",
+        "agree": "我同意用户留言",
+        "policy": "隐私政策与服务条款"
     },
-    "news": {
-        "list": [
-            {
-                "id": "news1",
-                "title": "2025年越南河内塑料橡胶展会回顾",
-                "tag": "新闻稿",
-                "date": "2025-06-10",
-                "content": "2025年6月4日至7日，我司参加了在越南河内国家展览中心隆重举办的越南国际塑料橡胶工业展（VietnamPlas Hanoi 2025）。此次展会聚焦塑料、橡胶、包装等产业链的前沿技术与解决方案，吸引了来自全球20多个国家和地区的400多家参展商和超过2万人次的专业观众。",
-                "image": "/news/news-1.jpg"
-            },
-            {
-                "id": "news2",
-                "title": "第三十七届深圳雅式国际橡塑展回顾",
-                "date": "2025-04-18",
-                "tag": "新闻稿",
-                "content": "2025 年 4 月 15 - 18 日，第三十七届中国国际塑料橡胶工业展览会（CHINAPLAS 2025 国际橡塑展）在深圳国际会展中心盛大举行。东莞金久自动化科技有限公司积极参与了此次行业盛会，在这一全球领先的国际塑料橡胶展平台上，充分展示了公司的技术实力与创新成果。作为专注于提供优质塑胶成型辅助生产设备的企业，金久自动化在展会上重点展示了公司的核心产品，包括自动控制风环、配料称重系统、薄膜测厚仪等自动化控制设备。这些产品吸引了众多参观者的目光，他们纷纷驻足在金久的展位前，详细了解产品的性能、特点及应用场景。金久的专业团队热情地为每一位参观者进行讲解和演示，耐心解答他们提出的各种问题，让客户直观地感受到金久产品在提升生产效率、保障产品质量等方面的优势。展会期间，东莞金久自动化科技有限公司的展位成为了一个交流互动的热点区域。不仅与众多老客户进行了深入的沟通，进一步巩固了长期合作关系，还结识了大量来自国内外的新客户。通过与新客户的交流，了解到市场对于塑胶成型辅助设备在智能化、高效化、节能环保等方面的新需求，为公司未来产品研发和市场拓展方向提供了宝贵的参考依据。",
-                "image": "/news/news-2.jpg"
-            },
-            {
-                "id": "news3",
-                "title": "2025韩国国际塑料及模具工业展回顾",
-                "date": "2025-03-14",
-                "tag": "新闻稿",
-                "content": "2025 年 3 月 11 日至 14 日，2025 韩国国际塑料及模具工业展（INTERMOLD KOREA & KOPLAS 2025）在韩国 KINTEX 会展中心落幕。作为亚洲橡塑产业顶级盛会，本届展会吸引了全球 26 国 530 余家展商，集中展示智能化模具、节能设备及数字化解决方案。东莞金久自动化科技有限公司携塑料加工辅助设备、智能计量系统及绿色生产方案亮相。",
-                "image": "/news/news-3.jpg"
-            },
-            {
-                "id": "news3",
-                "title": "2025韩国国际塑料及模具工业展回顾",
-                "date": "2025-03-14",
-                "tag": "新闻稿",
-                "content": "2025 年 3 月 11 日至 14 日，2025 韩国国际塑料及模具工业展（INTERMOLD KOREA & KOPLAS 2025）在韩国 KINTEX 会展中心落幕。作为亚洲橡塑产业顶级盛会，本届展会吸引了全球 26 国 530 余家展商，集中展示智能化模具、节能设备及数字化解决方案。东莞金久自动化科技有限公司携塑料加工辅助设备、智能计量系统及绿色生产方案亮相。",
-                "image": "/news/news-3.jpg"
-            }
-        ]
+    "PrivacyPolicy": {
+        "title": "用户留言隐私政策与服务条款",
+        "section1": {
+            "title": "一、信息收集 / Information Collection",
+            "content": "我们通过留言表单收集您主动填写的以下信息：姓名、电子邮箱、留言内容。\nWe collect the following information you voluntarily provide via our contact form: your name, email address, and message content."
+        },
+        "section2": {
+            "title": "二、信息用途 / Purpose of Use",
+            "list": [
+                "回复您的咨询或需求； / To respond to your inquiries or requests",
+                "提供与公司产品或服务相关的信息； / To provide information related to our products or services",
+                "改进我们的服务质量； / To improve our service quality"
+            ],
+            "note": "我们不会将您的个人信息用于任何未经您授权的商业用途。\nWe will not use your personal information for any unauthorized commercial purposes."
+        },
+        "section3": {
+            "title": "三、信息存储与安全 / Information Storage & Security",
+            "content": "我们将采取合理的技术与管理手段保护您的个人信息不被未经授权的访问、披露、使用或丢失。\nWe adopt reasonable technical and administrative measures to protect your personal information from unauthorized access, disclosure, use, or loss."
+        },
+        "section4": {
+            "title": "四、第三方分享 / Third-party Disclosure",
+            "list": [
+                "获得您的明确同意； / With your explicit consent",
+                "法律法规要求或政府机构要求； / As required by law or by governmental request",
+                "为了保护公司合法权益。 / To protect our legitimate rights and interests"
+            ]
+        },
+        "section5": {
+            "title": "五、用户权利 / Your Rights",
+            "content": "您有权要求我们访问、更正或删除您提交的个人信息。如有需要，请通过下方联系方式与我们联系。\nYou have the right to access, correct, or delete the personal information you have submitted. Please contact us via the details below if needed."
+        },
+        "section6": {
+            "title": "六、条款变更 / Changes to Terms",
+            "content": "本条款可能因公司政策或法律要求不时更新。更新后的条款将在本网站公布并即时生效。\nThese terms may be updated from time to time due to company policy or legal requirements. Updated terms will be published on this website and take effect immediately."
+        },
+        "section7": {
+            "title": "七、联系我们 / Contact Us",
+            "content": "公司名称：东莞市金久自动化科技有限公司\nCompany Name: Dongguan Jinjiu Automation Technology Co., Ltd.\n联系邮箱：sales@jinjiutech.com\nEmail: sales@jinjiutech.com"
+        },
+        "confirm": "✅ 勾选即表示您已阅读并同意上述条款。\nBy checking the box, you confirm that you have read and agreed to the above terms."
     }
 }

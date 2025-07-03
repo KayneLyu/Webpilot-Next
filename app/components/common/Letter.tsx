@@ -14,21 +14,29 @@ import {
     FormLabel,
     FormMessage,
 } from "@/components/ui/form"
+import { Checkbox } from "@/components/ui/checkbox"
+import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Textarea } from '@/components/ui/textarea'
 import { Button } from "@/components/ui/button"
 import { useTranslations } from 'next-intl'
-
-const FormSchema = z.object({
-    name: z.string().min(1, { message: '请输入姓名' }),
-    email: z.string().email({ message: '请输入有效的邮箱地址' }),
-    message: z.string().min(1, { message: '请输入至少5个字的留言内容' }),
-})
+import Link from 'next/link';
+import { Loader2Icon } from "lucide-react"
 
 export default function Letter() {
     const t = useTranslations()
 
-    const [captchaToken, setCaptchaToken] = useState<string | null>(null)
+    // const [captchaToken, setCaptchaToken] = useState<string | null>(null)
+
+    const [loading, setLoading] = useState(false);
+    const FormSchema = z.object({
+        name: z.string().min(1),
+        email: z.string().email(),
+        message: z.string().min(2),
+        checked: z.boolean().refine(value => value, {
+            message: t("tips.privacy"),
+        }),
+    })
 
     const form = useForm<z.infer<typeof FormSchema>>({
         resolver: zodResolver(FormSchema),
@@ -36,16 +44,36 @@ export default function Letter() {
             name: '',
             email: '',
             message: '',
+            checked: false
         },
     })
 
-    function onSubmit(data: z.infer<typeof FormSchema>) {
-        toast(t("tips.sendSuccess"))
+    async function onSubmit(data: z.infer<typeof FormSchema>) {
+        setLoading(true);
+        try {
+            const res = await fetch('/api/contact', {
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                method: 'POST',
+                body: JSON.stringify(data),
+            });
+            const result = await res.json();
+            setLoading(false);
+            if (result.success) {
+                toast.success(t("tips.sendSuccess"));
+                form.reset()
+            } else {
+                toast.error(result.error || t("tips.sendFail"));
+            }
+        } catch (error) {
+            setLoading(false);
+        }
     }
 
     return (
         <>
-            <Toaster position='top-center'/>
+            <Toaster position='top-center' />
             <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="w-full space-y-6">
                     <FormField
@@ -57,7 +85,6 @@ export default function Letter() {
                                 <FormControl>
                                     <Input placeholder={t("tips.name")} {...field} />
                                 </FormControl>
-                                <FormMessage />
                             </FormItem>
                         )}
                     />
@@ -71,7 +98,6 @@ export default function Letter() {
                                 <FormControl>
                                     <Input placeholder={t("tips.email")} type="email" {...field} />
                                 </FormControl>
-                                <FormMessage />
                             </FormItem>
                         )}
                     />
@@ -89,11 +115,38 @@ export default function Letter() {
                                         {...field}
                                     />
                                 </FormControl>
+                            </FormItem>
+                        )}
+                    />
+
+                    <FormField
+                        control={form.control}
+                        name="checked"
+                        render={({ field }) => (
+                            <FormItem>
+                                <Label>
+                                    <Checkbox
+                                        checked={field.value}     // 控制 checkbox 的状态
+                                        onCheckedChange={field.onChange}  // 当 checkbox 改变时，触发 zod 校验
+                                        id="toggle-2"
+                                        className="data-[state=checked]:border-blue-600 data-[state=checked]:bg-blue-600 data-[state=checked]:text-white dark:data-[state=checked]:border-blue-700 dark:data-[state=checked]:bg-blue-700"
+                                    />
+                                    <div className="grid gap-1.5 font-normal">
+                                        <p className="text-sm leading-none font-medium">
+                                            {t("tips.agree")}
+                                            <Link href={"/privacy-policy"} className='ml-2 underline'>{t("tips.policy")}</Link>
+                                        </p>
+                                    </div>
+                                </Label>
                                 <FormMessage />
                             </FormItem>
                         )}
                     />
-                    <Button type="submit" className="bg-6 cursor-pointer hover:bg-3" size={"lg"}>{t("contact.send")}</Button>
+
+                    <Button type="submit" disabled={loading} className="bg-6 cursor-pointer hover:bg-3 py-6 px-18" size={"lg"}>
+                        {loading && <Loader2Icon className="animate-spin mr-2" />}
+                        {t("contact.send")}
+                    </Button>
                 </form>
             </Form>
         </>

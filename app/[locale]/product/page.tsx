@@ -3,16 +3,16 @@ import ProductComponent from '@/components/common/ProductList';
 export default function ProductPage() {
     const products = [
         {
-            src: '/products/air_ring.webp',
+            src: '/products/auto_air_ring.webp',
             alt: 'profile_control',
-            name: 'air_ring',
+            name: 'auto_air_ring',
             link: '/',
             hover: ''
         },
         {
-            src: '/products/lift_air_ring.webp',
+            src: '/products/lift_auto_air_ring.webp',
             alt: 'lift_profile_control',
-            name: 'lift_air_ring',
+            name: 'lift_auto_air_ring',
             link: '/',
             hover: ''
         },

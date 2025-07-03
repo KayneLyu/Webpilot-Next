@@ -8,7 +8,7 @@ export default async function NewsDetail({ params }: { params: Promise<{ locale:
     const news = await getNewsBySlug(locale, slug);
     if (!news) return notFound();
     return (
-        <div>
+        <article>
             <div className=" max-w-[1100px] min-h-[800px] mx-auto p-6">
                 <div className='hidden sm:block'>
                     <BackButton />
@@ -21,6 +21,6 @@ export default async function NewsDetail({ params }: { params: Promise<{ locale:
                     dangerouslySetInnerHTML={{ __html: news.contentHtml }}
                 />
             </div>
-        </div>
+        </article>
     );
 }

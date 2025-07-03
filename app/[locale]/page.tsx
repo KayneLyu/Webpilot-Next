@@ -17,16 +17,16 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   const newsList = await getAllNews(locale);
   const products = [
     {
-      src: '/products/air_ring.webp',
+      src: '/products/auto_air_ring.webp',
       alt: 'profile_control',
-      name: 'air_ring',
+      name: 'auto_air_ring',
       link: '/',
       hover: ''
     },
     {
-      src: '/products/lift_air_ring.webp',
+      src: '/products/lift_auto_air_ring.webp',
       alt: 'lift_profile_control',
-      name: 'lift_air_ring',
+      name: 'lift_auto_air_ring',
       link: '/',
       hover: ''
     },
@@ -61,6 +61,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   ]
   return (
     <>
+      <title>自动风环 | 智能吹膜风环控制系统 | 金久自动化</title>
       <section>
         <SwiperComponent />
       </section>
