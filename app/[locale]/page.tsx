@@ -61,7 +61,6 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   ]
   return (
     <>
-      <title>自动风环 | 智能吹膜风环控制系统 | 金久自动化</title>
       <section>
         <SwiperComponent />
       </section>
