@@ -1,5 +1,25 @@
 import Image from 'next/image';
 import ProductComponent from '@/components/common/ProductList';
+
+import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
+
+export const generateMetadata = async (): Promise<Metadata> => {
+  const t = await getTranslations();
+
+  return {
+    title: t('seo.products.title'), // 来自你的 zh.json / en.json
+    description: t('seo.products.description'),
+    alternates: {
+      canonical: 'https://jinjiutech.com/zh/product',
+      languages: {
+        zh: 'https://jinjiutech.com/zh/product',
+        en: 'https://jinjiutech.com/en/product'
+      }
+    }
+  };
+};
+
 export default function ProductPage() {
     const products = [
         {

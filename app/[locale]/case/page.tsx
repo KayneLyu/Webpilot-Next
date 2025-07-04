@@ -1,6 +1,24 @@
 import Image from 'next/image';
-import { useTranslations } from 'next-intl'
 import CaseList from './caseList';
+
+import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
+
+export const generateMetadata = async (): Promise<Metadata> => {
+  const t = await getTranslations();
+
+  return {
+    title: t('seo.cases.title'), // 来自你的 zh.json / en.json
+    description: t('seo.cases.description'),
+    alternates: {
+      canonical: 'https://jinjiutech.com/zh/case',
+      languages: {
+        zh: 'https://jinjiutech.com/zh/case',
+        en: 'https://jinjiutech.com/en/case'
+      }
+    }
+  };
+};
 
 export default function CasePage() {
   const cases = [

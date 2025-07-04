@@ -16,10 +16,10 @@ export const generateMetadata = async (): Promise<Metadata> => {
     title: t('seo.home.title'), // 来自你的 zh.json / en.json
     description: t('seo.home.description'),
     alternates: {
-      canonical: 'https://jinjiutech.com/zh/about',
+      canonical: 'https://jinjiutech.com/zh/',
       languages: {
-        zh: 'https://jinjiutech.com/zh/about',
-        en: 'https://jinjiutech.com/en/about'
+        zh: 'https://jinjiutech.com/zh/',
+        en: 'https://jinjiutech.com/en/'
       }
     }
   };

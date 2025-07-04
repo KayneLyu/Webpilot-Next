@@ -4,6 +4,24 @@ import JumpComponent from '@/components/common/Jump';
 import dayjs from 'dayjs';
 import { getAllNews } from '@/lib/news';
 
+import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
+
+export const generateMetadata = async (): Promise<Metadata> => {
+  const t = await getTranslations();
+
+  return {
+    title: t('seo.news.title'), // 来自你的 zh.json / en.json
+    description: t('seo.news.description'),
+    alternates: {
+      canonical: 'https://jinjiutech.com/zh/news',
+      languages: {
+        zh: 'https://jinjiutech.com/zh/news',
+        en: 'https://jinjiutech.com/en/news'
+      }
+    }
+  };
+};
 export default async function NewsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const newsList = await getAllNews(locale);
