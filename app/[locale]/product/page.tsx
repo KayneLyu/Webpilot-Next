@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import ProductComponent from '@/components/common/ProductList';
-import Head from 'next/head';
 export default function ProductPage() {
     const products = [
         {
@@ -63,15 +62,6 @@ export default function ProductPage() {
 
     return (
         <>
-            <Head>
-                <title>首页 | 我的门户网站</title>
-                <meta name="description" content="这是一个示例门户网站的首页描述" />
-                <meta property="og:title" content="首页 | 我的门户网站" />
-                <meta property="og:description" content="这是一个示例门户网站的首页描述" />
-                <meta property="og:image" content="/path/to/your/image.jpg" />
-                <meta property="og:url" content="https://www.example.com/" />
-                <link rel="canonical" href="https://www.example.com/" />
-            </Head>
             <div className='w-full'>
                 <section className='fixed w-full z-[-1]'>
                     <Image

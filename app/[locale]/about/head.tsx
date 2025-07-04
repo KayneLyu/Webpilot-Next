@@ -1,5 +1,19 @@
-import { SeoHead } from '@/components/common/SeoHead';
+// app/[locale]/about/head.tsx
+import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 
-export default function Head() {
-  return <SeoHead pageKey="about" path="/about" />;
-}
+export const generateMetadata = async (): Promise<Metadata> => {
+  const t = await getTranslations();
+
+  return {
+    title: t('seo.about.title'), // 来自你的 zh.json / en.json
+    description: t('seo.about.description'),
+    alternates: {
+      canonical: 'https://jinjiutech.com/zh/about',
+      languages: {
+        zh: 'https://jinjiutech.com/zh/about',
+        en: 'https://jinjiutech.com/en/about'
+      }
+    }
+  };
+};
