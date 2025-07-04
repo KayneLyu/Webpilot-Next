@@ -42,11 +42,29 @@ const RobotoCondensed = Roboto_Condensed({
 // meta data
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale: locale })
+  const t = await getTranslations({ locale });
   return {
-    title: t('company.welcome'),
-    description: '',
-    icons: "/favicon.ico"
+    title: {
+      default: t('seo.defaultTitle'),
+      template: `%s | ${t('seo.brand')}`
+    },
+    description: t('seo.defaultDescription'),
+    icons: '/favicon.ico',
+    metadataBase: new URL('https://jinjiutech.com'),
+    alternates: {
+      canonical: `https://jinjiutech.com/${locale}`,
+      languages: {
+        zh: 'https://jinjiutech.com',
+        en: 'https://jinjiutech.com'
+      }
+    },
+    openGraph: {
+      title: t('seo.defaultTitle'),
+      description: t('seo.defaultDescription'),
+      siteName: t('seo.brand'),
+      locale: locale,
+      type: 'website'
+    }
   };
 }
 

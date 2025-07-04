@@ -141,5 +141,34 @@
             "content": "Company Name: Dongguan Jinjiu Automation Technology Co., Ltd.\nEmail: sales@jinjiutech.com"
         },
         "confirm": "✅ By checking the box, you confirm that you have read and agreed to the above terms."
+    },
+    "seo": {
+        "brand": "JINJIU Automation",
+        "defaultTitle": "JINJIU Automation - Auto Air Ring & Film Control Solutions",
+        "defaultDescription": "JINJIU provides auto air rings and smart film control systems for the blown film industry.",
+        "home": {
+            "title": "Home | Auto Air Ring Expert | JINJIU Automation",
+            "description": "JINJIU Automation specializes in auto air rings and smart film thickness control systems for the blown film industry."
+        },
+        "about": {
+            "title": "About JINJIU | Auto Air Ring Manufacturer",
+            "description": "Learn more about JINJIU Automation, a trusted developer of auto air rings and smart control systems for the blown film industry."
+        },
+        "products": {
+            "title": "Products & Solutions | Blown Film Air Rings | JINJIU",
+            "description": "Explore JINJIU's auto air ring products and smart control solutions to optimize film quality and production performance."
+        },
+        "cases": {
+            "title": "Customer Cases | Auto Air Ring Applications | JINJIU",
+            "description": "See how JINJIU's auto air ring systems are successfully applied in blown film factories across the globe."
+        },
+        "news": {
+            "title": "News & Updates | Blown Film Industry | JINJIU",
+            "description": "Stay updated with JINJIU's latest news, industry insights, product launches, and exhibitions."
+        },
+        "contact": {
+            "title": "Contact Us | Auto Air Ring Consultation | JINJIU",
+            "description": "Get in touch with JINJIU Automation for professional advice and custom solutions on auto air ring systems."
+        }
     }
 }

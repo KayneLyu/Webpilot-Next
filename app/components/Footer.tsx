@@ -19,6 +19,7 @@ export function Footer() {
                 <EmailComponent />
               </div>
               <p className="mt-5">+86 0769-22991396</p>
+              <p className="">+86 186 0769 1396</p>
             </div>
           </div>
 
@@ -33,22 +34,22 @@ export function Footer() {
             <h1 className="font-bold text-lg">{t("menu")}</h1>
             <ul className="grid gap-3 text-white/85">
               <li className="mt-6">
-                <Link href="#">{t("home")}</Link>
+                <Link href="/">{t("home")}</Link>
               </li>
               <li>
-                <Link href="#">{t("about")}</Link>
+                <Link href="/about">{t("about")}</Link>
               </li>
               <li>
-                <Link href="#">{t("product")}</Link>
+                <Link href="/product">{t("product")}</Link>
               </li>
               <li>
-                <Link href="#">{t("case")}</Link>
+                <Link href="/case">{t("case")}</Link>
               </li>
               <li>
-                <Link href="#">{t("news")}</Link>
+                <Link href="/news">{t("news")}</Link>
               </li>
               <li>
-                <Link href="#">{t("contact")}</Link>
+                <Link href="/contact">{t("contact")}</Link>
               </li>
             </ul>
           </div>

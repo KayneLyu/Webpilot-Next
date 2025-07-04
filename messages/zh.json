@@ -12,7 +12,7 @@
         "menu": "导航菜单",
         "case": "用户案例",
         "follow": "关注我们",
-        "email": "邮件订阅",
+        "email": "邮件留言",
         "lang": "语言",
         "address": "中国广东省\n东莞市万江区\n新谷涌管理区\n合丰工业区8号"
     },
@@ -141,5 +141,34 @@
             "content": "公司名称：东莞市金久自动化科技有限公司\nCompany Name: Dongguan Jinjiu Automation Technology Co., Ltd.\n联系邮箱：sales@jinjiutech.com\nEmail: sales@jinjiutech.com"
         },
         "confirm": "✅ 勾选即表示您已阅读并同意上述条款。\nBy checking the box, you confirm that you have read and agreed to the above terms."
+    },
+    "seo": {
+        "brand": "金久自动化",
+        "defaultTitle": "金久自动化 - 自动风环与吹膜智能控制",
+        "defaultDescription": "金久自动化专注自动风环与厚度控制系统，助力吹膜行业智能化升级。",
+        "home": {
+            "title": "首页 | 自动风环专家 | 金久自动化",
+            "description": "金久自动化专注于自动风环与智能厚度控制系统研发，服务吹膜行业自动化升级。"
+        },
+        "about": {
+            "title": "关于金久 | 自动风环研发制造 | 金久自动化",
+            "description": "了解金久自动化，十年专注自动风环与智能吹膜控制系统，为吹膜行业提供高品质解决方案。"
+        },
+        "products": {
+            "title": "产品与解决方案 | 吹膜自动风环 | 金久自动化",
+            "description": "探索金久自动化的自动风环产品与智能厚度调控解决方案，助力客户提升生产效率与膜厚品质。"
+        },
+        "cases": {
+            "title": "用户案例 | 自动风环成功应用 | 金久自动化",
+            "description": "浏览金久自动化在国内外吹膜设备客户中的成功应用案例，验证我们的自动风环解决方案的稳定与高效。"
+        },
+        "news": {
+            "title": "新闻动态 | 吹膜行业资讯 | 金久自动化",
+            "description": "关注金久自动化最新动态，获取吹膜行业前沿技术、展会信息与产品发布。"
+        },
+        "contact": {
+            "title": "联系我们 | 自动风环咨询 | 金久自动化",
+            "description": "欢迎联系金久自动化，我们为您提供专业的自动风环选型建议与定制化解决方案。"
+        }
     }
 }
