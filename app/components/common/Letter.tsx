@@ -134,7 +134,7 @@ export default function Letter() {
                                     <div className="grid gap-1.5 font-normal">
                                         <p className="text-sm leading-none font-medium">
                                             {t("tips.agree")}
-                                            <Link href={"/privacy-policy"} className='ml-2 underline'>{t("tips.policy")}</Link>
+                                            <Link href={"/privacy-policy"} className='underline'>{t("tips.policy")}</Link>
                                         </p>
                                     </div>
                                 </Label>

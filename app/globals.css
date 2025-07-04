@@ -192,6 +192,11 @@
 .swiper-slogan {
   border-radius: 100% 100% 100% 0;;
 }
+
+.indent-two-chars {
+  text-indent: 2ch; /* 缩进两个字符宽度 */
+}
+
 .swiper-pagination-custom .swiper-pagination-bullet {
 }
 

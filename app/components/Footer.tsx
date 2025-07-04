@@ -6,7 +6,7 @@ import LetterComponent from "@/components/common/Letter";
 export function Footer() {
   const t = useTranslations('nav')
   return (
-    <footer className="px-6 xl:px-0 w-full text-[18px] bg-7 py-[85px] text-white text-center text-sm font-[family-name:var(--font-Public-Sans)]">
+    <footer className="px-6 xl:px-0 w-full text-[18px] bg-7 py-[85px] pb-[20px] text-white text-center text-sm font-[family-name:var(--font-Public-Sans)]">
       <div className="max-w-main mx-auto">
         <section className="flex flex-wrap justify-between gap-y-10 text-start">
           <div className="w-full sm:w-1/2 md:w-auto max-w-xs">
@@ -63,7 +63,7 @@ export function Footer() {
                 <Link href="https://www.youtube.com/@Jinjiu999" target="_blank" rel="noopener noreferrer">Youtube</Link>
               </li>
               <li>
-                <Link  href="https://x.com/AmeliaGu60137" target="_blank" rel="noopener noreferrer">X</Link>
+                <Link href="https://x.com/AmeliaGu60137" target="_blank" rel="noopener noreferrer">X</Link>
               </li>
               <li>
                 <Link href="#">Instagram</Link>
@@ -73,8 +73,15 @@ export function Footer() {
           </div>
         </section>
 
-        <section className="text-start mt-20 pr-5">
-          © 2025 by Kane. Powered and secured by JJSK
+        <section className="text-white/75 flex gap-4 md:gap-12 flex-wrap text-[14px]  text-start mt-25 pr-5">
+          <p className="">
+            Copyright © 2025 东莞市金久自动化科技有限公司 版权所有
+          </p>
+          <p>
+            <a href="https://beian.miit.gov.cn" target="_blank">
+              备案号: 粤ICP备2025366217号
+            </a>
+          </p>
         </section>
       </div>
     </footer>

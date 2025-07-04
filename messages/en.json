@@ -98,7 +98,7 @@
         "inputEmail": "Please enter a valid email address",
         "inputLetters": "Please enter your message content",
         "privacy": "You have not agreed to the Privacy Policy and Terms of Service for user messages",
-        "agree": "I agree to the",
+        "agree": "I agree to the ",
         "policy": "Privacy Policy"
     },
     "PrivacyPolicy": {

@@ -1,7 +1,7 @@
 ---
 title: 36th Malaysia International Machinery & Equipment Exhibition Preview
 date: 2025-07-10
-tag: PRESS RELEASE
+tag: EVENTS
 cover: /images/news_preview/mlsy.jpg
 excerpt: We sincerely invite you to join us at the MIMF 2025 exhibition in Kuala Lumpur from July 10 to 12, 2025. Let’s meet onsite to explore new opportunities in the industry together
 ---

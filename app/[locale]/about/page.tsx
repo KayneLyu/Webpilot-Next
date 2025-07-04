@@ -25,7 +25,7 @@ export default function AboutPage() {
               <div className="w-full md:w-1/2 p-5">
                 <div className="flex flex-col gap-2 h-full xl:mx-[74px] text-[14px] md:text-[18px] leading-[24px]  md:leading-[30px] text-4">
                   <h1 className="about-title mb-5">{t("tittle1")}</h1>
-                  <p style={{ whiteSpace: 'pre-line' }}>
+                  <p className='indent-two-chars' style={{ whiteSpace: 'pre-line'}}>
                     {t('part1')}
                   </p>
                 </div>

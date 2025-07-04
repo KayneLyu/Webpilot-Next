@@ -5,8 +5,8 @@ import Image from "next/image";
 
 export function Header() {
   return (
-    <header className="fixed top-0 z-11 w-full border-b bg-white shadow-md">
-      <div className="max-w-main mx-auto h-15 md:h-[120px]  flex items-center justify-between pl-4 ">
+    <header className="bg-white fixed top-0 z-11 w-full border-b shadow-md">
+      <div className=" max-w-main mx-auto h-15 md:h-[120px]  flex items-center justify-between pl-4 ">
         <Link href="/" className="text-xl font-bold text-primary">
           <Image
             src={Logo}
