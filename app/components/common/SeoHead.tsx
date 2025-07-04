@@ -9,6 +9,8 @@ export function SeoHead({ pageKey, path }: { pageKey: string; path: string }) {
   const locale = useLocale();
   const baseUrl = 'https://jinjiutech.com';
 
+  console.log(123,pageKey, path );
+  
   return (
     <>
       <title>{t('title')}</title>
