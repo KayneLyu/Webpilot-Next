@@ -20,7 +20,6 @@ export function Footer() {
               </div>
               <p className="mt-5">+86 0769-22991396</p>
               <p className="">+86 186 0769 1396</p>
-              <p className="">+86 137 1256 7398</p>
             </div>
           </div>
 

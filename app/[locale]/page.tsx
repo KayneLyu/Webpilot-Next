@@ -5,6 +5,26 @@ import HonorComponent from '@/components/Home/honor';
 import NewsComponent from '@/components/Home/news';
 import { getAllNews } from '@/lib/news';
 import dynamic from 'next/dynamic'
+// app/[locale]/about/head.tsx
+import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
+
+export const generateMetadata = async (): Promise<Metadata> => {
+  const t = await getTranslations();
+
+  return {
+    title: t('seo.home.title'), // 来自你的 zh.json / en.json
+    description: t('seo.home.description'),
+    alternates: {
+      canonical: 'https://jinjiutech.com/zh/about',
+      languages: {
+        zh: 'https://jinjiutech.com/zh/about',
+        en: 'https://jinjiutech.com/en/about'
+      }
+    }
+  };
+};
+
 
 // 开启懒加载 + 显示加载中占位
 const HomeCase = dynamic(() => import('@/components/Home/cases'), {
