@@ -22,13 +22,13 @@ export const generateMetadata = async (): Promise<Metadata> => {
 
 export default function CasePage() {
   const cases = [
-    { id: 1, type: 'image', title: '六组分计量称重应用', src: '/case/case1.jpg' },
-    { id: 2, type: 'image', title: '在线称重&自动风环解决方案', src: '/case/solution1.png' },
-    { id: 3, type: 'video', title: '自动风环横扫测厚仪', src: '/case/horizon_thick_gauge.mp4', poster: '/case/horizon_thick_gauge.webp' },
-    { id: 4, type: 'video', title: '自动风环应用', src: '/case/air_ring1.mp4', poster: '/case/air_ring1.jpg' },
-    { id: 5, type: 'image', title: '环扫测厚仪应用', src: '/case/rotate_gauge1.jpg' },
-    { id: 6, type: 'image', title: '自动风环应用', src: '/case/air_ring2.webp' },
-    { id: 7, type: 'video', title: '环扫测厚仪应用', src: '/case/rotate_gauge2.mp4', poster: '/case/rotate_gauge2.jpg' },
+    { id: 1, type: 'image', title: 'dosing', src: '/case/case1.jpg' },
+    { id: 2, type: 'image', title: 'airRing&dosing', src: '/case/solution1.png' },
+    { id: 3, type: 'video', title: 'thick_gauge', src: '/case/horizon_thick_gauge.mp4', poster: '/case/horizon_thick_gauge.webp' },
+    { id: 4, type: 'video', title: 'airRing', src: '/case/air_ring1.mp4', poster: '/case/air_ring1.jpg' },
+    { id: 5, type: 'image', title: 'rotary_gauge', src: '/case/rotate_gauge1.jpg' },
+    { id: 6, type: 'image', title: 'airRing', src: '/case/air_ring2.webp' },
+    { id: 7, type: 'video', title: 'rotary_gauge', src: '/case/rotate_gauge2.mp4', poster: '/case/rotate_gauge2.jpg' },
   ]
   return (
     <>

@@ -1,1 +1,245 @@
-{}
+{
+    "company": {
+        "name": "Dongguan Jinjiu Otomasyon Teknolojisi Co., Ltd.",
+        "welcome": "JINJIU Web Sitesine Hoş Geldiniz"
+    },
+    "nav": {
+        "home": "Ana Sayfa",
+        "product": "Ürün ve Çözümler",
+        "about": "Hakkımızda",
+        "news": "Haberler ve Etkinlikler",
+        "contact": "İletişim",
+        "menu": "Menü",
+        "case": "Vakalar",
+        "follow": "Bizi Takip Edin",
+        "email": "Bülten",
+        "lang": "Dil",
+        "address": "No. 8 Hefeng Sanayi Bölgesi, \nXingu Chong Yönetim Alanı,\nWanjiang İlçesi, Dongguan Şehri,\nGuangdong Eyaleti, Çin."
+    },
+    "home": {
+        "tech": "SERTİFİKALI",
+        "brief": "JINJIU KISA BİLGİ",
+        "honor1": "Film ekstrüzyon otomasyon endüstrisindeki deneyim yılları.",
+        "honor2": "ISO 9001 sertifikalı; ana teknolojiler faydalı model patentleriyle korunmaktadır.",
+        "honor3": "Jinjiu'nun akıllı kontrol sistemleriyle donatılmış esnek film üretim hatları.",
+        "honor4": "Araştırma geliştirme, üretim ve teknik hizmet alanlarında uzmanlaşmış çalışanlar.",
+        "service": "Sunulan Hizmetler",
+        "solution": "Çözümler",
+        "product": "Ürünler",
+        "contact": "İletişim",
+        "offer": "Akıllı plastik film ekipmanlarına uzmanlaşmışız ve kalınlık ölçümü, hava halkası kontrolü ve otomasyon için entegre çözümler sunuyoruz.",
+        "more": "Daha Fazla Bilgi",
+        "jinjiu": "JINJIU",
+        "case": "Esnek film üretimi süreçlerinde müşterilerimizin film kalitesini artırmasına, atıkları azaltmasına ve üretim verimliliğini artırmada yardımcı olan gerçek dünya projelerini inceleyin.",
+        "about1": "Jinjiu Otomasyon Teknolojisi Co., Ltd., esnek film endüstrisi için önde gelen akıllı kontrol sistemleri sağlayıcısıdır. Otomatik hava halkası kontrol sistemleri, süpürmeli kalınlık ölçerler, döner kalınlık ölçerler ve gravimetrik dozaj sistemlerine uzmanlaşmıştır. Çözümlerimiz film homojenliğini artırmayı, malzeme atığını azaltmayı ve üretim verimliliğini yükseltmeyi amaçlamaktadır.",
+        "about2": "Güçlü bir AR-GE ekibi ve bağımsız mülkiyet haklarına sahip olarak, JINJIU Otomasyon hassas sensörler, kapalı döngü kontrol algoritmaları ve endüstriyel iletişim protokolleri entegre eden özgün teknolojiler geliştirmiştir. Ürünlerimiz Çin genelinde yaygın olarak kullanılmakta ve Güneydoğu Asya, Orta Doğu ve diğer bölgelere ihraç edilmektedir.",
+        "about3": "JINJIU Otomasyon, film ekstrüzyon sürecinin dijitalleşmesi ve otomasyonunu ilerletmeye kararlıdır; ortaklarımızın daha yüksek kalite, daha akıllı üretim ve sürdürülebilir büyüme elde etmesine yardımcı olur."
+    },
+    "product": {
+        "description": "Jinjiu Otomasyon, esnek film endüstrisi için akıllı kontrol sistemlerine uzmanlaşmıştır. Ana ürünlerimiz arasında otomatik hava halkaları (hava hacmi ve sıcaklık kontrolü), hareketli ve döner kalınlık ölçerler, gravimetrik tartım sistemleri ve tekli kayıpsız ağırlık besleme cihazları yer almaktadır. Çeşitli film üretim hatlarında yaygın olarak kullanılan çözümlerimiz, müşterilerimize verimli, stabil ve akıllı üretim imkanı sunar.",
+        "single_Loss-in-Weight": "Tek Kayıpsız Ağırlık Gravimetrik Besleme Sistemi",
+        "section": "Ürün & Çözümler",
+        "auto_air_ring": "Otomatik Hava Halkası",
+        "lift_auto_air_ring": "Yükseklik Ayarlanabilir Hava Halkası",
+        "Cross-Direction_Scanning_Thickness_Gauge": "En Boyunda Tarama Kalınlık Ölçer",
+        "rotary_thickness_gauge": "Döner Kalınlık Ölçer",
+        "dosing": "Dozajlama",
+        "X-Ray_rotary_thickness_gauge": "X-Scan Döner Kalınlık Ölçer",
+        "product": "Ürünler",
+        "solutions": "çözümler",
+        "more": "Daha fazla bilgi",
+        "tips": "Tüm esnek film üretim hatlarını destekliyoruz ve özel ihtiyaçlarınıza uygun tamamen özelleştirilmiş otomasyon çözümleri sunuyoruz."
+    },
+    "slogan": {
+        "s1": "Dünya çapında 1000+ Hat Üzerinde Kullanılıyor",
+        "s2": "Akıllı. Verimli. Güvenilir.",
+        "s3": "Küresel Destek. Yerel Hizmet",
+        "s4": "Modern Film Hatları İçin Üretildi",
+        "s5": "Otomatik Hava Kontrolü, Optimize Edilmiş Çıktı",
+        "s6": "Verimlilik Kontrolle Başlar"
+    },
+    "about": {
+        "tittle1": "Şirket Profili",
+        "tittle2": "Temel Ürünler ve Teknolojik Avantajlar",
+        "tittle3": "Neden Jinjiu'yu seçmelisiniz?",
+        "tittle4": "Vizyon ve Misyon",
+        "part1": "Dongguan Jinjiu Otomasyon Teknolojisi Co., Ltd. (bundan sonra Jinjiu Teknolojisi olarak anılacaktır), Guangdong-Hong Kong-Macao Büyük Körfezi bölgesinin merkezinde yer alan Dongguan'da faaliyet göstermektedir. Ulusal yüksek teknoloji şirketi olarak şirket, araştırma-geliştirme, üretim, satış ve hizmet zinciri boyunca faaliyet göstermekte ve küresel plastik film akıllı ekipman alanında lider konumuna ulaşmayı hedeflemektedir. On beş yıllık sürekli gelişim sonucunda Jinjiu Teknolojisi, çevrimiçi kalınlık ölçümüne dayanan otomatik hava halkası sistemi odaklı bir teknoloji matrisi oluşturmuş ve donanım, yazılım algoritması ve akıllı kontrolün bir araya geldiği üçlü çözüm sistemini gerçekleştirmiştir. Şirket tarafından geliştirilen yapay zeka temelli akıllı kapalı döngü kontrol teknolojisi, geleneksel esnek film işlemlerinin manuel deneyime dayalı sınırlamalarını aşmıştır. Çoklu sensör veri birleştirme ve makine öğrenimi algoritması optimizasyonu sayesinde film kalınlığı sapma kontrol doğruluğu ≤±1.5% seviyesine ulaşmış olup bu sektör ortalamasının %40’ından fazladır.",
+        "part2": "Çevrimiçi Kalınlık & Hava Halkası Sistemi: Esnek Film Üretiminin Akıllı Beyni\nOtomatik hava halkası, çevrimiçi kalınlık ölçer ve akıllı kontrol sistemi olmak üzere üç temel modülden oluşan JinJiu Otomasyon, film kalınlığında tutarlılığı, üretim stabilitesini ve malzeme kullanımında verimliliği sağlayan kapsamlı kapalı döngü çözümünü sunmaktadır.\n1. Akıllı Hava Halkası\nÇok bölgeli kapalı döngü kontrol, baloncuk dalgalanmalarına gerçek zamanlı olarak hava akışını ayarlamaktadır. Patentli hava tasarımı, eşitliği artırmakta ve manuel ayar ihtiyacını azaltmaktadır.\n2. Yüksek Hassasiyetli Kalınlık Ölçer\n0.1μm çözünürlüğe sahip temassız tarama ile gerçek zamanlı izleme yapılabilmesini sağlamaktadır. Farklı malzemeler ve kopolimerizasyon süreçlerini desteklemektedir.\n3. Akıllı Kontrol Sistemi\nÖzgün algoritmalar sayesinde kalınlık ve hava kontrolünün senkronize optimizasyonu yapılmaktadır. Veri takibi, kendini öğreten yetenek ve uzaktan bakım desteği sağlamaktadır.",
+        "part3": "✅ Liderlik: AR-GE ekibimiz 10 yıldan fazla deneyime sahiptir ve ana teknolojilerimiz birçok ulusal patent belgelerine sahiptir.\n✅ Kalite Taahhüdü: Temel bileşenler ithal elektronik parçalardan üretilmiştir ve ISO9001 kalite yönetim sistemi sertifikasına sahiptir.\n✅ Maliyet Azaltma ve Verim Artışı: Kalınlık eşitliğini %50’den fazla artırarak ham madde atığını %15-25 azaltır ve müşteri rekabet gücünü artırır.\n✅ Endişesiz Hizmet: Özelleştirilmiş çözüm tasarımı, kurulum ve test hizmeti ile 24 saatlik yanıt süresi ile müşterilerin üretimlerini desteklemektedir."
+    },
+    "button": {
+        "us": "HAKKIMIZDA",
+        "more": "DAHA FAZLA",
+        "news": "DAHA FAZLA HABER",
+        "cases": "TÜM VAKALARI GÖR",
+        "product": "DAHA FAZLA ÜRÜN",
+        "back": "GERİ"
+    },
+    "contact": {
+        "mobile": "Cep Telefonu",
+        "phone": "Telefon",
+        "fax": "Faks",
+        "email": "E-posta",
+        "address": "Adres",
+        "name": "Adınız",
+        "lastName": "Soyadınız",
+        "message": "Mesajınız",
+        "send": "Gönder",
+        "touch": "Bizimle İletişime Geçin"
+    },
+    "tips": {
+        "name": "Adınız",
+        "last": "Soyadınız",
+        "email": "E-posta adresiniz",
+        "phone": "Telefon numaranız",
+        "message": "Mesajınız",
+        "sendSuccess": "Başarıyla gönderildi",
+        "sendFail": "Gönderilemedi! Lütfen başka bir iletişim yöntemi deneyin.",
+        "inputName": "Lütfen adınızı girin",
+        "inputEmail": "Geçerli bir e-posta adresi girin",
+        "inputLetters": "Lütfen mesaj içeriğinizi girin",
+        "privacy": "Kullanıcı mesajları için Gizlilik Politikası ve Kullanım Koşullarını kabul etmediniz",
+        "agree": "Kabul ediyorum ",
+        "policy": "Gizlilik Politikası"
+    },
+    "PrivacyPolicy": {
+        "title": "Gizlilik Politikası & Hizmet Şartları",
+        "section1": {
+            "title": "1. Bilgi Toplama",
+            "content": "İletişim formumuz aracılığıyla gönüllü olarak sağlayacağınız aşağıdaki bilgileri toplarız: adınız, e-posta adresiniz ve mesaj içeriği."
+        },
+        "section2": {
+            "title": "2. Kullanım Amacı",
+            "list": [
+                "Soru veya taleplerinize yanıt vermek için",
+                "Ürün veya hizmetlerimize ilişkin bilgi sağlamak için",
+                "Hizmet kalitesini iyileştirmek için"
+            ],
+            "note": "Kişisel bilgilerinizi yetkisiz ticari amaçlarla kullanmayacağız."
+        },
+        "section3": {
+            "title": "3. Bilgi Depolama & Güvenlik",
+            "content": "Kişisel bilgilerinizi yetkisiz erişim, açıklama, kullanım veya kayıptan korumak için makul teknik ve idari önlemler alıyoruz."
+        },
+        "section4": {
+            "title": "4. Üçüncü Taraf Açıklaması",
+            "list": [
+                "Açık rızanız ile",
+                "Kanunlar veya devlet talepleri gereğince",
+                "Meşru hak ve menfaatlerimizi korumak için"
+            ]
+        },
+        "section5": {
+            "title": "5. Haklarınız",
+            "content": "Göndermiş olduğunuz kişisel bilgilere erişme, düzeltme veya silme hakkına sahipsiniz. Gerekirse aşağıdaki bilgilerle bizimle iletişime geçin."
+        },
+        "section6": {
+            "title": "6. Şartlardaki Değişiklikler",
+            "content": "Bu şartlar şirket politikası veya yasal gereklilikler doğrultusunda zaman zaman güncellenebilir. Güncellenmiş şartlar web sitesinde yayımlanacak ve derhal yürürlüğe girecektir."
+        },
+        "section7": {
+            "title": "7. Bize Ulaşın",
+            "content": "Şirket Adı: Dongguan Jinjiu Automation Technology Co., Ltd.\nE-posta: sales@jinjiutech.com"
+        },
+        "confirm": "✅ Kutuyu işaretleyerek yukarıdaki şartları okuduğunuzu ve kabul ettiğinizi onaylarsınız."
+    },
+    "detail": {
+        "features": "Özellikler",
+        "more": "Daha fazla bilgi",
+        "auto_air_ring": [
+            "1. Otomatik modda hedef kalınlık sapma değerine hızlı ayar (yaklaşık 10 dakika).",
+            "2. Üretim kapasitesini artırabilir (yaklaşık %10-20).",
+            "3. Otomatik modda kalınlık sapması: (±2-4%@2Sigma).",
+            "4. Patentli valf tasarımı, yüksek seviye akıllı motorlu damper kontrolü.",
+            "5. Kontrol modu: otomatik adaptasyon ve ayarlama.",
+            "6. Hava halkası kontrol modları: A. Hava hacmi tipi, B. Hava sıcaklığı tipi."
+        ],
+        "lift_auto_air_ring": [
+            "1. Otomatik modda hedef kalınlık sapma değerine hızlı ayar (yaklaşık 10 dakika).",
+            "2. Üretim kapasitesini artırabilir (yaklaşık %10-20).",
+            "3. Otomatik modda kalınlık sapması: (±2-4%@2Sigma).",
+            "4. Patentli valf tasarımı, yüksek seviye akıllı motorlu damper kontrolü.",
+            "5. Kontrol modu: otomatik adaptasyon ve ayarlama.",
+            "6. Esnek üretim için yükseklik ayarlanabilir.",
+            "7. Hava halkası kontrol modları: A. Hava hacmi tipi, B. Hava sıcaklığı tipi."
+        ],
+        "single_Loss-in-Weight": [
+            "1. Üretim verilerini sağlar (kg/saat, g/metre vb.).",
+            "2. Ham madde kullanımını azaltır (minimum kalınlığı düşürerek müşteri kabul edilebilir aralığında %1.5-%3 ham madde tasarrufu sağlar).",
+            "3. Üretim kapasitesini artırır (ağırlığı düşürerek daha yüksek çıktı elde edilir).",
+            "4. Ürün kalitesini artırır (kararlı ölçüm ağırlığı ürün boyutlarının tutarlılığını garanti altına alır).",
+            "5. Tekrar edebilirliği geliştirir (ürün tutarlılığı operatörlere bağlı kalmaz).",
+            "6. Başlangıç atık oranı düşüktür (başlangıç aşamasında hassas kontrol sağlar).",
+            "7. Aynı anda 11 ekstrüder kontrolü yapabilir."
+        ],
+        "solutions": [
+            "① Merkezi kontrol istasyonu",
+            "② Otomatik hava halkası",
+            "③ Taramalı kalınlık ölçer",
+            "④ Üst çekim ölçüm ve kontrol sistemi",
+            "⑤ Altı bileşenli çevrimiçi tartım sistemi"
+        ],
+        "Cross-Direction_Scanning_Thickness_Gauge": [
+            "1. X-ışını teknolojisi kullanarak yüksek doğrulukta ölçüm yapar, tüm film malzemeleriyle uyumludur.",
+            "2. Taramalı yapı sayesinde tam genişlik boyunca kalınlık izlemesi yapılır.",
+            "3. Temassız ölçüm film yüzeyine zarar vermez.",
+            "4. Otomatik hava halkası ile entegre çalışarak kalınlık eşitliğini artırır.",
+            "5. Stabil veri çıkışı ve hızlı yanıt süresi, yüksek hızda üretim hatlarına uygundur.",
+            "6. Akıllı algoritma kontrollüdür; ölçüm ve geri bildirimi otomatik optimize ederek sistem uyumunu geliştirir."
+        ],
+        "rotary_thickness_gauge": [
+            "1. Dairesel tarama tasarımı sayesinde çevresel yönde kalınlık değişimini kapsamlı olarak algılar.",
+            "2. Gerçek zamanlı geri bildirim sistemi işlem stabilitesini artırır.",
+            "3. Kompakt yapı, kolay kurulum, farklı üfleme film makineleriyle uyumludur.",
+            "4. Yüksek hassasiyetli sensörler güvenilir ölçümler sunar.",
+            "5. Birden fazla ekstrüdere senkronize olabilir, genel kontrol verimliliğini artırır.",
+            "6. Kalınlık dalgalanmalarını tahmin edebilen ve otomatik ayar yapabilen akıllı algoritma desteklidir."
+        ],
+        "X-Ray_rotary_thickness_gauge": [
+            "1. Dairesel tarama tasarımı sayesinde çevresel yönde kalınlık değişimini kapsamlı olarak algılar.",
+            "2. Gerçek zamanlı geri bildirim sistemi işlem stabilitesini artırır.",
+            "3. Kompakt yapı, kolay kurulum, farklı üfleme film makineleriyle uyumludur.",
+            "4. Yüksek hassasiyetli sensörler güvenilir ölçümler sunar.",
+            "5. Birden fazla ekstrüdere senkronize olabilir, genel kontrol verimliliğini artırır.",
+            "6. Kalınlık dalgalanmalarını tahmin edebilen ve otomatik ayar yapabilen akıllı algoritma desteklidir.",
+            "7. X-ışını teknolojisi kullanarak yüksek doğrulukta ölçüm yapar, tüm film malzemeleriyle uyumludur."
+        ]
+    },
+    "seo": {
+        "brand": "JINJIU Otomasyon",
+        "defaultTitle": "JINJIU Otomasyon - Otomatik Hava Halkası & Film Kontrol Çözümleri",
+        "defaultDescription": "JINJIU, üfleme film endüstrisi için otomatik hava halkaları ve akıllı film kontrol sistemleri sağlar.",
+        "home": {
+            "title": "Ana Sayfa | Otomatik Hava Halkası Uzmanı | JINJIU Otomasyon",
+            "description": "JINJIU Otomasyon, üfleme film endüstrisi için otomatik hava halkaları ve akıllı film kalınlık kontrol sistemlerine uzmanlaşmıştır."
+        },
+        "about": {
+            "title": "Hakkımızda | Otomatik Hava Halkası Üreticisi",
+            "description": "Üfleme film endüstrisi için güvenilir otomatik hava halkası ve akıllı kontrol sistemleri geliştiren JINJIU Otomasyon hakkında daha fazla bilgi edinin."
+        },
+        "products": {
+            "title": "Ürünler & Çözümler | Üfleme Film Hava Halkaları | JINJIU",
+            "description": "Film kalitesini ve üretim performansını optimize etmek için JINJIU'nun otomatik hava halkası ürünleri ve akıllı kontrol çözümlerini keşfedin."
+        },
+        "cases": {
+            "title": "Müşteri Vakaları | Otomatik Hava Halkası Uygulamaları | JINJIU",
+            "description": "JINJIU'nun otomatik hava halkası sistemlerinin dünya çapındaki üfleme film fabrikalarında nasıl başarıyla uygulandığını görün."
+        },
+        "news": {
+            "title": "Haberler & Güncellemeler | Üfleme Film Endüstrisi | JINJIU",
+            "description": "JINJIU'dan en son haberler, endüstri içgörüleriniz, yeni ürün tanıtımları ve fuar katılımlarıyla güncel kalın."
+        },
+        "contact": {
+            "title": "İletişim | Otomatik Hava Halkası Danışmanlığı | JINJIU",
+            "description": "Otomatik hava halkası sistemleri konusunda profesyonel danışmanlık ve özel çözümler için JINJIU Otomasyon ile iletişime geçin."
+        }
+    },
+    "use": {
+        "airRing": "Otomatik Hava Halkası Uygulama Örneği",
+        "dosing": "Gravimetrik Dozaj Sistemi Uygulama Örneği",
+        "rotary_gauge": "Dairesel Kalınlık Ölçer Uygulama Örneği",
+        "thick_gauge": "Yatay Tarama Kalınlık Ölçer Uygulama Örneği",
+        "airRing&dosing": "Otomatik Hava Halkası & Dozaj Sistemi Çözümü",
+        "single_Loss": "Tekli Kayıp Tartım Besleme Sistemi Uygulama Örneği"
+    }
+}

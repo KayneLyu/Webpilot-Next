@@ -4,9 +4,10 @@ import { useState } from 'react'
 import CaseModal from '@/components/common/CaseModal'
 import Image from 'next/image';
 import { CirclePlay } from "lucide-react"
+import { useTranslations } from 'next-intl'
 export default function CaseList({ cases }: { cases: ICaseList[] }) {
   const [selected, setSelected] = useState<null | ICaseList>(null)
-
+  const t = useTranslations('use')
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -33,11 +34,10 @@ export default function CaseList({ cases }: { cases: ICaseList[] }) {
                       <CirclePlay size={60} color='#fff' />
                     </div>
                   </div>
-
                 )}
               </div>
               <div className='flex justify-center items-end case-info text-white absolute bottom-0 left-0  w-full h-[40%]  transition-all duration-300 ease-in'>
-                <p className='mb-5 text-2xl transition-all duration-300 ease-in'>{item.title}</p>
+                <p className='px-3 mb-5 text-2xl transition-all duration-300 ease-in'>{t(item.title)}</p>
               </div>
             </div>
           </div>

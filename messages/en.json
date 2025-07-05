@@ -233,5 +233,13 @@
             "title": "Contact Us | Auto Air Ring Consultation | JINJIU",
             "description": "Get in touch with JINJIU Automation for professional advice and custom solutions on auto air ring systems."
         }
+    },
+    "use": {
+        "airRing": "Auto Air Ring Application Case",
+        "dosing": "Gravimetric Dosing System Application Case",
+        "rotary_gauge": "Rotary Thickness Gauge Application Case",
+        "thick_gauge": "Cross-Direction Thickness Gauge Application Case",
+        "airRing&dosing": "Auto Air Ring & Dosing System Solution",
+        "single_Loss": "Single Loss-in-Weight Feeder Application Case"
     }
 }

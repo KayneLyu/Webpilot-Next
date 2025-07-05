@@ -1,1 +1,245 @@
-{}
+{
+    "company": {
+        "name": "Công ty TNHH Công nghệ Tự động hóa Jinjiu Đông Quan",
+        "welcome": "Chào mừng đến với Trang web JINJIU"
+    },
+    "nav": {
+        "home": "Trang chủ",
+        "product": "Sản phẩm và Giải pháp",
+        "about": "Giới thiệu",
+        "news": "Tin tức và Sự kiện",
+        "contact": "Liên hệ",
+        "menu": "Menu",
+        "case": "Dự án",
+        "follow": "Theo dõi chúng tôi",
+        "email": "Bản tin",
+        "lang": "Ngôn ngữ",
+        "address": "Số 8, Khu công nghiệp Hefeng,\nQuản khu Xingu Chong,\nKhu Wanjiang, thành phố Đông Quan,\ntỉnh Quảng Đông, Trung Quốc."
+    },
+    "home": {
+        "tech": "ĐƯỢC CHỨNG NHẬN",
+        "brief": "GIỚI THIỆU VỀ JINJIU",
+        "honor1": "Nhiều năm kinh nghiệm trong ngành tự động hóa ép đùn màng film.",
+        "honor2": "Đạt chứng nhận ISO 9001; các công nghệ cốt lõi được bảo hộ bởi nhiều bằng sáng chế kiểu dáng.",
+        "honor3": "Các dây chuyền sản xuất màng thổi trang bị hệ thống điều khiển thông minh của Jinjiu.",
+        "honor4": "Đội ngũ nhân viên chuyên sâu về nghiên cứu phát triển, sản xuất và dịch vụ kỹ thuật.",
+        "service": "Chúng tôi cung cấp",
+        "solution": "Giải pháp",
+        "product": "Sản phẩm",
+        "contact": "Liên hệ",
+        "offer": "Chúng tôi chuyên về thiết bị thông minh cho sản xuất màng nhựa, cung cấp giải pháp tích hợp đo độ dày, kiểm soát vòng gió và tự động hóa.",
+        "more": "Tìm hiểu thêm",
+        "jinjiu": "JINJIU",
+        "case": "Khám phá những dự án thực tế nơi hệ thống điều khiển thông minh của chúng tôi đã giúp khách hàng cải thiện chất lượng màng, giảm phế liệu và nâng cao hiệu suất sản xuất.",
+        "about1": "Công ty Công nghệ Tự động hóa Jinjiu là nhà cung cấp hàng đầu về hệ thống điều khiển thông minh cho ngành công nghiệp màng thổi, chuyên về hệ thống điều khiển vòng gió tự động, cảm biến đo độ dày di chuyển và quay, cũng như hệ thống định lượng trọng lượng. Các giải pháp của chúng tôi được thiết kế để cải thiện độ đồng đều của màng, giảm thiểu lãng phí vật liệu và nâng cao năng suất sản xuất.",
+        "about2": "Với đội ngũ R&D mạnh và sở hữu nhiều quyền sở hữu trí tuệ độc lập, Công ty Tự động hóa Jinjiu đã phát triển các công nghệ độc quyền kết hợp cảm biến chính xác, thuật toán điều khiển vòng kín và các giao thức truyền thông công nghiệp. Sản phẩm của chúng tôi được sử dụng rộng rãi trên toàn Trung Quốc và xuất khẩu sang Đông Nam Á, Trung Đông và các khu vực khác.",
+        "about3": "Công ty Tự động hóa Jinjiu cam kết thúc đẩy quá trình số hóa và tự động hóa trong quy trình ép đùn màng, giúp các đối tác đạt được chất lượng cao hơn, sản xuất thông minh hơn và phát triển bền vững."
+    },
+    "product": {
+        "description": "Công ty Tự động hóa Jinjiu chuyên về hệ thống điều khiển thông minh cho ngành công nghiệp màng thổi. Các sản phẩm chính bao gồm vòng gió tự động (điều khiển lưu lượng và nhiệt độ không khí), cảm biến đo độ dày di chuyển và quay, hệ thống cân trọng lượng và bộ cấp liệu đơn theo phương pháp mất trọng lượng. Được ứng dụng rộng rãi trên nhiều dây chuyền sản xuất màng khác nhau, các giải pháp của chúng tôi giúp khách hàng đạt được quy trình sản xuất hiệu quả, ổn định và thông minh.",
+        "single_Loss-in-Weight": "Hệ thống cấp liệu trọng lượng đơn (Loss-in-Weight)",
+        "section": "Sản phẩm & Giải pháp",
+        "auto_air_ring": "Vòng gió tự động",
+        "lift_auto_air_ring": "Vòng gió điều chỉnh độ cao",
+        "Cross-Direction_Scanning_Thickness_Gauge": "Cảm biến đo độ dày theo chiều ngang",
+        "rotary_thickness_gauge": "Cảm biến đo độ dày quay",
+        "dosing": "Định lượng",
+        "X-Ray_rotary_thickness_gauge": "Cảm biến đo độ dày quay X-Scan",
+        "product": "Sản phẩm",
+        "solutions": "giải pháp",
+        "more": "Tìm hiểu thêm",
+        "tips": "Chúng tôi hỗ trợ tất cả các loại dây chuyền sản xuất màng thổi và cung cấp các giải pháp tự động hóa hoàn toàn tùy chỉnh đáp ứng nhu cầu cụ thể của bạn."
+    },
+    "slogan": {
+        "s1": "Được sử dụng trên 1000+ dây chuyền trên toàn thế giới",
+        "s2": "Thông minh. Hiệu quả. Đáng tin cậy.",
+        "s3": "Hỗ trợ toàn cầu. Dịch vụ địa phương",
+        "s4": "Thiết kế dành cho dây chuyền sản xuất hiện đại",
+        "s5": "Tự động hóa luồng khí, tối ưu hóa đầu ra",
+        "s6": "Hiệu quả bắt đầu từ việc kiểm soát"
+    },
+    "about": {
+        "tittle1": "Giới thiệu công ty",
+        "tittle2": "Sản phẩm chính và lợi thế công nghệ",
+        "tittle3": "Tại sao chọn Jinjiu?",
+        "tittle4": "Tầm nhìn và sứ mệnh",
+        "part1": "Công ty TNHH Công nghệ Tự động hóa Jinjiu Đông Quan (sau đây gọi tắt là Công nghệ Jinjiu) có trụ sở tại Đông Quan, trung tâm vùng hậu phương của Vùng vịnh Quảng Đông - Hồng Kông - Ma Cao. Là doanh nghiệp công nghệ cao quốc gia, công ty tập trung vào toàn bộ chuỗi hoạt động từ nghiên cứu phát triển, sản xuất, bán hàng đến dịch vụ, hướng tới trở thành doanh nghiệp hàng đầu trong lĩnh vực thiết bị thông minh cho sản xuất màng nhựa toàn cầu. Sau 15 năm phát triển liên tục, Công nghệ Jinjiu đã xây dựng ma trận công nghệ xoay quanh hệ thống vòng gió tự động có chức năng đo độ dày trực tuyến làm cốt lõi, hình thành hệ thống giải pháp 3 trong 1 bao gồm phần cứng, thuật toán phần mềm và điều khiển thông minh. Công nghệ điều khiển vòng kín AI thông minh do công ty tự phát triển đã phá vỡ giới hạn của quy trình sản xuất màng thổi truyền thống phụ thuộc vào kinh nghiệm thủ công. Thông qua tích hợp dữ liệu đa cảm biến và tối ưu hóa thuật toán học máy, công ty đạt mức độ chính xác kiểm soát sai lệch độ dày màng ≤±1.5%, vượt trội hơn 40% so với mức trung bình ngành.",
+        "part2": "Hệ thống đo độ dày & vòng gió trực tuyến: Não bộ thông minh của dây chuyền sản xuất màng thổi\nDựa trên ba mô-đun cốt lõi — vòng gió tự động, cảm biến đo độ dày trực tuyến và hệ thống điều khiển thông minh, Công ty Tự động hóa Jinjiu cung cấp giải pháp khép kín một cửa nhằm đảm bảo độ dày màng ổn định, sản xuất ổn định và sử dụng nguyên liệu hiệu quả.\n1. Vòng gió thông minh\nĐiều khiển vòng kín nhiều vùng điều chỉnh lưu lượng gió theo thời gian thực để phản ứng với dao động bong bóng. Thiết kế luồng gió được cấp bằng sáng chế giúp tăng độ đồng đều và giảm cần hiệu chỉnh thủ công.\n2. Cảm biến đo độ dày độ phân giải cao\nQuét không tiếp xúc với độ phân giải 0.1μm cho phép giám sát thời gian thực, hỗ trợ nhiều loại vật liệu và quy trình đồng ép.\n3. Hệ thống điều khiển thông minh\nHoạt động dựa trên các thuật toán độc quyền để tối ưu hóa đồng bộ giữa độ dày và lưu lượng gió. Hỗ trợ theo dõi dữ liệu, tự học và bảo trì từ xa.",
+        "part3": "✅ Tiên phong: Nhóm R&D của chúng tôi có hơn 10 năm kinh nghiệm trong ngành, công nghệ cốt lõi đã đạt nhiều bằng sáng chế quốc gia.\n✅ Cam kết chất lượng: Các linh kiện cốt lõi được làm từ linh kiện điện tử nhập khẩu và đạt chứng nhận hệ thống quản lý chất lượng ISO9001.\n✅ Giảm chi phí và tăng hiệu quả: Nâng cao độ đồng đều độ dày hơn 50%, giảm phế liệu nguyên liệu từ 15–25%, giúp khách hàng nâng cao tính cạnh tranh.\n✅ Dịch vụ yên tâm: Cung cấp thiết kế giải pháp tùy chỉnh, lắp đặt và hiệu chỉnh, cùng dịch vụ phản hồi 24 giờ để hỗ trợ toàn diện cho sản xuất của khách hàng."
+    },
+    "button": {
+        "us": "VỀ CHÚNG TÔI",
+        "more": "XEM THÊM",
+        "news": "XEM THÊM TIN TỨC",
+        "cases": "XEM TẤT CẢ DỰ ÁN",
+        "product": "XEM THÊM SẢN PHẨM",
+        "back": "TRỞ LẠI"
+    },
+    "contact": {
+        "mobile": "Di động",
+        "phone": "Điện thoại",
+        "fax": "Fax",
+        "email": "Email",
+        "address": "Địa chỉ",
+        "name": "Tên",
+        "lastName": "Họ",
+        "message": "Tin nhắn",
+        "send": "Gửi",
+        "touch": "Liên hệ với chúng tôi"
+    },
+    "tips": {
+        "name": "Tên của bạn",
+        "last": "Họ của bạn",
+        "email": "Email của bạn",
+        "phone": "Số điện thoại của bạn",
+        "message": "Tin nhắn",
+        "sendSuccess": "Gửi thành công",
+        "sendFail": "Gửi thất bại! Vui lòng thử phương thức liên lạc khác.",
+        "inputName": "Vui lòng nhập tên của bạn",
+        "inputEmail": "Vui lòng nhập email hợp lệ",
+        "inputLetters": "Vui lòng nhập nội dung tin nhắn",
+        "privacy": "Bạn chưa đồng ý với Chính sách Bảo mật và Điều khoản Dịch vụ cho tin nhắn người dùng",
+        "agree": "Tôi đồng ý với ",
+        "policy": "Chính sách Bảo mật"
+    },
+    "PrivacyPolicy": {
+        "title": "Chính sách bảo mật & Điều khoản dịch vụ",
+        "section1": {
+            "title": "1. Thu thập thông tin",
+            "content": "Chúng tôi thu thập các thông tin bạn cung cấp tự nguyện qua biểu mẫu liên hệ: tên, địa chỉ email và nội dung tin nhắn."
+        },
+        "section2": {
+            "title": "2. Mục đích sử dụng",
+            "list": [
+                "Để phản hồi các yêu cầu hoặc thắc mắc của bạn",
+                "Để cung cấp thông tin liên quan đến sản phẩm hoặc dịch vụ của chúng tôi",
+                "Để cải thiện chất lượng dịch vụ"
+            ],
+            "note": "Chúng tôi sẽ không sử dụng thông tin cá nhân của bạn cho bất kỳ mục đích thương mại trái phép nào."
+        },
+        "section3": {
+            "title": "3. Lưu trữ & Bảo mật thông tin",
+            "content": "Chúng tôi áp dụng các biện pháp kỹ thuật và hành chính hợp lý để bảo vệ thông tin cá nhân của bạn khỏi truy cập, tiết lộ, sử dụng hoặc mất mát trái phép."
+        },
+        "section4": {
+            "title": "4. Tiết lộ cho bên thứ ba",
+            "list": [
+                "Với sự đồng ý rõ ràng của bạn",
+                "Theo yêu cầu của pháp luật hoặc cơ quan nhà nước",
+                "Để bảo vệ quyền và lợi ích hợp pháp của chúng tôi"
+            ]
+        },
+        "section5": {
+            "title": "5. Quyền của bạn",
+            "content": "Bạn có quyền truy cập, chỉnh sửa hoặc xóa thông tin cá nhân đã gửi. Vui lòng liên hệ với chúng tôi theo thông tin dưới đây nếu cần."
+        },
+        "section6": {
+            "title": "6. Thay đổi điều khoản",
+            "content": "Các điều khoản này có thể được cập nhật theo chính sách công ty hoặc yêu cầu pháp lý. Điều khoản đã cập nhật sẽ được đăng trên trang web này và có hiệu lực ngay lập tức."
+        },
+        "section7": {
+            "title": "7. Liên hệ",
+            "content": "Tên công ty: Dongguan Jinjiu Automation Technology Co., Ltd.\nEmail: sales@jinjiutech.com"
+        },
+        "confirm": "✅ Bằng cách đánh dấu vào ô, bạn xác nhận rằng bạn đã đọc và đồng ý với các điều khoản trên."
+    },
+    "detail": {
+        "features": "Tính năng",
+        "more": "Thông tin thêm",
+        "auto_air_ring": [
+            "1. Điều chỉnh nhanh đến giá trị độ lệch mục tiêu trong chế độ tự động (khoảng 10 phút).",
+            "2. Tăng công suất sản xuất (khoảng 10–20%).",
+            "3. Độ lệch độ dày ở chế độ tự động: (±2–4%@2Sigma).",
+            "4. Thiết kế van điều khiển có bằng sáng chế, động cơ thông minh cao cấp điều chỉnh cánh gió.",
+            "5. Chế độ điều khiển: tự động thích nghi và điều chỉnh.",
+            "6. Chế độ điều khiển vòng gió tự động: A. Kiểu lưu lượng không khí, B. Kiểu nhiệt độ không khí."
+        ],
+        "lift_auto_air_ring": [
+            "1. Điều chỉnh nhanh đến giá trị độ lệch mục tiêu trong chế độ tự động (khoảng 10 phút).",
+            "2. Tăng công suất sản xuất (khoảng 10–20%).",
+            "3. Độ lệch độ dày ở chế độ tự động: (±2–4%@2Sigma).",
+            "4. Thiết kế van điều khiển có bằng sáng chế, động cơ thông minh cao cấp điều chỉnh cánh gió.",
+            "5. Chế độ điều khiển: tự động thích nghi và điều chỉnh.",
+            "6. Điều chỉnh độ cao linh hoạt cho sản xuất đa dạng.",
+            "7. Chế độ điều khiển vòng gió tự động: A. Kiểu lưu lượng không khí, B. Kiểu nhiệt độ không khí."
+        ],
+        "single_Loss-in-Weight": [
+            "1. Cung cấp dữ liệu sản xuất (kg/giờ, g/mét...).",
+            "2. Giảm sử dụng nguyên liệu (giảm độ dày tối thiểu, tiết kiệm từ 1,5–3% nguyên liệu trong phạm vi khách hàng chấp nhận).",
+            "3. Tăng công suất sản xuất (giảm trọng lượng để đạt đầu ra cao hơn).",
+            "4. Nâng cao chất lượng sản phẩm (trọng lượng ổn định đảm bảo kích thước sản phẩm đồng đều).",
+            "5. Tăng khả năng lặp lại (tính nhất quán ít phụ thuộc vào người vận hành).",
+            "6. Tỷ lệ phế liệu khởi động thấp (điều khiển chính xác trong giai đoạn khởi động).",
+            "7. Có thể điều khiển đồng thời đến 11 máy ép đùn."
+        ],
+        "solutions": [
+            "① Trạm điều khiển trung tâm",
+            "② Vòng gió tự động",
+            "③ Cảm biến đo độ dày kiểu quét",
+            "④ Hệ thống đo và điều khiển kéo trên",
+            "⑤ Hệ thống cân online 6 thành phần"
+        ],
+        "Cross-Direction_Scanning_Thickness_Gauge": [
+            "1. Sử dụng công nghệ tia X để đo độ dày với độ chính xác cao, phù hợp với nhiều loại vật liệu film.",
+            "2. Cấu trúc quét giúp giám sát độ dày toàn dải theo thời gian thực.",
+            "3. Đo không tiếp xúc đảm bảo không làm hư bề mặt film.",
+            "4. Tương thích với hệ thống điều khiển vòng gió tự động nhằm tăng độ đồng đều của độ dày.",
+            "5. Xuất dữ liệu ổn định và phản hồi nhanh, lý tưởng cho dây chuyền tốc độ cao.",
+            "6. Được hỗ trợ bởi thuật toán thông minh tự động tối ưu hóa quá trình đo và phản hồi, nâng cao tính thích ứng của hệ thống."
+        ],
+        "rotary_thickness_gauge": [
+            "1. Thiết kế quay giúp phát hiện toàn diện sự biến đổi độ dày theo hướng chu vi.",
+            "2. Hệ thống phản hồi thời gian thực cải thiện tính ổn định quy trình.",
+            "3. Cấu trúc nhỏ gọn, dễ lắp đặt, tương thích với nhiều loại máy thổi film khác nhau.",
+            "4. Cảm biến độ chính xác cao đảm bảo dữ liệu đo đáng tin cậy.",
+            "5. Có thể đồng bộ với nhiều máy ép đùn để nâng cao hiệu quả điều khiển tổng thể.",
+            "6. Hỗ trợ điều khiển thuật toán thông minh dự đoán và tự động điều chỉnh biến động độ dày."
+        ],
+        "X-Ray_rotary_thickness_gauge": [
+            "1. Thiết kế quay giúp phát hiện toàn diện sự biến đổi độ dày theo hướng chu vi.",
+            "2. Hệ thống phản hồi thời gian thực cải thiện tính ổn định quy trình.",
+            "3. Cấu trúc nhỏ gọn, dễ lắp đặt, tương thích với nhiều loại máy thổi film khác nhau.",
+            "4. Cảm biến độ chính xác cao đảm bảo dữ liệu đo đáng tin cậy.",
+            "5. Có thể đồng bộ với nhiều máy ép đùn để nâng cao hiệu quả điều khiển tổng thể.",
+            "6. Hỗ trợ điều khiển thuật toán thông minh dự đoán và tự động điều chỉnh biến động độ dày.",
+            "7. Sử dụng công nghệ tia X để đo độ dày với độ chính xác cao, phù hợp với nhiều loại vật liệu film."
+        ]
+    },
+    "seo": {
+        "brand": "Tự động hóa JINJIU",
+        "defaultTitle": "Tự động hóa JINJIU - Vòng gió tự động & Giải pháp kiểm soát film",
+        "defaultDescription": "JINJIU cung cấp vòng gió tự động và hệ thống kiểm soát film thông minh cho ngành sản xuất màng thổi.",
+        "home": {
+            "title": "Trang chủ | Chuyên gia vòng gió tự động | Tự động hóa JINJIU",
+            "description": "Tự động hóa JINJIU chuyên về vòng gió tự động và hệ thống kiểm soát độ dày film thông minh dành cho ngành sản xuất màng thổi."
+        },
+        "about": {
+            "title": "Giới thiệu | Nhà sản xuất vòng gió tự động",
+            "description": "Tìm hiểu thêm về Tự động hóa JINJIU – nhà cung cấp đáng tin cậy về vòng gió tự động và hệ thống điều khiển thông minh cho ngành sản xuất màng thổi."
+        },
+        "products": {
+            "title": "Sản phẩm & Giải pháp | Vòng gió tự động cho màng thổi | JINJIU",
+            "description": "Khám phá các sản phẩm vòng gió tự động và giải pháp kiểm soát thông minh của JINJIU nhằm tối ưu hóa chất lượng và hiệu suất sản xuất film."
+        },
+        "cases": {
+            "title": "Dự án khách hàng | Ứng dụng vòng gió tự động | JINJIU",
+            "description": "Xem cách hệ thống vòng gió tự động của JINJIU được áp dụng thành công tại các nhà máy sản xuất màng thổi khắp thế giới."
+        },
+        "news": {
+            "title": "Tin tức & Cập nhật | Ngành sản xuất màng thổi | JINJIU",
+            "description": "Luôn cập nhật những tin tức mới nhất, phân tích ngành, ra mắt sản phẩm và các hội chợ triển lãm từ JINJIU."
+        },
+        "contact": {
+            "title": "Liên hệ | Tư vấn vòng gió tự động | JINJIU",
+            "description": "Liên hệ với Tự động hóa JINJIU để nhận tư vấn chuyên nghiệp và giải pháp tùy chỉnh cho hệ thống vòng gió tự động."
+        }
+    },
+    "use": {
+        "airRing": "Trường hợp ứng dụng vòng khí tự động",
+        "dosing": "Trường hợp ứng dụng hệ thống cân định lượng",
+        "rotary_gauge": "Trường hợp ứng dụng máy đo độ dày quay vòng",
+        "thick_gauge": "Trường hợp ứng dụng máy đo độ dày quét ngang",
+        "airRing&dosing": "Giải pháp vòng khí tự động & hệ thống cân định lượng",
+        "single_Loss": "Trường hợp ứng dụng hệ thống cấp liệu mất trọng lượng đơn"
+    }
+}
