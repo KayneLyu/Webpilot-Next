@@ -3,76 +3,77 @@ import ProductComponent from '@/components/common/ProductList';
 
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
-
+import { useTranslations } from 'next-intl'
 export const generateMetadata = async (): Promise<Metadata> => {
-  const t = await getTranslations();
+    const t = await getTranslations();
 
-  return {
-    title: t('seo.products.title'), // 来自你的 zh.json / en.json
-    description: t('seo.products.description'),
-    alternates: {
-      canonical: 'https://jinjiutech.com/zh/product',
-      languages: {
-        zh: 'https://jinjiutech.com/zh/product',
-        en: 'https://jinjiutech.com/en/product'
-      }
-    }
-  };
+    return {
+        title: t('seo.products.title'), // 来自你的 zh.json / en.json
+        description: t('seo.products.description'),
+        alternates: {
+            canonical: 'https://jinjiutech.com/zh/product',
+            languages: {
+                zh: 'https://jinjiutech.com/zh/product',
+                en: 'https://jinjiutech.com/en/product'
+            }
+        }
+    };
 };
 
 export default function ProductPage() {
+    const t = useTranslations("product");
     const products = [
         {
-            src: '/products/auto_air_ring.webp',
+            src: '/products/auto_air_ring.png',
             alt: 'profile_control',
             name: 'auto_air_ring',
             link: '/',
             hover: ''
         },
         {
-            src: '/products/lift_auto_air_ring.webp',
+            src: '/products/lift_auto_air_ring.png',
             alt: 'lift_profile_control',
             name: 'lift_auto_air_ring',
             link: '/',
             hover: ''
         },
         {
-            src: '/products/Cross-Direction_Scanning_Thickness_Gauge.webp',
+            src: '/products/Cross-Direction_Scanning_Thickness_Gauge.png',
             alt: 'profile_measurement',
             name: 'Cross-Direction_Scanning_Thickness_Gauge',
             link: '/',
             hover: ''
         },
         {
-            src: '/products/rotary_thickness_gauge.webp',
+            src: '/products/rotary_thickness_gauge.png',
             alt: 'rotary_thickness_gauge',
             name: 'rotary_thickness_gauge',
             link: '/',
             hover: ''
         },
         {
-            src: '/products/X-Ray_rotary_thickness_gauge.webp',
+            src: '/products/X-Ray_rotary_thickness_gauge.png',
             alt: 'profile_measurement',
             name: 'X-Ray_rotary_thickness_gauge',
             link: '/',
             hover: ''
         },
         {
-            src: '/products/dosing.webp',
+            src: '/products/dosing.png',
             alt: 'dosing',
             name: 'dosing',
             link: '/',
             hover: ''
         },
         {
-            src: '/products/single_Loss-in-Weight.webp',
+            src: '/products/single_Loss-in-Weight.png',
             alt: 'single_Loss-in-Weight',
             name: 'single_Loss-in-Weight',
             link: '/',
             hover: ''
         },
         {
-            src: '/products/solutions.webp',
+            src: '/products/solutions.png',
             alt: 'solution',
             name: 'solutions',
             link: '/',
@@ -98,6 +99,14 @@ export default function ProductPage() {
 
                 <div className='bg-9  py-6 md:py-15 '>
                     <div className='max-w-main mx-auto'>
+                        <div>
+                            <h1 className='section-title'>{t("product")}</h1>
+                        </div>
+                        <div>
+                            <p className='text-2 text-[14px] md:w-[50%] md:text-[18px]'>
+                                {t('description')}
+                            </p>
+                        </div>
                         <div>
                             <ProductComponent products={products} tittle='section' />
                         </div>

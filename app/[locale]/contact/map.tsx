@@ -73,7 +73,8 @@ export default function MapContact() {
     return (
         <div
             ref={mapContainer}
-            style={{ width: '100%', height: '600px', border: '1px solid #ccc' }}
+            className='w-full h-[500px] md:h-[650px]'
+            style={{  border: '1px solid #ccc' }}
         />
     );
 }

@@ -22,7 +22,6 @@ import { usePathname } from 'next/navigation'
 import { useLocale } from 'next-intl'
 import { cn } from "@/lib/utils" // shadcn 提供的合并类名工具
 import LanguageComponent from '@/components/common/Language';
-import LangSwitcher from '@/components/common/LocaleSwitcher';
 import EmailAddress from '@/components/common/EAddress';
 export default function Navigation() {
     const t = useTranslations('nav')

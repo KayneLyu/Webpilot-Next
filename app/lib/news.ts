@@ -3,7 +3,8 @@ import path from 'path';
 import { parseMarkdown } from './markdown.ts';
 
 export async function getAllNews(locale: string) {
-  const newsDirectory = path.join(process.cwd(), 'content', locale, 'news');
+  const isZh = locale == 'zh' ? "zh" : "en";
+  const newsDirectory = path.join(process.cwd(), 'content', isZh, 'news');
   const fileNames = fs.existsSync(newsDirectory) ? fs.readdirSync(newsDirectory) : [];
   const newsList = await Promise.all(
     fileNames.map(async (fileName) => {
@@ -20,7 +21,8 @@ export async function getAllNews(locale: string) {
 }
 
 export async function getNewsBySlug(locale: string, slug: string) {
-  const fullPath = path.join(process.cwd(), 'content', locale, 'news', `${slug}.md`);
+  const isZh = locale == 'zh' ? "zh" : "en";
+  const fullPath = path.join(process.cwd(), 'content', isZh, 'news', `${slug}.md`);
   if (!fs.existsSync(fullPath)) return null;
   const { metadata, contentHtml } = await parseMarkdown(fullPath);
   return {

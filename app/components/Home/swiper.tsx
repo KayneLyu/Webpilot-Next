@@ -18,27 +18,32 @@ export default function Carousel() {
     {
       mobile: '/swiper/banner1_m.webp',
       pc: '/swiper/banner4.webp',
-      slogan: "s2"
+      slogan: "s1",
+      link: "/product/auto_air_ring"
     },
     {
       mobile: '/swiper/banner2_m.webp',
       pc: '/swiper/banner1.webp',
-      slogan: "s4"
+      slogan: "s5",
+      link: "/product/lift_auto_air_ring"
     },
     {
       mobile: '/swiper/banner3_m.webp',
       pc: '/swiper/banner2.webp',
-      slogan: "s1"
+      slogan: "s4",
+      link: "/product/rotary_thickness_gauge"
     },
     {
       mobile: '/swiper/banner4_m.webp',
       pc: '/swiper/banner3.webp',
-      slogan: "s3"
+      slogan: "s3",
+      link: "/product/Cross-Direction_Scanning_Thickness_Gauge"
     },
     {
       mobile: '/swiper/banner5_m.webp',
       pc: '/swiper/banner5.webp',
-      slogan: "s5"
+      slogan: "s2",
+      link: "/product/solutions"
     },
   ]
   return (
@@ -82,7 +87,7 @@ export default function Carousel() {
             </picture>
 
             <div className="bottom-[10%] left-5 font-semibold w-[80%] flex md:pl-15 justify-center items-center absolute md:bottom-10 md:left-30 text-white  xl:w-[35vw] xl:h-[35vw] xl:border-[4px] border-white swiper-slogan ">
-              <Link href='/product' className='cursor-pointer'>
+              <Link href={item.link} className='cursor-pointer'>
                 <p className='text-[26px] mb-5 md:mb-15 sm:text-4xl md:text-6xl line-clamp-2'>{t(item.slogan)}</p>
                 <JumpComponent color='text-white' text='more' />
               </Link>

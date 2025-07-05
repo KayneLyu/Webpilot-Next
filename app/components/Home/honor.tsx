@@ -7,7 +7,7 @@ export default function Honors() {
     const honors = [
         {
             icons: "/focus.svg",
-            title: "10+",
+            title: "20+",
             text: "honor1"
         },
         {

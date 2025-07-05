@@ -37,42 +37,42 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   const newsList = await getAllNews(locale);
   const products = [
     {
-      src: '/products/auto_air_ring.webp',
+      src: '/products/auto_air_ring.png',
       alt: 'profile_control',
       name: 'auto_air_ring',
       link: '/',
       hover: ''
     },
     {
-      src: '/products/lift_auto_air_ring.webp',
+      src: '/products/lift_auto_air_ring.png',
       alt: 'lift_profile_control',
       name: 'lift_auto_air_ring',
       link: '/',
       hover: ''
     },
     {
-      src: '/products/Cross-Direction_Scanning_Thickness_Gauge.webp',
+      src: '/products/Cross-Direction_Scanning_Thickness_Gauge.png',
       alt: 'profile_measurement',
       name: 'Cross-Direction_Scanning_Thickness_Gauge',
       link: '/',
       hover: ''
     },
     {
-      src: '/products/rotary_thickness_gauge.webp',
+      src: '/products/rotary_thickness_gauge.png',
       alt: 'rotary_thickness_gauge',
       name: 'rotary_thickness_gauge',
       link: '/',
       hover: ''
     },
     {
-      src: '/products/X-Ray_rotary_thickness_gauge.webp',
+      src: '/products/X-Ray_rotary_thickness_gauge.png',
       alt: 'profile_measurement',
       name: 'X-Ray_rotary_thickness_gauge',
       link: '/',
       hover: ''
     },
     {
-      src: '/products/dosing.webp',
+      src: '/products/dosing.png',
       alt: 'dosing',
       name: 'dosing',
       link: '/',

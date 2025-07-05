@@ -36,9 +36,10 @@
         "about3": "JINJIU Automation is committed to advancing the digitalization and automation of the film extrusion process, helping our partners achieve higher quality, smarter manufacturing, and sustainable growth."
     },
     "product": {
+        "description": "Jinjiu Automation specializes in intelligent control systems for the blown film industry. Our main products include automatic air rings (air volume and temperature control), traversing and rotating thickness gauges, gravimetric weighing systems, and single loss-in-weight feeders. Widely used in various film production lines, our solutions help customers achieve efficient, stable, and intelligent manufacturing.",
         "single_Loss-in-Weight": "Single Loss-in-Weight Gravimetric Feeding System",
         "section": "Product & Solutions",
-        "auto_air_ring": "Automatic Air Ring",
+        "auto_air_ring": "Auto Air Ring",
         "lift_auto_air_ring": "Height-Adjustable Air Ring",
         "Cross-Direction_Scanning_Thickness_Gauge": "Cross-Direction Thickness Gauge",
         "rotary_thickness_gauge": "Rotary Thickness Gauge",
@@ -50,7 +51,7 @@
         "tips": "We support all types of blown film production lines and offer fully customized automation solutions to meet your specific needs."
     },
     "slogan": {
-        "s1": "Used in 100+ Lines Worldwide",
+        "s1": "Used in 1000+ Lines Worldwide",
         "s2": "Smart. Efficient. Reliable.",
         "s3": "Global Support. Local Service",
         "s4": "Built for Modern Film Lines",
@@ -141,6 +142,68 @@
             "content": "Company Name: Dongguan Jinjiu Automation Technology Co., Ltd.\nEmail: sales@jinjiutech.com"
         },
         "confirm": "✅ By checking the box, you confirm that you have read and agreed to the above terms."
+    },
+    "detail": {
+        "features": "Features",
+        "more": "More information",
+        "auto_air_ring": [
+            "1.Quickly adjust to the target thickness deviation value in the automatic state (about 10 minutes).",
+            "2.It can increase production capacity (10-20%).",
+            "3.Thickness deviation in automatic state:(±2-4%@2Sigma).",
+            "4.IPatent design for control valve , high-end intelligent motor adjusting damper.",
+            "5.Control mode: automatic adaption and adjustment.",
+            "6.Automatic air ring control mode: A.air volume type, B.air temperature type."
+        ],
+        "lift_auto_air_ring": [
+            "1.Quickly adjust to the target thickness deviation value in the automatic state (about 10 minutes).",
+            "2.It can increase production capacity (10-20%).",
+            "3.Thickness deviation in automatic state:(±2-4%@2Sigma).",
+            "4.IPatent design for control valve , high-end intelligent motor adjusting damper.",
+            "5.Control mode: automatic adaption and adjustment.",
+            "6.Adjustable height for flexible production.",
+            "7.Automatic air ring control mode: A.air volume type, B.air temperature type."
+        ],
+        "single_Loss-in-Weight": [
+            "1. Provide production data information (kg/h, g/m, etc.).",
+            "2. Reduce raw material usage (by lowering the minimum thickness, 1.5%-3% of raw materials can be saved within customer acceptable range).",
+            "3. Increase production capacity (reduce weight to achieve higher output).",
+            "4. Improve product quality (stable meter weight ensures consistent product dimensions).",
+            "5. Enhanced repeatability (product consistency is rarely dependent on operators).",
+            "6. Low startup scrap rate (provides precise control during the start-up phase).",
+            "7. Capable of controlling up to 11 extruders simultaneously."
+        ],
+        "solutions": [
+            "① Central control station",
+            "② Automatic air ring",
+            "③ Sweep-scanning type thickness gauge",
+            "④ Upper Traction Measurement and Control",
+            "⑤ Six-component online weighing system"
+        ],
+        "Cross-Direction_Scanning_Thickness_Gauge": [
+            "1. Utilizes X-ray technology for high-precision measurement, suitable for various film materials.",
+            "2. Sweeping structure enables real-time monitoring of the full width thickness.",
+            "3. Non-contact measurement ensures no damage to the film surface.",
+            "4. Compatible with automatic air ring control for improved thickness uniformity.",
+            "5. Stable data output and fast response, ideal for high-speed production lines.",
+            "6. Equipped with intelligent algorithm control to automatically optimize measurement and feedback, enhancing system adaptability."
+        ],
+        "rotary_thickness_gauge": [
+            "1. Ring scanning design comprehensively detects thickness variation in the circumferential direction.",
+            "2. Real-time feedback system enhances process stability.",
+            "3. Compact structure, easy installation, compatible with various blown film machines.",
+            "4. High-precision sensors ensure reliable measurement data.",
+            "5. Capable of synchronizing with multiple extruders to improve overall control efficiency.",
+            "6. Supports intelligent algorithm control for thickness fluctuation prediction and automatic adjustment."
+        ],
+        "X-Ray_rotary_thickness_gauge": [
+            "1. Ring scanning design comprehensively detects thickness variation in the circumferential direction.",
+            "2. Real-time feedback system enhances process stability.",
+            "3. Compact structure, easy installation, compatible with various blown film machines.",
+            "4. High-precision sensors ensure reliable measurement data.",
+            "5. Capable of synchronizing with multiple extruders to improve overall control efficiency.",
+            "6. Supports intelligent algorithm control for thickness fluctuation prediction and automatic adjustment.",
+            "7. Utilizes X-ray technology for high-precision measurement, suitable for various film materials."
+        ]
     },
     "seo": {
         "brand": "JINJIU Automation",

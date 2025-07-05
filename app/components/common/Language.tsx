@@ -29,6 +29,26 @@ export default function DropdownMenuRadioGroupDemo() {
             value: "en",
             path: "/english.svg"
         },
+        {
+            label: "Русский",
+            value: "ru",
+            path: "/ru.svg"
+        },
+        {
+            label: "한국어",
+            value: "ko",
+            path: "/ko.svg"
+        },
+        {
+            label: "Tiếng Việt",
+            value: "vi",
+            path: "/vi.svg"
+        },
+        {
+            label: "Türkçe",
+            value: "tr",
+            path: "/tr.svg"
+        },
     ];
 
 
