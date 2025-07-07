@@ -95,8 +95,8 @@ export default async function RootLayout({
           <Header />
           <BackTop />
           <main className="flex-1 mt-15 md:mt-30">
-            <BrowserCheck />
             {children}
+            <BrowserCheck />
           </main>
           <Footer />
         </NextIntlClientProvider>
