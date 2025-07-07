@@ -3,7 +3,7 @@ import {routing} from './i18n/routing';
  
 export default createMiddleware({
   ...routing,
-  localeDetection: true // 根据浏览器语言判断是否跳转
+  localeDetection: true
 });
  
 export const config = {

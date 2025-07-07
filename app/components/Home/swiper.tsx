@@ -19,7 +19,7 @@ export default function Carousel() {
       mobile: '/swiper/banner1_m.webp',
       pc: '/swiper/banner4.webp',
       slogan: "s1",
-      link: "/product/auto_air_ring"
+      link: "/product/automatic_air_ring"
     },
     {
       mobile: '/swiper/banner2_m.webp',

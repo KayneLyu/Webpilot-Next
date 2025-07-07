@@ -24,22 +24,22 @@ export default function ProductPage() {
     const t = useTranslations("product");
     const products = [
         {
-            src: '/products/auto_air_ring.png',
-            alt: 'profile_control',
+            src: '/products/automatic_air_ring.png',
+            alt: 'automatic air ring',
             name: 'auto_air_ring',
             link: '/',
             hover: ''
         },
         {
             src: '/products/lift_auto_air_ring.png',
-            alt: 'lift_profile_control',
+            alt: 'lift automatic air ring',
             name: 'lift_auto_air_ring',
             link: '/',
             hover: ''
         },
         {
             src: '/products/Cross-Direction_Scanning_Thickness_Gauge.png',
-            alt: 'profile_measurement',
+            alt: 'profile measurement',
             name: 'Cross-Direction_Scanning_Thickness_Gauge',
             link: '/',
             hover: ''
@@ -53,7 +53,7 @@ export default function ProductPage() {
         },
         {
             src: '/products/X-Ray_rotary_thickness_gauge.png',
-            alt: 'profile_measurement',
+            alt: 'profile measurement',
             name: 'X-Ray_rotary_thickness_gauge',
             link: '/',
             hover: ''
@@ -67,14 +67,14 @@ export default function ProductPage() {
         },
         {
             src: '/products/single_Loss-in-Weight.png',
-            alt: 'single_Loss-in-Weight',
+            alt: 'single Loss-in-Weight',
             name: 'single_Loss-in-Weight',
             link: '/',
             hover: ''
         },
         {
             src: '/products/solutions.png',
-            alt: 'solution',
+            alt: 'automatic air ring solution',
             name: 'solutions',
             link: '/',
             hover: ''

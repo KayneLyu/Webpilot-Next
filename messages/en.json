@@ -36,7 +36,7 @@
         "about3": "JINJIU Automation is committed to advancing the digitalization and automation of the film extrusion process, helping our partners achieve higher quality, smarter manufacturing, and sustainable growth."
     },
     "product": {
-        "description": "Jinjiu Automation specializes in intelligent control systems for the blown film industry. Our main products include automatic air rings (air volume and temperature control), traversing and rotating thickness gauges, gravimetric weighing systems, and single loss-in-weight feeders. Widely used in various film production lines, our solutions help customers achieve efficient, stable, and intelligent manufacturing.",
+        "description": "Jinjiu Automation specializes in intelligent control systems for the blown film industry. Our main products include automatic air ring (air volume and temperature control), traversing and rotating thickness gauges, gravimetric weighing systems, and single loss-in-weight feeders. Widely used in various film production lines, our solutions help customers achieve efficient, stable, and intelligent manufacturing.",
         "single_Loss-in-Weight": "Single Loss-in-Weight Gravimetric Feeding System",
         "section": "Product & Solutions",
         "auto_air_ring": "Auto Air Ring",
@@ -210,11 +210,11 @@
         "defaultTitle": "JINJIU Automation - Auto Air Ring & Film Control Solutions",
         "defaultDescription": "JINJIU provides auto air rings and smart film control systems for the blown film industry.",
         "home": {
-            "title": "Home | Auto Air Ring Expert | JINJIU Automation",
+            "title": "Home | Automatic Air Ring | JINJIU Automation",
             "description": "JINJIU Automation specializes in auto air rings and smart film thickness control systems for the blown film industry."
         },
         "about": {
-            "title": "About JINJIU | Auto Air Ring Manufacturer",
+            "title": "About JINJIU | Automatic Air Ring Manufacturer",
             "description": "Learn more about JINJIU Automation, a trusted developer of auto air rings and smart control systems for the blown film industry."
         },
         "products": {
@@ -222,7 +222,7 @@
             "description": "Explore JINJIU's auto air ring products and smart control solutions to optimize film quality and production performance."
         },
         "cases": {
-            "title": "Customer Cases | Auto Air Ring Applications | JINJIU",
+            "title": "Customer Cases | Automatic Air Ring Applications | JINJIU",
             "description": "See how JINJIU's auto air ring systems are successfully applied in blown film factories across the globe."
         },
         "news": {
@@ -235,7 +235,7 @@
         }
     },
     "use": {
-        "airRing": "Auto Air Ring Application Case",
+        "airRing": "Automatic Air Ring Application Case",
         "dosing": "Gravimetric Dosing System Application Case",
         "rotary_gauge": "Rotary Thickness Gauge Application Case",
         "thick_gauge": "Cross-Direction Thickness Gauge Application Case",

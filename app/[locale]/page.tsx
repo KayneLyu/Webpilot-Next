@@ -37,36 +37,36 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   const newsList = await getAllNews(locale);
   const products = [
     {
-      src: '/products/auto_air_ring.png',
-      alt: 'profile_control',
+      src: '/products/automatic_air_ring.png',
+      alt: 'automatic air ring',
       name: 'auto_air_ring',
       link: '/',
       hover: ''
     },
     {
       src: '/products/lift_auto_air_ring.png',
-      alt: 'lift_profile_control',
+      alt: 'lift automatic air ring',
       name: 'lift_auto_air_ring',
       link: '/',
       hover: ''
     },
     {
       src: '/products/Cross-Direction_Scanning_Thickness_Gauge.png',
-      alt: 'profile_measurement',
+      alt: 'profile measurement',
       name: 'Cross-Direction_Scanning_Thickness_Gauge',
       link: '/',
       hover: ''
     },
     {
       src: '/products/rotary_thickness_gauge.png',
-      alt: 'rotary_thickness_gauge',
+      alt: 'rotary thickness gauge',
       name: 'rotary_thickness_gauge',
       link: '/',
       hover: ''
     },
     {
       src: '/products/X-Ray_rotary_thickness_gauge.png',
-      alt: 'profile_measurement',
+      alt: 'profile measurement',
       name: 'X-Ray_rotary_thickness_gauge',
       link: '/',
       hover: ''
