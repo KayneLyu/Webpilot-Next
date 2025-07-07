@@ -39,8 +39,8 @@
         "description": "Công ty Tự động hóa Jinjiu chuyên về hệ thống điều khiển thông minh cho ngành công nghiệp màng thổi. Các sản phẩm chính bao gồm vòng gió tự động (điều khiển lưu lượng và nhiệt độ không khí), cảm biến đo độ dày di chuyển và quay, hệ thống cân trọng lượng và bộ cấp liệu đơn theo phương pháp mất trọng lượng. Được ứng dụng rộng rãi trên nhiều dây chuyền sản xuất màng khác nhau, các giải pháp của chúng tôi giúp khách hàng đạt được quy trình sản xuất hiệu quả, ổn định và thông minh.",
         "single_Loss-in-Weight": "Hệ thống cấp liệu trọng lượng đơn (Loss-in-Weight)",
         "section": "Sản phẩm & Giải pháp",
-        "auto_air_ring": "Vòng gió tự động",
-        "lift_auto_air_ring": "Vòng gió điều chỉnh độ cao",
+        "automatic_air_ring": "Vòng gió tự động",
+        "lift_automatic_air_ring": "Vòng gió điều chỉnh độ cao",
         "Cross-Direction_Scanning_Thickness_Gauge": "Cảm biến đo độ dày theo chiều ngang",
         "rotary_thickness_gauge": "Cảm biến đo độ dày quay",
         "dosing": "Định lượng",
@@ -146,7 +146,7 @@
     "detail": {
         "features": "Tính năng",
         "more": "Thông tin thêm",
-        "auto_air_ring": [
+        "automatic_air_ring": [
             "1. Điều chỉnh nhanh đến giá trị độ lệch mục tiêu trong chế độ tự động (khoảng 10 phút).",
             "2. Tăng công suất sản xuất (khoảng 10–20%).",
             "3. Độ lệch độ dày ở chế độ tự động: (±2–4%@2Sigma).",
@@ -154,7 +154,7 @@
             "5. Chế độ điều khiển: tự động thích nghi và điều chỉnh.",
             "6. Chế độ điều khiển vòng gió tự động: A. Kiểu lưu lượng không khí, B. Kiểu nhiệt độ không khí."
         ],
-        "lift_auto_air_ring": [
+        "lift_automatic_air_ring": [
             "1. Điều chỉnh nhanh đến giá trị độ lệch mục tiêu trong chế độ tự động (khoảng 10 phút).",
             "2. Tăng công suất sản xuất (khoảng 10–20%).",
             "3. Độ lệch độ dày ở chế độ tự động: (±2–4%@2Sigma).",

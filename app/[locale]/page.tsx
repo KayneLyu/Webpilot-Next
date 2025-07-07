@@ -39,14 +39,14 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
     {
       src: '/products/automatic_air_ring.png',
       alt: 'automatic air ring',
-      name: 'auto_air_ring',
+      name: 'automatic_air_ring',
       link: '/',
       hover: ''
     },
     {
-      src: '/products/lift_auto_air_ring.png',
+      src: '/products/lift_automatic_air_ring.png',
       alt: 'lift automatic air ring',
-      name: 'lift_auto_air_ring',
+      name: 'lift_automatic_air_ring',
       link: '/',
       hover: ''
     },

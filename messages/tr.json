@@ -39,8 +39,8 @@
         "description": "Jinjiu Otomasyon, esnek film endüstrisi için akıllı kontrol sistemlerine uzmanlaşmıştır. Ana ürünlerimiz arasında otomatik hava halkaları (hava hacmi ve sıcaklık kontrolü), hareketli ve döner kalınlık ölçerler, gravimetrik tartım sistemleri ve tekli kayıpsız ağırlık besleme cihazları yer almaktadır. Çeşitli film üretim hatlarında yaygın olarak kullanılan çözümlerimiz, müşterilerimize verimli, stabil ve akıllı üretim imkanı sunar.",
         "single_Loss-in-Weight": "Tek Kayıpsız Ağırlık Gravimetrik Besleme Sistemi",
         "section": "Ürün & Çözümler",
-        "auto_air_ring": "Otomatik Hava Halkası",
-        "lift_auto_air_ring": "Yükseklik Ayarlanabilir Hava Halkası",
+        "automatic_air_ring": "Otomatik Hava Halkası",
+        "lift_automatic_air_ring": "Yükseklik Ayarlanabilir Hava Halkası",
         "Cross-Direction_Scanning_Thickness_Gauge": "En Boyunda Tarama Kalınlık Ölçer",
         "rotary_thickness_gauge": "Döner Kalınlık Ölçer",
         "dosing": "Dozajlama",
@@ -146,7 +146,7 @@
     "detail": {
         "features": "Özellikler",
         "more": "Daha fazla bilgi",
-        "auto_air_ring": [
+        "automatic_air_ring": [
             "1. Otomatik modda hedef kalınlık sapma değerine hızlı ayar (yaklaşık 10 dakika).",
             "2. Üretim kapasitesini artırabilir (yaklaşık %10-20).",
             "3. Otomatik modda kalınlık sapması: (±2-4%@2Sigma).",
@@ -154,7 +154,7 @@
             "5. Kontrol modu: otomatik adaptasyon ve ayarlama.",
             "6. Hava halkası kontrol modları: A. Hava hacmi tipi, B. Hava sıcaklığı tipi."
         ],
-        "lift_auto_air_ring": [
+        "lift_automatic_air_ring": [
             "1. Otomatik modda hedef kalınlık sapma değerine hızlı ayar (yaklaşık 10 dakika).",
             "2. Üretim kapasitesini artırabilir (yaklaşık %10-20).",
             "3. Otomatik modda kalınlık sapması: (±2-4%@2Sigma).",

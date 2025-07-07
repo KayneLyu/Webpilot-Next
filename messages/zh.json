@@ -39,8 +39,8 @@
         "description":"金久自动化专注于吹膜行业智能控制系统的研发与制造，主要产品包括自动风环系统（风量、风温调节）、横扫与环扫测厚仪、米克重称重系统、单失重喂料系统等，广泛应用于各类薄膜生产线，助力客户实现高效、稳定、智能化生产。",
         "single_Loss-in-Weight": "单失重计量喂料系统",
         "section": "产品 & 解决方案",
-        "auto_air_ring": "自动风环",
-        "lift_auto_air_ring": "升降自动风环",
+        "automatic_air_ring": "自动风环",
+        "lift_automatic_air_ring": "升降自动风环",
         "Cross-Direction_Scanning_Thickness_Gauge": "横扫测厚仪",
         "rotary_thickness_gauge": "环扫测厚仪",
         "dosing": "称重配料系统",
@@ -146,7 +146,7 @@
     "detail": {
         "features": "特点",
         "more": "更多信息",
-        "auto_air_ring": [
+        "automatic_air_ring": [
             "1.自动状态快速调节到目标厚薄偏差值（10分钟左右）。",
             "2.可提高产能（10～20%）左右。",
             "3.自动状态下厚薄偏差：（±2-4%@2Sigma）以内。",
@@ -154,7 +154,7 @@
             "5.控制方式厚与薄自动适应调整。",
             "6.自动风环控制方式：A 风量式，B风温式."
         ],
-        "lift_auto_air_ring": [
+        "lift_automatic_air_ring": [
             "1.自动状态快速调节到目标厚薄偏差值（10分钟左右）。",
             "2.可提高产能（10～20%）左右。",
             "3.自动状态下厚薄偏差：（±2-4%@2Sigma）以内。",
