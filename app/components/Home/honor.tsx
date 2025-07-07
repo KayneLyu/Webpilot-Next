@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Marquee from '@/components/common/marquee';
 import { useTranslations } from 'next-intl'
+import JumpTo from '@/components/common/JumpTo';
 export default function Honors() {
     const t = useTranslations('home')
     const honors = [
@@ -46,7 +47,7 @@ export default function Honors() {
                                             {index == 1 ? t(item.title) : item.title}
                                         </div>
                                         <div className="text-4  text-[14px] md:text-[18px] mt-8">
-                                            { t(item.text) }
+                                            {t(item.text)}
                                         </div>
                                     </div>
                                 </li>
@@ -56,6 +57,9 @@ export default function Honors() {
                     </ul>
                     <div>
                         <Marquee />
+                    </div>
+                    <div className="w-full text-right mt-10 md:mt-20">
+                        <JumpTo link="/honor" text="more" />
                     </div>
                 </div>
             </div>

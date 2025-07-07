@@ -6,6 +6,7 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './layouts/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  safelist: ['text-red-500', 'bg-blue-500', /^btn-/, /^text-/],
   theme: {
     extend: {
       colors: {

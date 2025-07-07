@@ -55,10 +55,15 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     alternates: {
       canonical: `https://jinjiutech.com/${locale}`,
       languages: {
-        zh: 'https://jinjiutech.com',
-        en: 'https://jinjiutech.com'
+        zh: 'https://jinjiutech.com/zh',
+        en: 'https://jinjiutech.com/en',
+        ko: 'https://jinjiutech.com/ko',
+        ru: 'https://jinjiutech.com/ru',
+        vi: 'https://jinjiutech.com/vi',
+        tr: 'https://jinjiutech.com/tr'
       }
     },
+
     openGraph: {
       title: t('seo.defaultTitle'),
       description: t('seo.defaultDescription'),
@@ -83,6 +88,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
+      <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
       <body
         className={`${RobotoCondensed.variable} ${RobotoFont.variable} ${PublicSans.variable} ${RecursiveFont.variable} ${geistMono.variable} antialiased`}
       >
