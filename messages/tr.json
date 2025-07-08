@@ -203,6 +203,17 @@
             "5. Birden fazla ekstrüdere senkronize olabilir, genel kontrol verimliliğini artırır.",
             "6. Kalınlık dalgalanmalarını tahmin edebilen ve otomatik ayar yapabilen akıllı algoritma desteklidir.",
             "7. X-ışını teknolojisi kullanarak yüksek doğrulukta ölçüm yapar, tüm film malzemeleriyle uyumludur."
+        ],
+        "dosing": [
+            "1. 2, 3, 4, 5, 6, 7, 8, 9, 10 olmak üzere çok bileşenli kombinasyonlar serbestçe seçilebilir.",
+            "2. Her malzeme için ayrı boru besleme yöntemi, hammaddenin saflığını sağlar; yaklaşık 20–100 metreye kadar uzak besleme mesafesiyle düşük enerji tüketimi ve yüksek verimlilik, enerji tasarrufu ve emisyon azaltma standartlarını karşılar.",
+            "3. Otomatik darbeli toz giderme sistemi: kendi kendini temizleme özelliğine sahip olup, sökme gerektirmeden bakım maliyetlerini büyük ölçüde azaltır.",
+            "4. Tek seferlik dozaj miktarı 1000g–3000g arasındadır.",
+            "5. Dozaj vanası ve vidalı sistemin birleşimi sayesinde yüksek dozaj hassasiyeti sağlanır.",
+            "6. Düzensiz şekilli, akışkanlığı düşük granüller ve mikro katkı maddeleri (0.1%–10%) için hassas dozajlama yapılabilir.",
+            "7. Dozaj aralığı: %0.1–%100.",
+            "8. Karıştırma haznesi kayıplı tartım fonksiyonuna sahiptir; homojen karışım doğrudan ekstrudere aktarılır, böylece malzeme homojenliği sağlanır.",
+            "9. Karıştırma haznesi ekstruder ile senkronize çalışarak stabil ekstrüzyon sağlar ve film kalınlığının boyuna homojenliğini artırır."
         ]
     },
     "seo": {

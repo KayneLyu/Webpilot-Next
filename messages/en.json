@@ -203,6 +203,17 @@
             "5. Capable of synchronizing with multiple extruders to improve overall control efficiency.",
             "6. Supports intelligent algorithm control for thickness fluctuation prediction and automatic adjustment.",
             "7. Utilizes X-ray technology for high-precision measurement, suitable for various film materials."
+        ],
+        "dosing": [
+            "1. Multiple components (2, 3, 4, 5, 6, 7, 8, 9, 10) can be freely combined.",
+            "2. One-material-one-pipe feeding ensures material purity; supports remote conveying (approx. 20–100 meters) with low energy consumption and high efficiency, meeting energy-saving and emission reduction standards.",
+            "3. Pulse automatic dust removal system with self-cleaning function; no need for disassembly, greatly reducing maintenance cost.",
+            "4. Single batch dosing amount ranges from 1000g to 3000g.",
+            "5. High dosing accuracy thanks to the combination of dosing valve and dosing screw.",
+            "6. Suitable for irregular-shaped, poor-flowing granules; micro-additive function (0.1%–10%) enables precise blending.",
+            "7. Dosing range: 0.1%–100%.",
+            "8. Weighing and mixing hopper with uniform mixing; material directly fed to the extruder to ensure material uniformity.",
+            "9. Mixing hopper linked with extruder for stable extrusion flow, improving longitudinal film thickness uniformity."
         ]
     },
     "seo": {

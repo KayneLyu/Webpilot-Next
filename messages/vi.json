@@ -203,6 +203,17 @@
             "5. Có thể đồng bộ với nhiều máy ép đùn để nâng cao hiệu quả điều khiển tổng thể.",
             "6. Hỗ trợ điều khiển thuật toán thông minh dự đoán và tự động điều chỉnh biến động độ dày.",
             "7. Sử dụng công nghệ tia X để đo độ dày với độ chính xác cao, phù hợp với nhiều loại vật liệu film."
+        ],
+        "dosing": [
+            "1. Có thể kết hợp tự do từ 2 đến 10 thành phần.",
+            "2. Phương thức cấp liệu một ống một nguyên liệu đảm bảo tính đơn nhất của nguyên liệu; hỗ trợ khoảng cách hút xa (20–100 mét), tiêu thụ năng lượng thấp, hiệu suất cao, đạt tiêu chuẩn tiết kiệm năng lượng và giảm khí thải.",
+            "3. Hệ thống tự động lọc bụi bằng xung: có chức năng tự làm sạch, không cần tháo rời để bảo trì, giảm đáng kể chi phí vận hành.",
+            "4. Lượng phối liệu mỗi lần từ 1000g đến 3000g.",
+            "5. Độ chính xác phối liệu cao nhờ sự kết hợp giữa van định lượng và trục vít định lượng.",
+            "6. Thích hợp cho hạt có hình dạng không đều, độ chảy kém; chức năng vi lượng (0.1%–10%) cho phép pha trộn chính xác.",
+            "7. Phạm vi định lượng: từ 0.1% đến 100%.",
+            "8. Phễu trộn có chức năng cân mất trọng lượng, nguyên liệu được trộn đều và đưa trực tiếp vào máy đùn, đảm bảo tính đồng nhất của nguyên liệu.",
+            "9. Phễu trộn liên kết với máy đùn giúp ổn định lượng đùn, cải thiện độ đồng đều chiều dọc của độ dày màng."
         ]
     },
     "seo": {

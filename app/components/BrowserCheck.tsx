@@ -26,7 +26,7 @@ export default function BrowserCheck() {
                 <h2 style={{ textAlign: "center", marginTop: "10vh", fontSize: "34px" }}>浏览器版本过低</h2>
                 <p style={{ lineHeight: "60px", textAlign: "center", marginTop: "40px", fontSize: "30px" }}>
                     当前浏览器版本较低，可能无法正常浏览本站内容。<br />
-                    建议您使用最新版 夸克、 Chrome、Edge 或其他现代浏览器访问本网站。
+                    建议您升级浏览器或使用最新版 夸克、 Chrome、Edge 或其他现代浏览器访问本网站。
                 </p>
                 <div style={{ textAlign: "center"}}>
                     <button

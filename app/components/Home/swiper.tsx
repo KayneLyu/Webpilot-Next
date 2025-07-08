@@ -2,6 +2,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { useTranslations } from 'next-intl'
+import Image from 'next/image'
 import Link from "next/link";
 
 import JumpComponent from '@/components/common/Jump';
@@ -19,31 +20,36 @@ export default function Carousel() {
       mobile: '/swiper/banner1_m.webp',
       pc: '/swiper/banner4.webp',
       slogan: "s1",
-      link: "/product/automatic_air_ring"
+      link: "/product/automatic_air_ring",
+      alt: "automatic air ring"
     },
     {
       mobile: '/swiper/banner2_m.webp',
       pc: '/swiper/banner1.webp',
       slogan: "s5",
-      link: "/product/lift_auto_air_ring"
+      link: "/product/lift_automatic_air_ring",
+      alt: "lift automatic air ring"
     },
     {
       mobile: '/swiper/banner3_m.webp',
       pc: '/swiper/banner2.webp',
       slogan: "s4",
-      link: "/product/rotary_thickness_gauge"
+      link: "/product/rotary_thickness_gauge",
+      alt: "Rotary thickness gauge"
     },
     {
       mobile: '/swiper/banner4_m.webp',
       pc: '/swiper/banner3.webp',
       slogan: "s3",
-      link: "/product/Cross-Direction_Scanning_Thickness_Gauge"
+      link: "/product/Cross-Direction_Scanning_Thickness_Gauge",
+      alt: "thickness gauge"
     },
     {
       mobile: '/swiper/banner5_m.webp',
       pc: '/swiper/banner5.webp',
       slogan: "s2",
-      link: "/product/solutions"
+      link: "/product/solutions",
+      alt: "auto air ring solutions"
     },
   ]
   return (
@@ -74,15 +80,20 @@ export default function Carousel() {
               <source
                 media="(min-width: 1024px)"
                 srcSet={item.pc}
+
               />
               <source
                 media="(max-width: 1023px)"
                 srcSet={item.mobile}
               />
-              <img
-                src="/swiper/banner1_m.webp"
-                alt="solutions"
-                className="w-full object-cover filter brightness-60"
+              <Image
+                src={item.mobile}
+                alt={item.alt}
+                width={1920}
+                height={840}
+                className="object-cover w-full h-full brightness-60"
+                priority={index === 0} // ✅ 只有第一张图设置 priority
+                quality={75}
               />
             </picture>
 

@@ -17,13 +17,14 @@ export default function Cases() {
     const t = useTranslations()
 
     const cases = [
-        { id: 1, type: 'image', title: 'dosing', src: '/case/case1.jpg' },
-        { id: 2, type: 'image', title: 'airRing&dosing', src: '/case/solution1.png' },
+        { id: 1, type: 'video', title: 'airRing', src: '/case/automatic_air_ring_video2.mp4', poster: '/case/automatic_air_ring_2.jpg' },
+        { id: 2, type: 'image', title: 'dosing', src: '/case/dosing1.webp' },
         { id: 3, type: 'video', title: 'thick_gauge', src: '/case/horizon_thick_gauge.mp4', poster: '/case/horizon_thick_gauge.webp' },
-        { id: 4, type: 'video', title: 'airRing', src: '/case/air_ring1.mp4', poster: '/case/air_ring1.jpg' },
+        { id: 4, type: 'video', title: 'airRing', src: '/case/automatic_air_ring_video1.mp4', poster: '/case/automatic_air_ring_1.jpg' },
         { id: 5, type: 'image', title: 'rotary_gauge', src: '/case/rotate_gauge1.jpg' },
         { id: 6, type: 'image', title: 'airRing', src: '/case/air_ring2.webp' },
         { id: 7, type: 'video', title: 'rotary_gauge', src: '/case/rotate_gauge2.mp4', poster: '/case/rotate_gauge2.jpg' },
+        { id: 8, type: 'image', title: 'airRing', src: '/case/air_ring3.webp' },
     ]
     return (
         <div className='w-full mt-10 md:mt-20 py-[40px] md:py-[65px] px-6 xl:px-0 '>

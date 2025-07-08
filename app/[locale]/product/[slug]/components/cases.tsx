@@ -17,13 +17,14 @@ export default function Cases() {
     const t = useTranslations()
 
     const cases = [
-        { id: 1, type: 'image', title: '六组分计量称重应用', src: '/case/case1.jpg' },
-        { id: 2, type: 'image', title: '在线称重&自动风环解决方案', src: '/case/solution1.png' },
-        { id: 3, type: 'video', title: '自动风环横扫测厚仪', src: '/case/horizon_thick_gauge.mp4', poster: '/case/horizon_thick_gauge.webp' },
-        { id: 4, type: 'video', title: '自动风环应用', src: '/case/air_ring1.mp4', poster: '/case/air_ring1.jpg' },
-        { id: 5, type: 'image', title: '环扫测厚仪应用', src: '/case/rotate_gauge1.jpg' },
-        { id: 6, type: 'image', title: '自动风环应用', src: '/case/air_ring2.webp' },
-        { id: 7, type: 'video', title: '环扫测厚仪应用', src: '/case/rotate_gauge2.mp4', poster: '/case/rotate_gauge2.jpg' },
+        { id: 1, type: 'video', title: 'airRing', src: '/case/automatic_air_ring_video2.mp4', poster: '/case/automatic_air_ring_2.jpg' },
+        { id: 2, type: 'image', title: 'dosing', src: '/case/dosing1.webp' },
+        { id: 3, type: 'video', title: 'thick_gauge', src: '/case/horizon_thick_gauge.mp4', poster: '/case/horizon_thick_gauge.webp' },
+        { id: 4, type: 'video', title: 'airRing', src: '/case/automatic_air_ring_video1.mp4', poster: '/case/automatic_air_ring_1.jpg' },
+        { id: 5, type: 'image', title: 'rotary_gauge', src: '/case/rotate_gauge1.jpg' },
+        { id: 6, type: 'image', title: 'airRing', src: '/case/air_ring2.webp' },
+        { id: 7, type: 'video', title: 'rotary_gauge', src: '/case/rotate_gauge2.mp4', poster: '/case/rotate_gauge2.jpg' },
+        { id: 8, type: 'image', title: 'airRing', src: '/case/air_ring3.webp' },
     ]
     return (
         <div className='w-full py-[40px] md:py-[65px] px-6 xl:px-0 '>
@@ -90,7 +91,7 @@ export default function Cases() {
                                         )}
                                     </div>
                                     <div className='flex justify-center items-end case-info text-white absolute bottom-0 left-0  w-full h-[40%]  transition-all duration-300 ease-in'>
-                                        <p className='mb-5 text-2xl transition-all duration-300 ease-in'>{item.title}</p>
+                                        <p className='mb-5 text-2xl transition-all duration-300 ease-in'>{t(`use.${item.title}`)}</p>
                                     </div>
                                 </div>
                             </SwiperSlide>

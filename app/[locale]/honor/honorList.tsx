@@ -3,7 +3,6 @@
 import { useState } from 'react'
 import CaseModal from './dialog'
 import Image from 'next/image';
-import { CirclePlay } from "lucide-react"
 import { useTranslations } from 'next-intl'
 export default function CaseList({ cases }: { cases: string[] }) {
     const [selected, setSelected] = useState<null | string>(null)
@@ -15,8 +14,8 @@ export default function CaseList({ cases }: { cases: string[] }) {
                     <Image
                         src="/honor/company.png"
                         alt="automatic air ring company"
-                        width={600}
-                        height={600}
+                        width={500}
+                        height={500}
                         className="w-full h-full object-contain " />
                 </div>
             </div>
@@ -29,8 +28,8 @@ export default function CaseList({ cases }: { cases: string[] }) {
                                 <Image
                                     src={item}
                                     alt="automatic air ring company"
-                                    width={600}
-                                    height={600}
+                                    width={200}
+                                    height={200}
                                     className="w-full h-auto object-contain " />
                             </div>
                         </div>

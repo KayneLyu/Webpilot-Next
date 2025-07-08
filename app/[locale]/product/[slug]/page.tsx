@@ -11,8 +11,8 @@ export default async function ProductDetail({ params }: { params: Promise<{ loca
             <div className='max-w-main mx-auto hidden sm:block'>
                 <BackButton />
             </div>
+            
             <div className="max-w-[1300px] mx-auto">
-
                 <h1 className='h1-span w-full text-[18px]  text-center text-2 mb-10'>{t(`product.${slug}`)}</h1>
                 <div className='flex flex-wrap px-5'>
                     <div className='basis-full sm:basis-1/2 pr-5'>

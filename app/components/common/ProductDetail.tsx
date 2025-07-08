@@ -5,7 +5,7 @@ export default function SpecialList({ product} : { product: string }) {
   const features = t.raw(`detail.${product}`) as string[];
 
   return (
-    <ul className='flex flex-col gap-4 text-[16px] md:text-[20px]'>
+    <ul className='flex flex-col gap-4 text-[16px] md:text-[18px]'>
       {features.map((feature, index) => (
         <li key={index}>{feature}</li>
       ))}
