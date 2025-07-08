@@ -8,22 +8,22 @@ import { useTranslations } from 'next-intl'
 export const generateMetadata = async (): Promise<Metadata> => {
     const t = await getTranslations();
     return {
-      title: t('seo.products.title'), // 来自你的 zh.json / en.json
-      keywords: ['air ring', 'auto air ring', 'automatic air ring', '风环', '自动风环', '测厚仪', '吹膜机', '吹膜自动化', 'jinjiu', '金久'],
-      description: t('seo.products.description'),
-      alternates: {
-        canonical: 'https://jinjiutech.com/en/product',
-        languages: {
-          zh: 'https://jinjiutech.com/zh/product',
-          en: 'https://jinjiutech.com/en/product',
-          ko: 'https://jinjiutech.com/ko/product',
-          ru: 'https://jinjiutech.com/ru/product',
-          vi: 'https://jinjiutech.com/vi/product',
-          tr: 'https://jinjiutech.com/tr/product'
+        title: t('seo.products.title'), // 来自你的 zh.json / en.json
+        keywords: ['air ring', 'auto air ring', 'automatic air ring', '风环', '自动风环', '测厚仪', '吹膜机', '吹膜自动化', 'jinjiu', '金久'],
+        description: t('seo.products.description'),
+        alternates: {
+            canonical: 'https://jinjiutech.com/en/product',
+            languages: {
+                zh: 'https://jinjiutech.com/zh/product',
+                en: 'https://jinjiutech.com/en/product',
+                ko: 'https://jinjiutech.com/ko/product',
+                ru: 'https://jinjiutech.com/ru/product',
+                vi: 'https://jinjiutech.com/vi/product',
+                tr: 'https://jinjiutech.com/tr/product'
+            }
         }
-      }
     };
-  };
+};
 
 export default function ProductPage() {
     const t = useTranslations("product");
@@ -102,15 +102,17 @@ export default function ProductPage() {
                 <div className='w-full md:h-180'>
                 </div>
 
-                <div className='bg-9  py-6 md:py-15 '>
-                    <div className='max-w-main mx-auto'>
-                        <div>
-                            <h1 className='section-title'>{t("product")}</h1>
-                        </div>
-                        <div>
-                            <p className='text-2 text-[14px] md:w-[50%] md:text-[18px]'>
-                                {t('description')}
-                            </p>
+                <div className='bg-9  py-6 md:py-15'>
+                    <div className='max-w-main mx-auto '>
+                        <div className='px-5 xl:px-0'>
+                            <div>
+                                <h1 className='section-title'>{t("product")}</h1>
+                            </div>
+                            <div>
+                                <p className='text-2 text-[14px] md:w-[50%] md:text-[18px]'>
+                                    {t('description')}
+                                </p>
+                            </div>
                         </div>
                         <div>
                             <ProductComponent products={products} tittle='section' />

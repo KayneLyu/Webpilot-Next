@@ -1,5 +1,7 @@
 import { ChevronRight } from "lucide-react"
 import { useTranslations } from 'next-intl'
+import Links from "@/components/common/Links";
+
 export default function JumpTo({
     link = '#',
     text = '',
@@ -8,7 +10,7 @@ export default function JumpTo({
     const t = useTranslations("button")
 
     return (
-        <a href={link}>
+        <Links href={link}>
             <span className="group">
                 <span className={`${color} text-[16px] md:text-[20px] font-[family-name:var(--font-Roboto-Condensed)] inline-block transition-all duration-300 ease-in-out group-hover:translate-x-4 mr-6`}>{t(`${text}`)}</span>
                 <span>
@@ -20,6 +22,6 @@ export default function JumpTo({
                     </button>
                 </span>
             </span>
-        </a>
+        </Links>
     )
 }
