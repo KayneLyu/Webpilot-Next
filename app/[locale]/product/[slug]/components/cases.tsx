@@ -91,7 +91,7 @@ export default function Cases() {
                                         )}
                                     </div>
                                     <div className='flex justify-center items-end case-info text-white absolute bottom-0 left-0  w-full h-[40%]  transition-all duration-300 ease-in'>
-                                        <p className='mb-5 text-2xl transition-all duration-300 ease-in'>{t(`use.${item.title}`)}</p>
+                                        <p className='mb-5 px-5 text-2xl transition-all duration-300 ease-in'>{t(`use.${item.title}`)}</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
