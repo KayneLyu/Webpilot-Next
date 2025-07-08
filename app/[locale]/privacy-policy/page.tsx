@@ -1,6 +1,29 @@
 import { useTranslations } from 'next-intl';
 import BackButton from '@/components/common/BackButton';
 
+import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
+
+export const generateMetadata = async (): Promise<Metadata> => {
+    const t = await getTranslations();
+    return {
+      title: t('seo.home.title'), // 来自你的 zh.json / en.json
+      keywords: ['air ring', 'auto air ring', 'automatic air ring', '风环', '自动风环', '测厚仪', '吹膜机', '吹膜自动化', 'jinjiu', '金久'],
+      description: t('seo.home.description'),
+      alternates: {
+        canonical: 'https://jinjiutech.com/en/privacy-policy',
+        languages: {
+          zh: 'https://jinjiutech.com/zh/privacy-policy',
+          en: 'https://jinjiutech.com/en/privacy-policy',
+          ko: 'https://jinjiutech.com/ko/privacy-policy',
+          ru: 'https://jinjiutech.com/ru/privacy-policy',
+          vi: 'https://jinjiutech.com/vi/privacy-policy',
+          tr: 'https://jinjiutech.com/tr/privacy-policy'
+        }
+      }
+    };
+  };
+
 export default function PrivacyPolicyPage() {
     const t = useTranslations('PrivacyPolicy');
 

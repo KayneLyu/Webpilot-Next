@@ -9,15 +9,19 @@ import { getTranslations } from 'next-intl/server';
 
 export const generateMetadata = async (): Promise<Metadata> => {
   const t = await getTranslations();
-
   return {
     title: t('seo.contact.title'), // 来自你的 zh.json / en.json
+    keywords: ['air ring', 'auto air ring', 'automatic air ring', '风环', '自动风环', '测厚仪', '吹膜机', '吹膜自动化', 'jinjiu', '金久'],
     description: t('seo.contact.description'),
     alternates: {
-      canonical: 'https://jinjiutech.com/zh/contact',
+      canonical: 'https://jinjiutech.com/en/contact',
       languages: {
         zh: 'https://jinjiutech.com/zh/contact',
-        en: 'https://jinjiutech.com/en/contact'
+        en: 'https://jinjiutech.com/en/contact',
+        ko: 'https://jinjiutech.com/ko/contact',
+        ru: 'https://jinjiutech.com/ru/contact',
+        vi: 'https://jinjiutech.com/vi/contact',
+        tr: 'https://jinjiutech.com/tr/contact'
       }
     }
   };
