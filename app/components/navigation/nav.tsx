@@ -1,6 +1,5 @@
 "use client"
 import { motion } from "motion/react"
-import Link from "next/link"
 import { useState } from "react"
 import { AlignJustify } from "lucide-react"
 import {
@@ -23,6 +22,8 @@ import { useLocale } from 'next-intl'
 import { cn } from "@/lib/utils" // shadcn 提供的合并类名工具
 import LanguageComponent from '@/components/common/Language';
 import EmailAddress from '@/components/common/EAddress';
+import Links from "@/components/common/Links";
+
 export default function Navigation() {
     const t = useTranslations('nav')
     const pathname = usePathname()
@@ -72,7 +73,7 @@ export default function Navigation() {
                                                         ? "bg-accent text-primary font-semibold"
                                                         : "text-muted-foreground"
                                                 )}  >
-                                                    <Link href={`/${locale}/${item.href}`} className=" uppercase font-semibold font-[family-name:var(--font-Roboto-Condensed)] text-[18px] py-2 px-2"> {t(`${item.name}`)}</Link>
+                                                    <Links href={`/${locale}${item.href}`} className=" uppercase font-semibold font-[family-name:var(--font-Roboto-Condensed)] text-[18px] py-2 px-2"> {t(`${item.name}`)}</Links>
                                                 </NavigationMenuLink>
                                             </NavigationMenuItem>
                                         )
@@ -120,13 +121,13 @@ export default function Navigation() {
                                         transition={{ duration: 0.5 }}
                                         key={item.href}
                                         className="font-[family-name:var(--font-Roboto-Condensed)]  mb-0 w-full h-14 pl-4 flex items-center border-b border-8" >
-                                        <Link
+                                        <Links
                                             href={`/${locale}/${item.href}`}
                                             className="uppercase block w-full text-[18px] text-3 hover:text-primary"
                                             onClick={() => setOpen(false)}
                                         >
                                             {t(item.name)}
-                                        </Link>
+                                        </Links>
                                     </motion.li>
                                 ))}
                                 {/* <motion.li

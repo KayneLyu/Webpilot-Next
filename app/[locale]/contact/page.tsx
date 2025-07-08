@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Head from 'next/head';
 import { useTranslations } from 'next-intl'
 import MapComponent from './map';
 import Letters from './letters';

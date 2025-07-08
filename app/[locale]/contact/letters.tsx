@@ -18,7 +18,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from '@/components/ui/textarea'
 import { Button } from "@/components/ui/button"
 import { useTranslations } from 'next-intl'
-import Link from 'next/link';
+import Links from "@/components/common/Links";
 import { Loader2Icon } from "lucide-react"
 
 // import ReCAPTCHA from 'react-google-recaptcha'
@@ -158,7 +158,7 @@ export default function Letter() {
                                     <div className="grid gap-1.5 font-normal">
                                         <p className="text-sm leading-none font-medium">
                                             {t("tips.agree")}
-                                            <Link href={"/privacy-policy"} className='underline'>{t("tips.policy")}</Link>
+                                            <Links href="/privacy-policy" className='underline'>{t("tips.policy")}</Links>
                                         </p>
                                     </div>
                                 </Label>
