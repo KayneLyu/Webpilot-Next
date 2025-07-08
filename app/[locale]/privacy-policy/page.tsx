@@ -26,7 +26,6 @@ export const generateMetadata = async (): Promise<Metadata> => {
 
 export default function PrivacyPolicyPage() {
     const t = useTranslations('PrivacyPolicy');
-
     return (
         <div className='max-w-4xl mx-auto pt-1 pb-10 md:pt-5 px-5 '>
             <BackButton />

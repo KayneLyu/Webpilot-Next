@@ -40,42 +40,36 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       src: '/products/automatic_air_ring.png',
       alt: 'automatic air ring',
       name: 'automatic_air_ring',
-      link: '/',
       hover: ''
     },
     {
       src: '/products/lift_automatic_air_ring.png',
       alt: 'lift automatic air ring',
       name: 'lift_automatic_air_ring',
-      link: '/',
       hover: ''
     },
     {
       src: '/products/Cross-Direction_Scanning_Thickness_Gauge.png',
       alt: 'profile measurement',
       name: 'Cross-Direction_Scanning_Thickness_Gauge',
-      link: '/',
       hover: ''
     },
     {
       src: '/products/rotary_thickness_gauge.png',
       alt: 'rotary thickness gauge',
       name: 'rotary_thickness_gauge',
-      link: '/',
       hover: ''
     },
     {
       src: '/products/X-Ray_rotary_thickness_gauge.png',
       alt: 'profile measurement',
       name: 'X-Ray_rotary_thickness_gauge',
-      link: '/',
       hover: ''
     },
     {
       src: '/products/dosing.png',
       alt: 'dosing',
       name: 'dosing',
-      link: '/',
       hover: ''
     },
   ]
