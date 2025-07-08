@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Links from "@/components/common/Links";
 import Image from 'next/image';
 import JumpComponent from '@/components/common/Jump';
 import dayjs from 'dayjs';
@@ -53,7 +53,7 @@ export default async function NewsPage({ params }: { params: Promise<{ locale: s
               <ul className="space-y-10 news-list flex flex-wrap ">
                 {newsList.map((news) => (
                   <li key={news.slug} className='news-item basis-full sm:basis-1/3 px-6'>
-                    <Link href={`/${locale}/news/${news.slug}`}>
+                    <Links href={`/news/${news.slug}`}>
                       <div className='group bg-white rounded-2xl overflow-hidden cursor-pointer'>
                         <div className='h-[340px] overflow-hidden'>
                           <Image
@@ -76,7 +76,7 @@ export default async function NewsPage({ params }: { params: Promise<{ locale: s
                           </div>
                         </div>
                       </div>
-                    </Link>
+                    </Links>
                   </li>
                 ))}
               </ul>

@@ -73,7 +73,7 @@ export default function Navigation() {
                                                         ? "bg-accent text-primary font-semibold"
                                                         : "text-muted-foreground"
                                                 )}  >
-                                                    <Links href={`/${locale}${item.href}`} className=" uppercase font-semibold font-[family-name:var(--font-Roboto-Condensed)] text-[18px] py-2 px-2"> {t(`${item.name}`)}</Links>
+                                                    <Links href={item.href} className=" uppercase font-semibold font-[family-name:var(--font-Roboto-Condensed)] text-[18px] py-2 px-2"> {t(`${item.name}`)}</Links>
                                                 </NavigationMenuLink>
                                             </NavigationMenuItem>
                                         )
@@ -122,7 +122,7 @@ export default function Navigation() {
                                         key={item.href}
                                         className="font-[family-name:var(--font-Roboto-Condensed)]  mb-0 w-full h-14 pl-4 flex items-center border-b border-8" >
                                         <Links
-                                            href={`/${locale}/${item.href}`}
+                                            href={item.href}
                                             className="uppercase block w-full text-[18px] text-3 hover:text-primary"
                                             onClick={() => setOpen(false)}
                                         >

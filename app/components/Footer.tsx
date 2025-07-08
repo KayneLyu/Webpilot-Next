@@ -1,5 +1,5 @@
 // components/Footer.tsx
-import Link from "next/link"
+import Links from "@/components/common/Links";
 import { useTranslations } from 'next-intl'
 import EmailComponent from "@/components/common/EAddress";
 import LetterComponent from "@/components/common/Letter";
@@ -34,22 +34,22 @@ export function Footer() {
             <h1 className="font-bold text-lg">{t("menu")}</h1>
             <ul className="grid gap-3 text-white/85">
               <li className="mt-6">
-                <Link href="/">{t("home")}</Link>
+                <Links href="/">{t("home")}</Links>
               </li>
               <li>
-                <Link href="/about">{t("about")}</Link>
+                <Links href="/about">{t("about")}</Links>
               </li>
               <li>
-                <Link href="/product">{t("product")}</Link>
+                <Links href="/product">{t("product")}</Links>
               </li>
               <li>
-                <Link href="/case">{t("case")}</Link>
+                <Links href="/case">{t("case")}</Links>
               </li>
               <li>
-                <Link href="/news">{t("news")}</Link>
+                <Links href="/news">{t("news")}</Links>
               </li>
               <li>
-                <Link href="/contact">{t("contact")}</Link>
+                <Links href="/contact">{t("contact")}</Links>
               </li>
             </ul>
           </div>
@@ -58,16 +58,16 @@ export function Footer() {
             <h1 className="font-bold text-lg">{t("follow")}</h1>
             <ul className="grid gap-2 text-white/85">
               <li className="mt-6">
-                <Link href="#">Facebook</Link>
+                <Links href="#">Facebook</Links>
               </li>
               <li>
-                <Link href="https://www.youtube.com/@Jinjiu999" target="_blank" rel="noopener noreferrer">Youtube</Link>
+                <Links href="https://www.youtube.com/@Jinjiu999" target="_blank" rel="noopener noreferrer">Youtube</Links>
               </li>
               <li>
-                <Link href="https://x.com/AmeliaGu60137" target="_blank" rel="noopener noreferrer">X</Link>
+                <Links href="https://x.com/AmeliaGu60137" target="_blank" rel="noopener noreferrer">X</Links>
               </li>
               <li>
-                <Link href="#">Instagram</Link>
+                <Links href="#">Instagram</Links>
               </li>
 
             </ul>

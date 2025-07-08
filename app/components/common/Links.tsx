@@ -17,7 +17,7 @@ export default function LocalizedLink({ href, children, className, ...props }: {
     }
     // 如果是内部链接，加上语言前缀
     return (
-        <Link href={href} locale={locale} className={className} {...props}>
+        <Link href={`/${locale + href}`} className={className} {...props}>
             {children}
         </Link>
     );

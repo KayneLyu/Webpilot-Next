@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useTranslations, useLocale } from 'next-intl'
 import JumpComponent from '@/components/common/JumpTo';
 import { ChevronRight } from "lucide-react"
-import Link from 'next/link';
+import Links from "@/components/common/Links";
 
 type IProductList = {
     src: string
@@ -56,7 +56,7 @@ export default function ProductList({ products, tittle, showMore }: { products: 
                 <div className='w-full mt-[40px] md:mt-[60px] '>
                     <ul className='gap-5 md:gap-10 md:w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 '>
                         {products.map((product, index) => (
-                            <Link href={`/${locale}/product/${product.name}`} key={index}>
+                            <Links href={`/product/${product.name}`} key={index}>
                                 <AnimatedListItem>
                                     <div className={`${(index === 1 || index === 4) && showMore ? 'hidden' : ''} sm:block bg-white filter-bottom-half rounded3 pb-10 cursor-pointer group`}>
                                         <Image
@@ -75,7 +75,7 @@ export default function ProductList({ products, tittle, showMore }: { products: 
                                         {/* <p className="font-semibold md:text-2xl font-[family-name:var(--font-Public-Sans)] text-[red] text-center my-5">{t(product.name)}</p> */}
                                     </div>
                                 </AnimatedListItem>
-                            </Link>
+                            </Links>
                         ))}
                     </ul>
                 </div>

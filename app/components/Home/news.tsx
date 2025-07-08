@@ -4,7 +4,7 @@ import { useTranslations, useLocale } from 'next-intl'
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import JumpComponent from '@/components/common/JumpTo';
 import Image from 'next/image';
-import Link from 'next/link';
+import Links from "@/components/common/Links";
 import dayjs from 'dayjs';
 
 import 'swiper/css';                  // 必须引入基础样式
@@ -67,7 +67,7 @@ export default function News({ items }: { items: IMeteData[] }) {
                         {
                             items.map((item, index) => (
                                 <SwiperSlide key={index}>
-                                    <Link href={`/${locale}/news/${item.slug}`}>
+                                    <Links href={`/news/${item.slug}`}>
                                         <div className='group bg-white rounded-2xl overflow-hidden cursor-pointer'>
                                             <div className='h-[340px] overflow-hidden'>
                                                 <Image
@@ -90,7 +90,7 @@ export default function News({ items }: { items: IMeteData[] }) {
                                                 </div>
                                             </div>
                                         </div>
-                                    </Link>
+                                    </Links>
                                 </SwiperSlide>
                             ))
                         }
