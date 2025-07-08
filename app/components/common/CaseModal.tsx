@@ -19,7 +19,7 @@ export default function CaseModal({ item, onClose }: { item: any, onClose: any }
                             height={1800}
                             src={item.src}
                             alt={item.title}
-                            className="w-full h-auto object-contain"
+                            className="w-full h-full object-contain"
                         />
                     )}
                 </div>
