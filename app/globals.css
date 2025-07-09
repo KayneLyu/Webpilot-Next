@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --bg-test: #0382E0;
+  --bg-test: #0382e0;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.129 0.042 264.695);
@@ -19,12 +19,12 @@
   --secondary: oklch(0.968 0.007 247.896);
   --secondary-foreground: oklch(0.208 0.042 265.755);
   --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: #1C1E87;
+  --muted-foreground: #1c1e87;
   --muted-foreground-1: oklch(0.554 0.046 257.417);
-  --accent: #BCE5FF;
+  --accent: #bce5ff;
   --accent-foreground: oklch(0.208 0.042 265.755);
 
-  --accent: #1C1E8CBB;
+  --accent: #1c1e8cbb;
   --accent-foreground: #fff;
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.929 0.013 255.508);
@@ -43,7 +43,7 @@
   --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
   --sidebar-border: oklch(0.929 0.013 255.508);
   --sidebar-ring: oklch(0.704 0.04 256.788);
-  --border-color: #4C4D4F;
+  --border-color: #4c4d4f;
   --bg-color: #ffffff;
   /* --bg-color: #141414; */
 }
@@ -89,7 +89,7 @@
 }
 
 @theme {
-  --color-blue:  #inline;
+  --color-blue: #inline;
 }
 
 .dark {
@@ -142,22 +142,22 @@
 }
 
 .h1-tittle {
-  @apply flex h-9 md:h-13  text-start text-size18
+  @apply flex h-9 md:h-13  text-start text-size18;
 }
 .h1-span {
-  @apply font-[family-name:var(--font-Recursive)] leading-9 md:leading-13 pl-4 pr-10 rounded-b-lg md:pl-8 md:pr-24 font-semibold md:text-[24px]
+  @apply font-[family-name:var(--font-Recursive)] leading-9 md:leading-13 pl-4 pr-10 rounded-b-lg md:pl-8 md:pr-24 font-semibold md:text-[24px];
 }
 
 .section-title {
-  @apply uppercase mb-[20px] font-semibold  text-[28px] md:text-[48px] text-3
+  @apply uppercase mb-[20px] font-semibold  text-[28px] md:text-[48px] text-3;
 }
 
 .about-title {
-  @apply uppercase mb-[20px] font-semibold  text-[28px] md:text-[40px] text-3 leading-[36px] md:leading-[50px]
+  @apply uppercase mb-[20px] font-semibold  text-[28px] md:text-[40px] text-3 leading-[36px] md:leading-[50px];
 }
 
 .rounded3 {
-  @apply rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] 
+  @apply rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px];
 }
 
 .custom-bg {
@@ -168,29 +168,30 @@
   border-bottom: 1px solid var(--border-color);
 }
 
-
 .filter-bottom-half {
   position: relative;
   overflow: hidden;
 }
 
 .filter-bottom-half::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 60%; /* 只影响下半部分 */
-  background: linear-gradient(to top, #1C1E8CBB ,  transparent) no-repeat padding-box;
+  background: linear-gradient(to top, #1c1e8cbb, transparent) no-repeat
+    padding-box;
   /* background: linear-gradient(180deg,rgba(170, 25, 25, 0) 0,#1C1E8C 100%) no-repeat padding-box; */
 }
 
 .case-info {
-  background: linear-gradient(to top, #1C1E8C ,  transparent) no-repeat padding-box;
+  background: linear-gradient(to top, #1c1e8c, transparent) no-repeat
+    padding-box;
 }
 
 .swiper-slogan {
-  border-radius: 100% 100% 100% 0;;
+  border-radius: 100% 100% 100% 0;
 }
 
 .indent-two-chars {
@@ -204,6 +205,10 @@
 }
 
 @keyframes marquee {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-100%); }
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

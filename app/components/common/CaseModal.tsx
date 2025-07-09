@@ -10,7 +10,7 @@ export default function CaseModal({ item, onClose }: { item: any, onClose: any }
 
                 <div className="w-full h-full overflow-hidden">
                     {item.type === 'video' ? (
-                        <video controls autoPlay className="w-full h-auto">
+                        <video controls autoPlay className="w-full h-full">
                             <source src={item.src} type="video/mp4" />
                         </video>
                     ) : (

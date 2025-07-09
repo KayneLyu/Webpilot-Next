@@ -18,7 +18,7 @@ export default function Honors() {
         },
         {
             icons: "/line.svg",
-            title: "200+",
+            title: "1000+",
             text: "honor3"
         },
         {

@@ -87,19 +87,28 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
+      <head>
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <meta name="theme-color" content="#ffffff" />
+      </head>
       <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
       <body
         className={`${RobotoCondensed.variable} ${RobotoFont.variable} ${PublicSans.variable} ${RecursiveFont.variable} ${geistMono.variable} antialiased`}
       >
-        <NextIntlClientProvider>
-          <Header />
-          <BackTop />
-          <main className="flex-1 mt-15 md:mt-30">
-            {children}
-            <BrowserCheck />
-          </main>
-          <Footer />
-        </NextIntlClientProvider>
+        <div className='relative flex flex-col'>
+          <NextIntlClientProvider>
+            <Header />
+            <BackTop />
+            <main className="flex-1">
+              {children}
+              <BrowserCheck />
+            </main>
+            <Footer />
+          </NextIntlClientProvider>
+        </div>
       </body>
     </html>
   );
