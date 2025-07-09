@@ -6,6 +6,7 @@ import JumpComponent from '@/components/common/JumpTo';
 import Image from 'next/image';
 import Links from "@/components/common/Links";
 import dayjs from 'dayjs';
+import { ArrowRight, ArrowLeft } from 'lucide-react';
 
 import 'swiper/css';                  // 必须引入基础样式
 import 'swiper/css/pagination';     // 分页器样式
@@ -99,6 +100,13 @@ export default function News({ items }: { items: IMeteData[] }) {
                             {/* 这个 div 会作为 Swiper 的分页器 */}
                         </div>
                     </Swiper>
+                    <div className="border-[3px]  border-3 p-1 custom-next absolute top-[-60px] right-0 text-center transform  z-10  rounded-full  text-3 cursor-pointer hover:bg-6/40 transition md:block hidden">
+                        <ArrowRight size={26} />
+                    </div>
+
+                    <div className="border-[3px] border-3 p-1 custom-prev absolute top-[-60px] right-12 text-center transform  z-10  rounded-full  text-3 cursor-pointer hover:bg-6/40 transition md:block hidden">
+                        <ArrowLeft  size={26}/>
+                    </div>
                 </div>
             </div>
         </div>
