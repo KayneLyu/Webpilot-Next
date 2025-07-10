@@ -1,11 +1,12 @@
 // app/not-found.tsx
 'use client'
 import { useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 export default function NotFound() {
+  const router = useRouter()
   useEffect(() => {
-    window.location.href = 'https://jinjiutech.com';
+    router.push('/')
   }, [])
-
   return (
     <div className="flex flex-col items-center justify-center h-screen text-center">
       <h1 className="text-2xl font-bold mb-4">Page not found</h1>

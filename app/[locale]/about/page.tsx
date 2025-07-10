@@ -25,7 +25,6 @@ export const generateMetadata = async (): Promise<Metadata> => {
 
 export default function AboutPage() {
   const t = useTranslations("about")
-
   return (
     <>
       <div className='w-full '>
