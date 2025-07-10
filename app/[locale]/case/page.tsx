@@ -4,14 +4,15 @@ import CaseList from './caseList';
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
-export const generateMetadata = async (): Promise<Metadata> => {
+export const generateMetadata = async ({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> => {
   const t = await getTranslations();
+  const { locale } = await params;
   return {
     title: t('seo.cases.title'), // 来自你的 zh.json / en.json
     keywords: ['air ring', 'auto air ring', 'automatic air ring', '风环', '自动风环', '测厚仪', '吹膜机', '吹膜自动化', 'jinjiu', '金久'],
     description: t('seo.cases.description'),
     alternates: {
-      canonical: 'https://jinjiutech.com/en/case',
+      canonical: `https://jinjiutech.com/${locale}/case`,
       languages: {
         zh: 'https://jinjiutech.com/zh/case',
         en: 'https://jinjiutech.com/en/case',

@@ -1,7 +1,6 @@
 
-import type { Metadata } from "next";
 import { Roboto_Condensed, Geist_Mono, Public_Sans, Lexend_Exa, Roboto } from "next/font/google";
-import { getTranslations } from 'next-intl/server'
+import { useLocale } from 'next-intl'
 import "./globals.css";
 
 const PublicSans = Public_Sans({
@@ -29,51 +28,12 @@ const RobotoCondensed = Roboto_Condensed({
     subsets: ["latin"],
 });
 
-
-// meta data
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-    const { locale } = await params;
-    const t = await getTranslations({ locale });
-    return {
-        title: {
-            default: t('seo.defaultTitle'),
-            template: `%s | ${t('seo.brand')}`
-        },
-        keywords: ['air ring', 'auto air ring', 'automatic air ring', '风环', '自动风环', '测厚仪', '吹膜机', '吹膜自动化', 'jinjiu', '金久'],
-        description: t('seo.defaultDescription'),
-        icons: '/favicon.ico',
-        metadataBase: new URL('https://jinjiutech.com'),
-        alternates: {
-            canonical: `https://jinjiutech.com/${locale}`,
-            languages: {
-                zh: 'https://jinjiutech.com/zh',
-                en: 'https://jinjiutech.com/en',
-                ko: 'https://jinjiutech.com/ko',
-                ru: 'https://jinjiutech.com/ru',
-                vi: 'https://jinjiutech.com/vi',
-                tr: 'https://jinjiutech.com/tr'
-            }
-        },
-
-        openGraph: {
-            url: 'https://www.jinjiutech.com',
-            title: t('seo.defaultTitle'),
-            description: t('seo.defaultDescription'),
-            siteName: t('seo.brand'),
-            locale: locale,
-            type: 'website'
-        }
-    };
-}
-
-export default async function RootLayout({
+export default function RootLayout({
     children,
-    params,
 }: Readonly<{
     children: React.ReactNode,
-    params: Promise<{ locale: string }>;
 }>) {
-    const { locale } = await params;
+    const locale = useLocale();
     return (
         <html lang={locale}>
             <head>
