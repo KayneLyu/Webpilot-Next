@@ -56,8 +56,8 @@ export default function Carousel() {
     <div className="relative">
       <Swiper
         navigation={{
-          nextEl: '.custom-next',
-          prevEl: '.custom-prev',
+          nextEl: '.custom-banner-next',
+          prevEl: '.custom-banner-prev',
         }}
         //   spaceBetween={0}
         centeredSlides
@@ -108,11 +108,11 @@ export default function Carousel() {
 
       </Swiper>
       {/* 自定义左右按钮 */}
-      <div className="custom-next absolute top-1/2 right-10 text-center transform -translate-y-1/2 z-10   p-4 text-4xl text-6 cursor-pointer hover:bg-6/40 transition md:block hidden">
+      <div className="custom-banner-next absolute top-1/2 right-10 text-center transform -translate-y-1/2 z-10   p-4 text-4xl text-6 cursor-pointer hover:bg-6/40 transition md:block hidden">
         ❯
       </div>
 
-      <div className="custom-prev absolute top-1/2 left-10 text-center transform -translate-y-1/2 z-10   p-4 text-4xl text-6 cursor-pointer hover:bg-6/40 transition md:block hidden">
+      <div className="custom-banner-prev absolute top-1/2 left-10 text-center transform -translate-y-1/2 z-10   p-4 text-4xl text-6 cursor-pointer hover:bg-6/40 transition md:block hidden">
         ❮
       </div>
     </div>
