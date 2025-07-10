@@ -7,6 +7,7 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl'
 import CaseModal from '@/components/common/CaseModal'
 import { CirclePlay } from "lucide-react"
+import { ChevronRight, ChevronLeft } from 'lucide-react';
 
 import 'swiper/css';                  // 必须引入基础样式
 import 'swiper/css/pagination';     // 分页器样式
@@ -33,11 +34,11 @@ export default function Cases() {
                 <p className='text-2 text-[14px] md:w-[50%] md:text-[18px]'>
                     {t('home.case')}
                 </p>
-                <div className='mt-5 md:mt-15'>
+                <div className='mt-5 md:mt-15 relative'>
                     <Swiper
                         navigation={{
-                            nextEl: '.custom-next',
-                            prevEl: '.custom-prev',
+                            nextEl: '.custom-case-next',
+                            prevEl: '.custom-case-prev',
                         }}
                         spaceBetween={50}
                         centeredSlides
@@ -99,6 +100,14 @@ export default function Cases() {
                             </SwiperSlide>
                         ))}
                     </Swiper>
+
+                    <div className="border-[2px] bg-5/90  border-3 p-1 custom-case-next absolute top-[-80px] right-0 text-center z-10  rounded-full  text-white cursor-pointer hover:bg-6/40 transition md:block hidden">
+                        <ChevronRight size={26} />
+                    </div>
+
+                    <div className="border-[2px] bg-5/90  border-3 p-1 custom-case-prev absolute top-[-80px] right-15 text-center z-10  rounded-full  text-white cursor-pointer hover:bg-6/40 transition md:block hidden">
+                        <ChevronLeft  size={26}/>
+                    </div>
                 </div>
 
                 <div className='mt-5 md:mt-10'>
