@@ -31,7 +31,7 @@ const RobotoCondensed = Roboto_Condensed({
 
 
 // meta data
-export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
     const { locale } = await params;
     const t = await getTranslations({ locale });
     return {
