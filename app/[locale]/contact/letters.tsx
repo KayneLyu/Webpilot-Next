@@ -30,8 +30,9 @@ export default function Letter() {
 
     const FormSchema = z.object({
         name: z.string().min(1),
-        lastName: z.string().min(1),
+        lastName: z.string().min(0),
         email: z.string().email(),
+        phone: z.string().min(1),
         message: z.string().min(2),
         checked: z.boolean().refine(value => value, {
             message: t("tips.privacy"),
@@ -45,6 +46,7 @@ export default function Letter() {
             email: '',
             message: '',
             lastName: '',
+            phone: '',
             checked: false
         },
     })
@@ -70,15 +72,6 @@ export default function Letter() {
         } catch (error) {
             setLoading(false);
         }
-
-        // toast("Tips:", {
-        //     description: (
-        //         <div className="text-black text-[16px] mt-2 w-[320px] rounded-md bg-white p-2">
-        //             <p >{t("tips.sendFail")} !</p>
-        //         </div>
-        //     ),
-        // })
-
     }
 
     return (
@@ -93,7 +86,7 @@ export default function Letter() {
                                 <FormItem className='w-[48%]'>
                                     <FormLabel className='text-[14px] md:text-[18px]'>{t("contact.name")} </FormLabel>
                                     <FormControl>
-                                        <Input className='h-[40px] md:h-[50px]' placeholder={t("tips.name")}  {...field} />
+                                        <Input className='h-[40px] md:h-[50px]' placeholder={`*${t("tips.name")}`}  {...field} />
                                     </FormControl>
                                 </FormItem>
                             )}
@@ -119,7 +112,20 @@ export default function Letter() {
                             <FormItem>
                                 <FormLabel className='text-[14px] md:text-[18px]'>{t("contact.email")}</FormLabel>
                                 <FormControl>
-                                    <Input className='h-[40px] md:h-[50px]' placeholder={t("tips.email")} type="email" {...field} />
+                                    <Input className='h-[40px] md:h-[50px]' placeholder={`*${t("tips.email")}`} type="email" {...field} />
+                                </FormControl>
+                            </FormItem>
+                        )}
+                    />
+
+                    <FormField
+                        control={form.control}
+                        name="phone"
+                        render={({ field }) => (
+                            <FormItem>
+                                <FormLabel className='text-[14px] md:text-[18px]'>{t("contact.phone")}</FormLabel>
+                                <FormControl>
+                                    <Input className='h-[40px] md:h-[50px]' placeholder={"*Phone / WhatsApp / WeChat"}  {...field} />
                                 </FormControl>
                             </FormItem>
                         )}
@@ -134,7 +140,7 @@ export default function Letter() {
                                 <FormControl>
                                     <Textarea
                                         className='h-[100px] md:h-[200px]'
-                                        placeholder={t("tips.message")}
+                                        placeholder={`*${t("tips.message")}`}
                                         rows={5}
                                         {...field}
                                     />
@@ -168,7 +174,7 @@ export default function Letter() {
                     />
 
                     <Button type="submit" disabled={loading} className="bg-6 cursor-pointer hover:bg-3 py-6 px-18" size={"lg"}>
-                        { loading && <Loader2Icon className="animate-spin mr-2" />}
+                        {loading && <Loader2Icon className="animate-spin mr-2" />}
                         {t("contact.send")}
                     </Button>
                 </form>

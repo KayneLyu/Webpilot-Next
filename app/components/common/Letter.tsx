@@ -24,15 +24,14 @@ import Links from "@/components/common/Links";
 import { Loader2Icon } from "lucide-react"
 
 export default function Letter() {
-    const t = useTranslations()
-
     // const [captchaToken, setCaptchaToken] = useState<string | null>(null)
-
+    const t = useTranslations()
     const [loading, setLoading] = useState(false);
     const FormSchema = z.object({
         name: z.string().min(1),
         email: z.string().email(),
         message: z.string().min(2),
+        phone: z.string().min(1),
         checked: z.boolean().refine(value => value, {
             message: t("tips.privacy"),
         }),
@@ -44,6 +43,7 @@ export default function Letter() {
             name: '',
             email: '',
             message: '',
+            phone: '',
             checked: false
         },
     })
@@ -83,7 +83,7 @@ export default function Letter() {
                             <FormItem className='w-[50%]'>
                                 <FormLabel>{t("contact.name")}</FormLabel>
                                 <FormControl>
-                                    <Input placeholder={t("tips.name")} {...field} />
+                                    <Input placeholder={`*${t("tips.name")}`} {...field} />
                                 </FormControl>
                             </FormItem>
                         )}
@@ -96,7 +96,20 @@ export default function Letter() {
                             <FormItem>
                                 <FormLabel>{t("contact.email")}</FormLabel>
                                 <FormControl>
-                                    <Input placeholder={t("tips.email")} type="email" {...field} />
+                                    <Input placeholder={`*${t("tips.email")}`} type="email" {...field} />
+                                </FormControl>
+                            </FormItem>
+                        )}
+                    />
+
+                    <FormField
+                        control={form.control}
+                        name="phone"
+                        render={({ field }) => (
+                            <FormItem>
+                                <FormLabel>{t("contact.phone")}</FormLabel>
+                                <FormControl>
+                                    <Input placeholder={"*Phone / WhatsApp / WeChat"}  {...field} />
                                 </FormControl>
                             </FormItem>
                         )}
@@ -110,7 +123,7 @@ export default function Letter() {
                                 <FormLabel>{t("tips.message")}</FormLabel>
                                 <FormControl>
                                     <Textarea
-                                        placeholder={t("tips.message")}
+                                        placeholder={`*${t("tips.message")}`}
                                         rows={5}
                                         {...field}
                                     />

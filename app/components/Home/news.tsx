@@ -100,11 +100,11 @@ export default function News({ items }: { items: IMeteData[] }) {
                             {/* 这个 div 会作为 Swiper 的分页器 */}
                         </div>
                     </Swiper>
-                    <div className="border-[3px]  border-3 p-1 custom-next absolute top-[-60px] right-0 text-center transform  z-10  rounded-full  text-3 cursor-pointer hover:bg-6/40 transition md:block hidden">
+                    <div className="border-[2px]  border-3 p-1 custom-next absolute top-[-50px] right-0 text-center z-10  rounded-full  text-3 cursor-pointer hover:bg-6/40 transition md:block hidden">
                         <ArrowRight size={26} />
                     </div>
 
-                    <div className="border-[3px] border-3 p-1 custom-prev absolute top-[-60px] right-12 text-center transform  z-10  rounded-full  text-3 cursor-pointer hover:bg-6/40 transition md:block hidden">
+                    <div className="border-[2px] border-3 p-1 custom-prev absolute top-[-50px] right-12 text-center z-10  rounded-full  text-3 cursor-pointer hover:bg-6/40 transition md:block hidden">
                         <ArrowLeft  size={26}/>
                     </div>
                 </div>

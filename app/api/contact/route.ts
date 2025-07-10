@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
 export async function POST(req: Request) {
-  const { name, email, message, checked, lastName } = await req.json();
+  const { name, email, message, checked, lastName, phone } = await req.json();
 
   if(!checked) {
     return NextResponse.json({ success: false, error: 'Please read the privacy policy.' }, { status: 400 });
@@ -32,6 +32,7 @@ export async function POST(req: Request) {
       html: `
         <p><strong>姓名：</strong> ${name} ${lastName || ''}</p>
         <p><strong>邮箱：</strong> ${email}</p>
+        <p><strong>电话/WhatsApp/WeChat：</strong> ${phone}</p>
         <p><strong>留言内容：</strong></p>
         <p>${message}</p>
       `,
