@@ -252,5 +252,17 @@
         "thick_gauge": "Yatay Tarama Kalınlık Ölçer Uygulama Örneği",
         "airRing&dosing": "Otomatik Hava Halkası & Dozaj Sistemi Çözümü",
         "single_Loss": "Tekli Kayıp Tartım Besleme Sistemi Uygulama Örneği"
+    },
+    "info": {
+        "more": "Jinjiu havalandırma halkası otomatik hava debisi ayarı, hava odasındaki hava debisini kontrol etmek için bir step motor ile hava klapesinin kombinasyonunu kullanır ve yüksek verimli kalınlık ölçüm sistemiyle birleştirilerek film kalınlığını kontrol eder. Geleneksel ısıtma kontrollü sistemlere kıyasla, motor sürücülü sistem daha hızlı tepki verir, daha güvenlidir, daha verimlidir ve daha az enerji harcar. Hem hava debisi hem hava sıcaklığının kontrolü, film kalınlığı varyasyonunu daha iyi azaltır. Kontrol mantığı şu şekildedir: kalınlık ölçümü film kalınlığının arttığını tespit ederse, hava klapesi ayarlanarak giriş hava hacmi azaltılır, böylece film inceltilir. Geri akış cihazı ile birleştirildiğinde üretimde %20–40 artış sağlar.",
+        "detail": "Daha fazla bilgi",
+        "model": "Model",
+        "type": "Kontrol yöntemi",
+        "unit": "Kontrol noktaları",
+        "size": "Uygulanabilir aralık",
+        "counterFlow": "Karşı akım var mı",
+        "optional": "Opsiyonel",
+        "fl": "Hava hacmi",
+        "fw": "Hava sıcaklığı"
     }
 }

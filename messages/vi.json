@@ -252,5 +252,17 @@
         "thick_gauge": "Trường hợp ứng dụng máy đo độ dày quét ngang",
         "airRing&dosing": "Giải pháp vòng khí tự động & hệ thống cân định lượng",
         "single_Loss": "Trường hợp ứng dụng hệ thống cấp liệu mất trọng lượng đơn"
+    },
+    "info": {
+        "more": "Vòng khí tự động điều chỉnh lưu lượng gió Jinjiu sử dụng động cơ bước kết hợp với lá cánh gió để kiểm soát lượng gió trong ngăn khí, kết hợp với hệ thống đo độ dày hiệu quả cao để điều khiển độ dày màng. So với phương pháp điều khiển bằng nhiệt truyền thống, hệ thống điều khiển bằng động cơ có phản ứng nhanh hơn, an toàn hơn, hiệu quả hơn và tiêu thụ ít năng lượng hơn. Việc kiểm soát cả lưu lượng khí và nhiệt độ không khí giúp giảm sai số độ dày màng tốt hơn. Logic điều khiển cụ thể như sau: khi hệ thống đo độ dày phát hiện màng dày lên, điều chỉnh cánh gió để giảm lưu lượng gió cấp vào, từ đó làm màng mỏng lại. Kết hợp với thiết bị ngược luồng, năng suất có thể tăng từ 20–40%.",
+        "detail": "Thêm thông tin",
+        "model": "Mẫu mã",
+        "type": "Phương thức điều khiển",
+        "unit": "Điểm điều khiển",
+        "size": "Phạm vi áp dụng",
+        "counterFlow": "Có dòng ngược không",
+        "optional": "Tùy chọn",
+        "fl": "Lưu lượng gió",
+        "fw": "Nhiệt độ gió"
     }
 }

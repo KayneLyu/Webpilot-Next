@@ -3,6 +3,7 @@ import { getTranslations } from 'next-intl/server';
 import BackButton from '@/components/common/BackButton';
 import ProductSpecial from '@/components/common/ProductDetail';
 import MoreCases from './components/cases';
+import AutomaticAirRing from "./components/airRing";
 export default async function ProductDetail({ params }: { params: Promise<{ locale: string, slug: string }> }) {
     const t = await getTranslations();
     const { slug } = await params;
@@ -12,7 +13,7 @@ export default async function ProductDetail({ params }: { params: Promise<{ loca
                 <BackButton />
             </div>
             
-            <div className="max-w-[1300px] mx-auto">
+            <div className="max-w-[1200px] mx-auto">
                 <h1 className='h1-span w-full text-[18px]  text-center text-2 mb-10'>{t(`product.${slug}`)}</h1>
                 <div className='flex flex-wrap px-5'>
                     <div className='basis-full sm:basis-1/2 pr-5'>
@@ -26,6 +27,10 @@ export default async function ProductDetail({ params }: { params: Promise<{ loca
                     <div className='basis-full sm:basis-1/2 md:pl-5 mt-0 md:mt-10'>
                         <ProductSpecial product={slug} />
                     </div>
+                </div>
+
+                <div className='mt-12'>
+                    { (slug == "automatic_air_ring" || slug == "lift_automatic_air_ring") && <AutomaticAirRing /> }
                 </div>
             </div>
 

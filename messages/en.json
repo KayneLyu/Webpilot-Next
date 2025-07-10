@@ -252,5 +252,17 @@
         "thick_gauge": "Cross-Direction Thickness Gauge Application Case",
         "airRing&dosing": "Auto Air Ring & Dosing System Solution",
         "single_Loss": "Single Loss-in-Weight Feeder Application Case"
+    },
+    "info": {
+        "detail": "More Info",
+        "more": "The Jinjiu auto‑air‑ring with adjustable airflow utilizes a stepper motor combined with an air‑flap to control the airflow inside the air chamber. Together with a high‑efficiency thickness measuring system, it controls film thickness precisely. Compared with traditional heater‑based control, the motor‑driven system reacts faster, is safer, more efficient, and consumes less energy. By controlling both airflow and air temperature, it effectively reduces film thickness variation. The control logic is as follows: if the thickness measurement detects film thickening, the air flap is adjusted to reduce inlet airflow, thereby thinning the film. Combined with a counter‑flow device, it can increase productivity by 20–40%.",
+        "model": "Model",
+        "type": "Control method",
+        "unit": "Control unit",
+        "size": "Applicable range",
+        "counterFlow": "Counterflow",
+        "optional": "Optional",
+        "fl": "Air Volume",
+        "fw": "Air Temperature"
     }
 }
