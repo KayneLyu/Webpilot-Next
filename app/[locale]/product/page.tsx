@@ -9,7 +9,7 @@ export const generateMetadata = async ({ params }: { params: Promise<{ locale: s
     const t = await getTranslations();
     const { locale } = await params
     return {
-        title: t('seo.products.title'), // 来自你的 zh.json / en.json
+        title: t('seo.products.title'),  
         keywords: ['air ring', 'auto air ring', 'automatic air ring', '风环', '自动风环', '测厚仪', '吹膜机', '吹膜自动化', 'jinjiu', '金久'],
         description: t('seo.products.description'),
         alternates: {

@@ -12,22 +12,25 @@ export const generateMetadata = async ({ params }: { params: Promise<{ locale: s
   const t = await getTranslations();
   const { locale } = await params;
   return {
-    title: t('seo.home.title'), // 来自你的 zh.json / en.json
+    title: t('seo.home.title'), 
     description: t('seo.home.description'),
     alternates: {
       canonical: `https://jinjiutech.com/${locale}/`,
       languages: {
-        zh: 'https://jinjiutech.com/zh/',
-        en: 'https://jinjiutech.com/en/'
+        zh: 'https://jinjiutech.com/zh',
+        en: 'https://jinjiutech.com/en',
+        ko: 'https://jinjiutech.com/ko',
+        ru: 'https://jinjiutech.com/ru',
+        vi: 'https://jinjiutech.com/vi',
+        tr: 'https://jinjiutech.com/tr'
       }
     }
   };
 };
 
-
 // 开启懒加载 + 显示加载中占位
 const HomeCase = dynamic(() => import('@/components/Home/cases'), {
-  // ssr: false, // 如果组件是客户端交互的可以加这个
+  // ssr: false, 
   loading: () => <p>Loading cases...</p>,
 })
 
