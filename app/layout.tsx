@@ -42,6 +42,7 @@ export default function RootLayout({
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
                 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
                 <meta name="theme-color" content="#ffffff" />
+                <script defer src="https://cloud.umami.is/script.js" data-website-id="493f4932-294a-46b6-be6d-e0d345832a41"></script>
             </head>
             <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
             <body
