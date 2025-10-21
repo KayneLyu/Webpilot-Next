@@ -35,7 +35,7 @@ export default function AboutPage() {
             src="/images/about.webp"
             width={1500}
             height={1000}
-            className='w-full object-cover h-100 md:h-200'
+            className='w-full object-cover h-100 md:h-200 bg-scale'
           />
         </section>
 

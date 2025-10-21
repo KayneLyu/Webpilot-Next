@@ -198,11 +198,11 @@
   text-indent: 2ch; /* 缩进两个字符宽度 */
 }
 
-.swiper-pagination-custom .swiper-pagination-bullet {
+/* .swiper-pagination-custom .swiper-pagination-bullet {
 }
 
 .swiper-pagination-custom .swiper-pagination-bullet-active {
-}
+} */
 
 @keyframes marquee {
   0% {
@@ -210,5 +210,18 @@
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+
+.bg-scale {
+  animation: scales 1s ease-in-out forwards;
+}
+
+@keyframes scales { 
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
   }
 }

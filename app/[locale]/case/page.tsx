@@ -47,7 +47,7 @@ export default function CasePage() {
             src="/images/product.webp"
             width={1800}
             height={1800}
-            className='w-full object-cover h-100 md:h-200'
+            className='w-full object-cover h-100 md:h-200 bg-scale'
           />
         </section>
 

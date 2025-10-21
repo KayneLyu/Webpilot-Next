@@ -40,7 +40,7 @@ export default async function NewsPage({ params }: { params: Promise<{ locale: s
             width={1500}
             height={1000}
             priority
-            className='w-full object-cover h-100 md:h-200'
+            className='w-full object-cover h-100 md:h-200 bg-scale'
           />
         </section>
 
@@ -71,7 +71,7 @@ export default async function NewsPage({ params }: { params: Promise<{ locale: s
                             <span className='font-semibold italic'>{dayjs(news.date).format("YYYY-MM-DD")}</span>
                           </p>
                           <p className='sm:min-h-[66px] font-semibold  text-[18px] md:text-[22px] line-clamp-2 overflow-hidden text-ellipsis'>{news.title}</p>
-                          <p className='my-3 line-clamp-3 overflow-hidden text-ellipsis'>{news.excerpt}</p>
+                          <p className='my-3 line-clamp-3 overflow-hidden text-ellipsis sm:min-h-[72px]'>{news.excerpt}</p>
                           <div className='mt-12 mb-8'>
                             <JumpComponent text='more'/>
                           </div>
