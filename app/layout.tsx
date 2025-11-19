@@ -38,6 +38,7 @@ export default function RootLayout({
     return (
         <html lang={locale}>
             <head>
+                <meta name="google-site-verification" content="5Ghtj0OA0vAyCrA_wkSQ4MSQ4az8UP338sF5i96uMOo" />
                 <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
                 <link rel="icon" href="/favicon.ico" sizes="any" />
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
