@@ -1,32 +1,108 @@
 
-import { Roboto_Condensed, Geist_Mono, Public_Sans, Lexend_Exa, Roboto } from "next/font/google";
+// import { Roboto_Condensed, Geist_Mono, Public_Sans, Lexend_Exa, Roboto } from "next/font/google";
 import { useLocale } from 'next-intl'
-import Script from "next/script";
+import localFont from "next/font/local";
+
 import "./globals.css";
 
-const PublicSans = Public_Sans({
+const PublicSans = localFont({
     variable: "--font-Public-Sans",
-    subsets: ["latin"],
+    src: [
+        {
+            path: "./../public/fonts/PublicSans-Regular.ttf",
+            weight: "400",
+            style: "normal",
+        },
+        {
+            path: "./../public/fonts/PublicSans-Medium.ttf",
+            weight: "500",
+            style: "normal",
+        },
+        {
+            path: "./../public/fonts/PublicSans-Bold.ttf",
+            weight: "700",
+            style: "normal",
+        }
+    ]
 });
 
-const RecursiveFont = Lexend_Exa({
-    variable: "--font-Recursive",
-    subsets: ["latin"],
+const RecursiveFont = localFont({
+    variable: "--font-Lexend_Exa",
+    src: [
+        {
+            path: "./../public/fonts/LexendExa-Regular.ttf",
+            weight: "400",
+            style: "normal",
+        },
+        {
+            path: "./../public/fonts/LexendExa-Medium.ttf",
+            weight: "500",
+            style: "normal",
+        },
+        {
+            path: "./../public/fonts/LexendExa-Bold.ttf",
+            weight: "700",
+            style: "normal",
+        }
+    ]
 });
 
-const geistMono = Geist_Mono({
+const geistMono = localFont({
     variable: "--font-geist-mono",
-    subsets: ["latin"],
+    src: [
+        {
+            path: "./../public/fonts/GeistMono-Regular.ttf",
+            weight: "400",
+            style: "normal",
+        },
+        {
+            path: "./../public/fonts/GeistMono-Medium.ttf",
+            weight: "500",
+            style: "normal",
+        },
+        {
+            path: "./../public/fonts/GeistMono-Bold.ttf",
+            weight: "700",
+            style: "normal",
+        }
+    ]
 });
 
-const RobotoFont = Roboto({
+const RobotoFont = localFont({
     variable: "--font-Roboto",
-    subsets: ["latin"],
+    src: [
+        {
+            path: "./../public/fonts/Roboto-Regular.ttf",
+            weight: "400",
+            style: "normal",
+        },
+        {
+            path: "./../public/fonts/Roboto-Medium.ttf",
+            weight: "500",
+            style: "normal",
+        },
+        {
+            path: "./../public/fonts/Roboto-Bold.ttf",
+            weight: "700",
+            style: "normal",
+        },
+    ],
 });
 
-const RobotoCondensed = Roboto_Condensed({
+const RobotoCondensed = localFont({
     variable: "--font-Roboto-Condensed",
-    subsets: ["latin"],
+    src: [
+        {
+            path: "./../public/fonts/RobotoCondensed-Regular.ttf",
+            weight: "400",
+            style: "normal",
+        },
+        {
+            path: "./../public/fonts/RobotoCondensed-Bold.ttf",
+            weight: "700",
+            style: "normal",
+        },
+    ],
 });
 
 export default function RootLayout({
