@@ -1,6 +1,7 @@
 // app/api/contact/route.ts
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import { type } from 'os';
 
 export async function POST(req: Request) {
   const { name, email, message, checked, lastName, phone } = await req.json();
@@ -38,8 +39,8 @@ export async function POST(req: Request) {
       `,
     });
 
-    return NextResponse.json({ success: true });
+    return NextResponse.json({ success: true, type: 'success' });
   } catch (error) {
-    return NextResponse.json({ success: false, error: 'Send email failed !' }, { status: 500 });
+    return NextResponse.json({ success: false, type: 'error', error: 'Send email failed !' }, { status: 500 });
   }
 }
