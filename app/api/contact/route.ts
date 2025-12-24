@@ -27,7 +27,7 @@ export async function POST(req: Request) {
   try {
     await transporter.sendMail({
       from: `"官网留言" <${process.env.SMTP_USER}>`,
-      to: process.env.SMTP_USER, // 接收邮件的地址
+      to: 'sales@jinjiutech.com', // 接收邮件的地址
       subject: '网站留言',
       html: `
         <p><strong>姓名：</strong> ${name} ${lastName || ''}</p>
