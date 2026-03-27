@@ -1,6 +1,6 @@
 ---
 title: Welcome to Visit JINJIU at CHINAPLAS 2026 – The 38th International Exhibition on Plastics and Rubber Industries.
-date: April 21, 2026
+date: 2026-04-21
 tag: Press Release
 cover: /images/news_preview/chainaplas_2026.webp
 excerpt: Dongguan Jinjiu Automation Technology Co., Ltd. is pleased to announce its participation in CHINAPLAS 2026, a leading global event for the plastics and rubber industries, taking place from April 21 to 24, 2026, at the National Exhibition and Convention Center (Shanghai), China.

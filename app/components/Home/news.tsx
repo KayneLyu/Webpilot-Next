@@ -84,8 +84,8 @@ export default function News({ items }: { items: IMeteData[] }) {
                                                     <span>{item.tag}</span>
                                                     <span className='font-semibold italic'>{dayjs(item.date).format("YYYY-MM-DD")}</span>
                                                 </p>
-                                                <p className='sm:min-h-[66px] font-semibold  text-[18px] md:text-[22px] line-clamp-2 overflow-hidden text-ellipsis'>{item.title}</p>
-                                                <p className='my-3 line-clamp-3 overflow-hidden text-ellipsis'>{item.excerpt}</p>
+                                                <p className='h-[54px] sm:min-h-[66px] font-semibold  text-[18px] md:text-[22px] line-clamp-2 overflow-hidden text-ellipsis'>{item.title}</p>
+                                                <p className='h-[72px] my-3 line-clamp-3 overflow-hidden text-ellipsis'>{item.excerpt}</p>
                                                 <div className='mt-12 mb-8'>
                                                     {/* <JumpComponent text='more' link='' /> */}
                                                 </div>

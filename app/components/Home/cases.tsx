@@ -18,14 +18,15 @@ export default function Cases() {
     const t = useTranslations()
 
     const cases = [
-        { id: 1, type: 'video', title: 'airRing', src: '/case/automatic_air_ring_video2.mp4', poster: '/case/automatic_air_ring_2.jpg' },
-        { id: 2, type: 'image', title: 'dosing', src: '/case/dosing1.webp' },
-        { id: 3, type: 'video', title: 'thick_gauge', src: '/case/horizon_thick_gauge.mp4', poster: '/case/horizon_thick_gauge.webp' },
-        { id: 4, type: 'video', title: 'airRing', src: '/case/automatic_air_ring_video1.mp4', poster: '/case/automatic_air_ring_1.jpg' },
-        { id: 5, type: 'image', title: 'rotary_gauge', src: '/case/rotate_gauge1.jpg' },
+        { id: 1, type: 'video', title: 'airRing&dosing', src: '/case/air_ring_dosing.mp4', poster: '/case/air_ring_dosing_poster.jpg' },
+        { id: 2, type: 'video', title: 'airRing&dosing', src: '/case/air_ring_dosing2.mp4', poster: '/case/air_ring_dosing_poster2.webp' },
+        { id: 3, type: 'video', title: 'airRing', src: '/case/automatic_air_ring_video1.mp4', poster: '/case/automatic_air_ring_1.webp' },
+        { id: 4, type: 'image', title: 'rotary_gauge', src: '/case/rotate_gauge1.jpg' },
+        { id: 5, type: 'video', title: 'airRing', src: '/case/automatic_air_ring_video2.mp4', poster: '/case/automatic_air_ring_2.webp' },
         { id: 6, type: 'image', title: 'airRing', src: '/case/air_ring2.webp' },
-        { id: 7, type: 'video', title: 'rotary_gauge', src: '/case/rotate_gauge2.mp4', poster: '/case/rotate_gauge2.jpg' },
-        { id: 8, type: 'image', title: 'airRing', src: '/case/air_ring3.webp' },
+        { id: 7, type: 'image', title: 'airRing', src: '/case/air_ring3.webp' },
+        { id: 8, type: 'video', title: 'rotary_gauge', src: '/case/rotate_gauge2.mp4', poster: '/case/rotate_gauge2.jpg' },
+
     ]
     return (
         <div className='w-full mt-10 md:mt-20 py-[40px] md:py-[65px] px-6 xl:px-0 '>
@@ -106,7 +107,7 @@ export default function Cases() {
                     </div>
 
                     <div className="border-[2px] bg-5/90  border-3 p-1 custom-case-prev absolute top-[-80px] right-15 text-center z-10  rounded-full  text-white cursor-pointer hover:bg-6/40 transition md:block hidden">
-                        <ChevronLeft  size={26}/>
+                        <ChevronLeft size={26} />
                     </div>
                 </div>
 
