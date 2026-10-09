@@ -87,6 +87,17 @@
         "send": "Gửi",
         "touch": "Liên hệ với chúng tôi"
     },
+    "float": {
+        "trigger": "Liên hệ",
+        "title": "Liên hệ với chúng tôi",
+        "subtitle": "JINJIU Automation",
+        "desc": "Liên hệ đội ngũ kinh doanh qua WhatsApp hoặc email — chúng tôi thường phản hồi trong vòng 24 giờ.",
+        "whatsapp": "WhatsApp",
+        "scan": "Quét mã QR để trò chuyện với chúng tôi trên WhatsApp",
+        "chat": "Trò chuyện trên WhatsApp",
+        "inquiry": "Gửi yêu cầu",
+        "close": "Đóng"
+    },
     "tips": {
         "name": "Tên của bạn",
         "last": "Họ của bạn",
@@ -243,6 +254,14 @@
         "contact": {
             "title": "Liên hệ | Tư vấn vòng gió tự động | JINJIU",
             "description": "Liên hệ với Tự động hóa JINJIU để nhận tư vấn chuyên nghiệp và giải pháp tùy chỉnh cho hệ thống vòng gió tự động."
+        },
+        "honor": {
+            "title": "Giải thưởng & Chứng nhận",
+            "description": "Bằng sáng chế, giải thưởng và chứng nhận đứng sau công nghệ vòng gió tự động và kiểm soát độ dày màng của JINJIU."
+        },
+        "privacy": {
+            "title": "Chính sách bảo mật",
+            "description": "Cách JINJIU Automation thu thập, sử dụng và bảo vệ thông tin bạn gửi qua website này."
         }
     },
     "use": {

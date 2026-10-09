@@ -4,26 +4,18 @@ import ProductComponent from '@/components/common/ProductList';
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { useTranslations } from 'next-intl'
+import { pageMetadata } from '@/lib/seo';
 
 export const generateMetadata = async ({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> => {
     const t = await getTranslations();
     const { locale } = await params
-    return {
-        title: t('seo.products.title'),  
-        keywords: ['air ring', 'auto air ring', 'automatic air ring', '风环', '自动风环', '测厚仪', '吹膜机', '吹膜自动化', 'jinjiu', '金久'],
+    return pageMetadata({
+        locale,
+        path: '/product',
+        title: t('seo.products.title'),
         description: t('seo.products.description'),
-        alternates: {
-            canonical: `https://jinjiutech.com/${locale}/product`,
-            languages: {
-                zh: 'https://jinjiutech.com/zh/product',
-                en: 'https://jinjiutech.com/en/product',
-                ko: 'https://jinjiutech.com/ko/product',
-                ru: 'https://jinjiutech.com/ru/product',
-                vi: 'https://jinjiutech.com/vi/product',
-                tr: 'https://jinjiutech.com/tr/product'
-            }
-        }
-    };
+        siteName: t('seo.brand'),
+    });
 };
 
 export default function ProductPage() {

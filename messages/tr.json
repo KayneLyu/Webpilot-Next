@@ -87,6 +87,17 @@
         "send": "Gönder",
         "touch": "Bizimle İletişime Geçin"
     },
+    "float": {
+        "trigger": "Bize ulaşın",
+        "title": "Bize Ulaşın",
+        "subtitle": "JINJIU Automation",
+        "desc": "Satış ekibimize WhatsApp veya e-posta ile ulaşın — genellikle 24 saat içinde yanıt veriyoruz.",
+        "whatsapp": "WhatsApp",
+        "scan": "WhatsApp'tan yazmak için QR kodu tarayın",
+        "chat": "WhatsApp'tan Yazın",
+        "inquiry": "Teklif İsteyin",
+        "close": "Kapat"
+    },
     "tips": {
         "name": "Adınız",
         "last": "Soyadınız",
@@ -243,6 +254,14 @@
         "contact": {
             "title": "İletişim | Otomatik Hava Halkası Danışmanlığı | JINJIU",
             "description": "Otomatik hava halkası sistemleri konusunda profesyonel danışmanlık ve özel çözümler için JINJIU Otomasyon ile iletişime geçin."
+        },
+        "honor": {
+            "title": "Ödüller & Sertifikalar",
+            "description": "JINJIU'nun otomatik hava halkası ve film kalınlık kontrolü teknolojisinin arkasındaki patentler, ödüller ve sertifikalar."
+        },
+        "privacy": {
+            "title": "Gizlilik Politikası",
+            "description": "JINJIU Automation'ın bu web sitesi üzerinden gönderdiğiniz bilgileri nasıl topladığı, kullandığı ve koruduğu."
         }
     },
     "use": {

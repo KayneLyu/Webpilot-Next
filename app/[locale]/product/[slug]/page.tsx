@@ -1,9 +1,28 @@
 import Image from 'next/image';
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import BackButton from '@/components/common/BackButton';
 import ProductSpecial from '@/components/common/ProductDetail';
 import MoreCases from './components/cases';
 import AutomaticAirRing from "./components/airRing";
+import { pageMetadata } from '@/lib/seo';
+
+// Without this the route would inherit the layout's canonical, i.e. every
+// product page would tell search engines it is a copy of the home page.
+export const generateMetadata = async ({ params }: { params: Promise<{ locale: string; slug: string }> }): Promise<Metadata> => {
+    const t = await getTranslations();
+    const { locale, slug } = await params;
+    return pageMetadata({
+        locale,
+        path: `/product/${slug}`,
+        title: t(`product.${slug}`),
+        // Prefixing the product name keeps each detail page's description unique
+        // instead of sharing the product-index wording verbatim.
+        description: `${t(`product.${slug}`)} — ${t('seo.products.description')}`,
+        siteName: t('seo.brand'),
+    });
+};
+
 export default async function ProductDetail({ params }: { params: Promise<{ locale: string, slug: string }> }) {
     const t = await getTranslations();
     const { slug } = await params;

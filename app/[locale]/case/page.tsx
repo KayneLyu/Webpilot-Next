@@ -3,26 +3,18 @@ import CaseList from './caseList';
 
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
+import { pageMetadata } from '@/lib/seo';
 
 export const generateMetadata = async ({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> => {
   const t = await getTranslations();
   const { locale } = await params;
-  return {
-    title: t('seo.cases.title'),  
-    keywords: ['air ring', 'auto air ring', 'automatic air ring', '风环', '自动风环', '测厚仪', '吹膜机', '吹膜自动化', 'jinjiu', '金久'],
+  return pageMetadata({
+    locale,
+    path: '/case',
+    title: t('seo.cases.title'),
     description: t('seo.cases.description'),
-    alternates: {
-      canonical: `https://jinjiutech.com/${locale}/case`,
-      languages: {
-        zh: 'https://jinjiutech.com/zh/case',
-        en: 'https://jinjiutech.com/en/case',
-        ko: 'https://jinjiutech.com/ko/case',
-        ru: 'https://jinjiutech.com/ru/case',
-        vi: 'https://jinjiutech.com/vi/case',
-        tr: 'https://jinjiutech.com/tr/case'
-      }
-    }
-  };
+    siteName: t('seo.brand'),
+  });
 };
 
 export default function CasePage() {

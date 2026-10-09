@@ -3,7 +3,9 @@ import { NextIntlClientProvider, hasLocale } from 'next-intl'
 import { Header } from "@/components/Header"
 import { Footer } from "@/components/Footer"
 import BackTop from "@/components/common/BackTop";
+import SideBar from "@/components/common/SideBar";
 import BrowserCheck from "@/components/BrowserCheck";
+import { SITE_KEYWORDS, SITE_URL, languageAlternates, localeUrl } from "@/lib/seo";
 import { routing } from '../../i18n/routing';
 import { notFound } from 'next/navigation'
 import { getTranslations } from 'next-intl/server'
@@ -18,23 +20,19 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
           default: t('seo.defaultTitle'),
           template: `%s | ${t('seo.brand')}`
       },
-      keywords: ['air ring', 'auto air ring', 'automatic air ring', '风环', '自动风环', '测厚仪', '吹膜机', '吹膜自动化', 'jinjiu', '金久'],
+      // Site-wide fallbacks, used by any route that does not define its own
+      // metadata. Regular pages build theirs with pageMetadata() in @/lib/seo,
+      // which keeps canonical, hreflang and og:url pointing at the same URL.
+      keywords: SITE_KEYWORDS,
       description: t('seo.defaultDescription'),
-      icons: '/favicon.ico',
-      metadataBase: new URL('https://jinjiutech.com'),
+      // Icons are declared once, in app/layout.tsx (full square icon set).
+      metadataBase: new URL(SITE_URL),
       alternates: {
-          canonical: `https://jinjiutech.com/${locale}`,
-          languages: {
-              zh: 'https://jinjiutech.com/zh',
-              en: 'https://jinjiutech.com/en',
-              ko: 'https://jinjiutech.com/ko',
-              ru: 'https://jinjiutech.com/ru',
-              vi: 'https://jinjiutech.com/vi',
-              tr: 'https://jinjiutech.com/tr'
-          }
+          canonical: localeUrl(locale, '/'),
+          languages: languageAlternates('/')
       },
       openGraph: {
-          url: 'https://www.jinjiutech.com',
+          url: localeUrl(locale, '/'),
           title: t('seo.defaultTitle'),
           description: t('seo.defaultDescription'),
           siteName: t('seo.brand'),
@@ -60,6 +58,7 @@ export default async function RootLayout({
       <NextIntlClientProvider>
         <Header />
         <BackTop />
+        <SideBar />
         <main className="flex-1">
           {children}
           <BrowserCheck />

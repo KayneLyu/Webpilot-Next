@@ -2,26 +2,18 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl'
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
+import { pageMetadata } from '@/lib/seo';
 
 export const generateMetadata = async ({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> => {
   const t = await getTranslations();
   const { locale } = await params;
-  return {
-    title: t('seo.about.title'),  
-    keywords: ['air ring', 'auto air ring', 'automatic air ring', '风环', '自动风环', '测厚仪', '吹膜机', '吹膜自动化', 'jinjiu', '金久'],
+  return pageMetadata({
+    locale,
+    path: '/about',
+    title: t('seo.about.title'),
     description: t('seo.about.description'),
-    alternates: {
-      canonical: `https://jinjiutech.com/${locale}/about`,
-      languages: {
-        zh: 'https://jinjiutech.com/zh/about',
-        en: 'https://jinjiutech.com/en/about',
-        ko: 'https://jinjiutech.com/ko/about',
-        ru: 'https://jinjiutech.com/ru/about',
-        vi: 'https://jinjiutech.com/vi/about',
-        tr: 'https://jinjiutech.com/tr/about'
-      }
-    }
-  };
+    siteName: t('seo.brand'),
+  });
 };
 
 export default function AboutPage() {

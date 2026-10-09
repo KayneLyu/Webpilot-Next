@@ -87,6 +87,17 @@
         "send": "Send",
         "touch": "Get In Touch With Us"
     },
+    "float": {
+        "trigger": "Contact us",
+        "title": "Contact Us",
+        "subtitle": "JINJIU Automation",
+        "desc": "Reach our sales team on WhatsApp or by email — we usually reply within 24 hours.",
+        "whatsapp": "WhatsApp",
+        "scan": "Scan the QR code to chat with us on WhatsApp",
+        "chat": "Chat on WhatsApp",
+        "inquiry": "Send an Inquiry",
+        "close": "Close"
+    },
     "tips": {
         "name": "Your name",
         "last": "Your last name",
@@ -243,6 +254,14 @@
         "contact": {
             "title": "Contact Us | Auto Air Ring Consultation | JINJIU",
             "description": "Get in touch with JINJIU Automation for professional advice and custom solutions on auto air ring systems."
+        },
+        "honor": {
+            "title": "Honors & Certifications",
+            "description": "Patents, awards and certifications behind JINJIU's automatic air ring and film thickness control technology."
+        },
+        "privacy": {
+            "title": "Privacy Policy",
+            "description": "How JINJIU Automation collects, uses and protects the information you send us through this website."
         }
     },
     "use": {

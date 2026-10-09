@@ -6,27 +6,20 @@ import { getAllNews } from '@/lib/news';
 
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
+import { pageMetadata } from '@/lib/seo';
 
 export const generateMetadata = async ({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> => {
   const t = await getTranslations();
   const { locale } = await params
-  return {
-    title: t('seo.news.title'), 
-    keywords: ['air ring', 'auto air ring', 'automatic air ring', '风环', '自动风环', '测厚仪', '吹膜机', '吹膜自动化', 'jinjiu', '金久'],
+  return pageMetadata({
+    locale,
+    path: '/news',
+    title: t('seo.news.title'),
     description: t('seo.news.description'),
-    alternates: {
-      canonical: `https://jinjiutech.com/${locale}/news`,
-      languages: {
-        zh: 'https://jinjiutech.com/zh/news',
-        en: 'https://jinjiutech.com/en/news',
-        ko: 'https://jinjiutech.com/ko/news',
-        ru: 'https://jinjiutech.com/ru/news',
-        vi: 'https://jinjiutech.com/vi/news',
-        tr: 'https://jinjiutech.com/tr/news'
-      }
-    }
-  };
+    siteName: t('seo.brand'),
+  });
 };
+
 export default async function NewsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const newsList = await getAllNews(locale);

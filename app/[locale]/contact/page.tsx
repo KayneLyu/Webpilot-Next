@@ -5,26 +5,18 @@ import Letters from './letters';
 
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
+import { pageMetadata } from '@/lib/seo';
 
 export const generateMetadata = async ({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> => {
   const t = await getTranslations();
   const { locale } = await params;
-  return {
-    title: t('seo.contact.title'),  
-    keywords: ['air ring', 'auto air ring', 'automatic air ring', '风环', '自动风环', '测厚仪', '吹膜机', '吹膜自动化', 'jinjiu', '金久'],
+  return pageMetadata({
+    locale,
+    path: '/contact',
+    title: t('seo.contact.title'),
     description: t('seo.contact.description'),
-    alternates: {
-      canonical: `https://jinjiutech.com/${locale}/contact`,
-      languages: {
-        zh: 'https://jinjiutech.com/zh/contact',
-        en: 'https://jinjiutech.com/en/contact',
-        ko: 'https://jinjiutech.com/ko/contact',
-        ru: 'https://jinjiutech.com/ru/contact',
-        vi: 'https://jinjiutech.com/vi/contact',
-        tr: 'https://jinjiutech.com/tr/contact'
-      }
-    }
-  };
+    siteName: t('seo.brand'),
+  });
 };
 
 export default function ContactPage() {

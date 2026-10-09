@@ -42,7 +42,7 @@ export default function BrowserCheck() {
                     <p>+86 0769-22991396</p>
 
                     <p>sales@jinjiutech.com</p>
-                    <p>www.jinjiutech.com</p>
+                    <p>jinjiutech.com</p>
                     <p>东莞市金久自动化科技有限公司</p>
                     <p></p>
                 </div>

@@ -1,6 +1,27 @@
-import { getNewsBySlug } from '@/lib/news';
+import { getNewsBySlug, newsLocales } from '@/lib/news';
 import { notFound } from 'next/navigation';
 import BackButton from '@/components/common/BackButton';
+import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
+import { pageMetadata } from '@/lib/seo';
+
+// Without this the route would inherit the layout's canonical, i.e. every
+// article would tell search engines it is a copy of the home page.
+export const generateMetadata = async ({ params }: { params: Promise<{ locale: string; slug: string }> }): Promise<Metadata> => {
+    const t = await getTranslations();
+    const { locale, slug } = await params;
+    const news = await getNewsBySlug(locale, slug);
+    if (!news) return {};
+    return pageMetadata({
+        locale,
+        path: `/news/${slug}`,
+        title: news.metadata.title,
+        description: news.metadata.excerpt || t('seo.news.description'),
+        siteName: t('seo.brand'),
+        type: 'article',
+        locales: newsLocales(slug),
+    });
+};
 
 export default async function NewsDetail({ params }: { params: Promise<{ locale: string, slug: string }> }) {
     const { locale, slug } = await params;

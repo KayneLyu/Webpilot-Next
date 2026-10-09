@@ -7,25 +7,18 @@ import { getAllNews } from '@/lib/news';
 import dynamic from 'next/dynamic'
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
+import { pageMetadata } from '@/lib/seo';
 
 export const generateMetadata = async ({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> => {
   const t = await getTranslations();
   const { locale } = await params;
-  return {
-    title: t('seo.home.title'), 
+  return pageMetadata({
+    locale,
+    path: '/',
+    title: t('seo.home.title'),
     description: t('seo.home.description'),
-    alternates: {
-      canonical: `https://jinjiutech.com/${locale}/`,
-      languages: {
-        zh: 'https://jinjiutech.com/zh',
-        en: 'https://jinjiutech.com/en',
-        ko: 'https://jinjiutech.com/ko',
-        ru: 'https://jinjiutech.com/ru',
-        vi: 'https://jinjiutech.com/vi',
-        tr: 'https://jinjiutech.com/tr'
-      }
-    }
-  };
+    siteName: t('seo.brand'),
+  });
 };
 
 // 开启懒加载 + 显示加载中占位

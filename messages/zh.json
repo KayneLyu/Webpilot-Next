@@ -87,6 +87,17 @@
         "send": "发送",
         "touch": "与我们取得联系"
     },
+    "float": {
+        "trigger": "联系我们",
+        "title": "联系我们",
+        "subtitle": "金久自动化",
+        "desc": "通过 WhatsApp 或邮件联系我们的销售团队，我们通常在 24 小时内回复。",
+        "whatsapp": "WhatsApp",
+        "scan": "扫描二维码，添加我们的 WhatsApp 咨询",
+        "chat": "WhatsApp 在线咨询",
+        "inquiry": "在线留言",
+        "close": "关闭"
+    },
     "tips": {
         "name": "请输入你的名字",
         "last": "请输入你的姓氏",
@@ -243,6 +254,14 @@
         "contact": {
             "title": "联系我们 | 自动风环咨询 | 金久自动化",
             "description": "欢迎联系金久自动化，我们为您提供专业的自动风环选型建议与定制化解决方案。"
+        },
+        "honor": {
+            "title": "荣誉资质",
+            "description": "金久自动化在自动风环与薄膜测厚控制领域获得的专利、荣誉与资质认证。"
+        },
+        "privacy": {
+            "title": "隐私政策",
+            "description": "了解金久自动化如何收集、使用和保护您通过本站提交的信息。"
         }
     },
     "use": {
