@@ -27,8 +27,8 @@ export default function Cases() {
         { id: 8, type: 'image', title: 'airRing', src: '/case/air_ring3.webp' },
     ]
     return (
-        <div className='w-full py-[40px] md:py-[65px] px-6 xl:px-0 '>
-            <div className='max-w-main mx-auto md:px-0'>
+        <div className='w-full py-[40px] md:py-[65px]'>
+            <div className='main-container'>
                 <h1 className='font-semibold text-2 text-[18px] md:text-[24px] w-full text-left mb-5'>{t("nav.case")}</h1>
 
                 <div className='mt-5 md:mt-10'>

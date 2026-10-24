@@ -18,7 +18,7 @@ export default function AboutSection() {
                     />
                 </div>
                 <div className="w-full md:w-1/2 p-5">
-                    <div className="flex flex-col gap-2 md:justify-between  h-full xl:mx-[74px] text-[14px] leading-[24px] md:text-[18px] md:leading-[30px] text-4">
+                    <div className="flex flex-col gap-2 md:justify-between  h-full lg:mx-8 xl:mx-10 2xl:mx-[74px] text-[14px] leading-[24px] md:text-[18px] md:leading-[30px] text-4">
                         <h1 className="section-title">{t("jinjiu")}</h1>
                         <p className="indent-two-chars">{t('about1')}</p>
                         <p className="indent-two-chars">{t('about2')}</p>

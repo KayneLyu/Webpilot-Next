@@ -28,11 +28,11 @@ export default async function ProductDetail({ params }: { params: Promise<{ loca
     const { slug } = await params;
     return (
         <div className="w-full py-10 md:pb-20">
-            <div className='max-w-main mx-auto hidden sm:block'>
+            <div className='main-container hidden sm:block'>
                 <BackButton />
             </div>
             
-            <div className="max-w-[1200px] mx-auto">
+            <div className="max-w-[1200px] mx-auto px-5 sm:px-0">
                 <h1 className='h1-span w-full text-[18px]  text-center text-2 mb-10'>{t(`product.${slug}`)}</h1>
                 <div className='flex flex-wrap px-5'>
                     <div className='basis-full sm:basis-1/2 pr-5'>

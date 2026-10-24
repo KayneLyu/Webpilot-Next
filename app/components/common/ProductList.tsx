@@ -37,8 +37,8 @@ export default function ProductList({ products, tittle, showMore }: { products: 
 
     const locale = useLocale()
     return (
-        <div className='w-full px-5 xl:px-0'>
-            <div className="pb-10 md:px-0 max-w-main mx-auto ">
+        <div className='w-full'>
+            <div className="main-container pb-10">
                 {
                     showMore && (
                         <div>

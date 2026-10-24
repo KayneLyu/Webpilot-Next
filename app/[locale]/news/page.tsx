@@ -33,16 +33,16 @@ export default async function NewsPage({ params }: { params: Promise<{ locale: s
             width={1500}
             height={1000}
             priority
-            className='w-full object-cover h-100 md:h-200 bg-scale'
+            className='w-full object-cover page-hero bg-scale'
           />
         </section>
 
-        <div className='w-full h-90 md:h-180'>
+        <div className='w-full page-hero-spacer'>
         </div>
 
         <div className='w-full bg-9'>
 
-          <div className='max-w-main mx-auto'>
+          <div className='main-container'>
             <div className='pt-10 md:pt-25'>
               <ul className="space-y-10 news-list flex flex-wrap ">
                 {newsList.map((news) => (
@@ -80,7 +80,7 @@ export default async function NewsPage({ params }: { params: Promise<{ locale: s
 
 
           <div className='w-full bg-9 pt-10 md:pt-20'>
-            <div className='max-w-main mx-auto'>
+            <div className='main-container'>
               {/* <MapComponent /> */}
             </div>
           </div>

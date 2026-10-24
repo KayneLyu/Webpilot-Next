@@ -61,21 +61,21 @@ export default function ContactPage() {
             width={1500}
             height={1000}
             priority
-            className='w-full object-cover h-100 md:h-200 bg-scale'
+            className='w-full object-cover page-hero bg-scale'
           />
         </section>
 
-        <div className='w-full h-90 md:h-180'>
+        <div className='w-full page-hero-spacer'>
         </div>
 
         <div className='w-full bg-9'>
 
-          <div className='max-w-main mx-auto'>
+          <div className='main-container'>
             <div className='pt-10 md:pt-30'>
-              <ul className='pl-10 md:pl-0 flex flex-col md:flex-row justify-between '>
+              <ul className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-x-6 gap-y-8'>
                 {
                   contacts.map((contact, index) => (
-                    <li key={index} className='mb-7 md:text-center text-3 text-[16px] md:text-[18px]'>
+                    <li key={index} className='min-w-0 text-3 text-[16px] md:text-center md:text-[18px]'>
                       <div className='w-[40px] h-[40px] md:w-[80px] md:h-[80px] flex md:mx-auto items-center justify-center   rounded-[50%] bg-5'>
                         <Image
                           src={contact.icon}
@@ -92,7 +92,7 @@ export default function ContactPage() {
                         contact.value.map((item, k) => (
                           contact.title == "email" ? <a href={mailtoLink} className='underline font-semibold' key={k}>{item}</a>
                             :
-                            <p className='font-semibold' style={{ whiteSpace: 'pre-line' }} key={k}>{item}</p>
+                            <p className='font-semibold break-words' style={{ whiteSpace: 'pre-line' }} key={k}>{item}</p>
                         ))
                       }
                     </li>
@@ -109,7 +109,7 @@ export default function ContactPage() {
           </div>
 
           <div className='w-full bg-9 py-10 md:pt-20'>
-            <div className='max-w-main mx-auto'>
+            <div className='main-container'>
               <MapComponent />
             </div>
           </div>

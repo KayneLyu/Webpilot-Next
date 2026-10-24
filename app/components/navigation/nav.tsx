@@ -45,20 +45,20 @@ export default function Navigation() {
     return (
         <>
             {/* 桌面导航 */}
-            <nav className="hidden md:block  ">
+            <nav className="hidden lg:block  ">
                 <div className="flex">
                     <NavigationMenu>
                         <NavigationMenuList>
                             <div>
                                 <div className="my-3 flex justify-end">
-                                    <div className="ml-10">
+                                    <div className="ml-4 xl:ml-10">
                                         <EmailAddress variant={true} />
                                     </div>
                                     <div>
                                         <LanguageComponent />
                                     </div>
                                 </div>
-                                <div className="flex gap-6">
+                                <div className="flex gap-3 xl:gap-6">
                                     {navItems.map((item) => {
                                         const isActive =
                                             item.href === '/'
@@ -73,7 +73,7 @@ export default function Navigation() {
                                                         ? "bg-accent text-primary font-semibold"
                                                         : "text-muted-foreground"
                                                 )}  >
-                                                    <Links href={item.href} className=" uppercase font-semibold font-[family-name:var(--font-Roboto-Condensed)] text-[18px] py-2 px-2"> {t(`${item.name}`)}</Links>
+                                                    <Links href={item.href} className=" uppercase font-semibold font-[family-name:var(--font-Roboto-Condensed)] text-[16px] xl:text-[18px] py-2 px-2"> {t(`${item.name}`)}</Links>
                                                 </NavigationMenuLink>
                                             </NavigationMenuItem>
                                         )
@@ -89,7 +89,7 @@ export default function Navigation() {
             </nav>
 
             {/* 移动端菜单按钮 */}
-            <div className="flex items-center md:hidden h-full">
+            <div className="flex items-center lg:hidden h-full">
                 <LanguageComponent />
                 <EmailAddress variant={true} />
                 <div className="h-full w-16 ">

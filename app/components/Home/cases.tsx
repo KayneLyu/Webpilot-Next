@@ -29,8 +29,8 @@ export default function Cases() {
 
     ]
     return (
-        <div className='w-full mt-10 md:mt-20 py-[40px] md:py-[65px] px-6 xl:px-0 '>
-            <div className='max-w-main mx-auto md:px-0'>
+        <div className='w-full mt-10 md:mt-20 py-[40px] md:py-[65px]'>
+            <div className='main-container'>
                 <h1 className='section-title'>{t("nav.case")}</h1>
                 <p className='text-2 text-[14px] md:w-[50%] md:text-[18px]'>
                     {t('home.case')}

@@ -6,10 +6,10 @@ import LetterComponent from "@/components/common/Letter";
 export function Footer() {
   const t = useTranslations('nav')
   return (
-    <footer className="px-6 xl:px-0 w-full text-[18px] bg-7 py-[85px] pb-[20px] text-white text-center text-sm font-[family-name:var(--font-Public-Sans)]">
-      <div className="max-w-main mx-auto">
-        <section className="flex flex-wrap justify-between gap-y-10 text-start">
-          <div className="w-full sm:w-1/2 md:w-auto max-w-xs">
+    <footer className="w-full text-[18px] bg-7 py-[85px] pb-[20px] text-white text-center text-sm font-[family-name:var(--font-Public-Sans)]">
+      <div className="main-container">
+        <section className="flex flex-wrap justify-between gap-x-8 gap-y-10 text-start">
+          <div className="w-full sm:w-1/2 md:w-auto max-w-[280px] 2xl:max-w-xs">
             <h1 className="font-bold text-lg">{t("contact")}</h1>
             <div className="mt-6 text-white/85">
               <address style={{ whiteSpace: 'pre-line' }}>
@@ -23,14 +23,14 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="w-full sm:w-1/2 md:w-full max-w-xs">
+          <div className="w-full sm:w-1/2 md:w-full max-w-[280px] 2xl:max-w-xs">
             <h1 className="font-bold text-lg">{t("email")}</h1>
             <div className="mt-6">
               <LetterComponent />
             </div>
           </div>
 
-          <div className="w-full sm:w-1/2 md:w-auto max-w-xs">
+          <div className="w-full sm:w-1/2 md:w-auto max-w-[280px] 2xl:max-w-xs">
             <h1 className="font-bold text-lg">{t("menu")}</h1>
             <ul className="grid gap-3 text-white/85">
               <li className="mt-6">
@@ -54,7 +54,7 @@ export function Footer() {
             </ul>
           </div>
 
-          <div className="w-full sm:w-1/2 md:w-auto max-w-xs">
+          <div className="w-full sm:w-1/2 md:w-auto max-w-[280px] 2xl:max-w-xs">
             <h1 className="font-bold text-lg">{t("follow")}</h1>
             <ul className="grid gap-2 text-white/85">
               <li className="mt-6">

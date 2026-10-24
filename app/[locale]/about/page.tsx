@@ -27,18 +27,18 @@ export default function AboutPage() {
             src="/images/about.webp"
             width={1500}
             height={1000}
-            className='w-full object-cover h-100 md:h-200 bg-scale'
+            className='w-full object-cover page-hero bg-scale'
           />
         </section>
 
-        <div className='w-full h-90 md:h-180'>
+        <div className='w-full page-hero-spacer'>
         </div>
 
         <div className='bg-9'>
           <div className='w-full pt-10 md:pt-25'>
-            <div className=" max-w-main mx-auto flex flex-wrap w-full ">
+            <div className=" main-container flex flex-wrap">
               <div className="w-full md:w-1/2 p-5">
-                <div className="flex flex-col gap-2 h-full xl:mx-[74px] text-[14px] md:text-[18px] leading-[24px]  md:leading-[30px] text-4">
+                <div className="flex flex-col gap-2 h-full lg:mx-8 xl:mx-10 2xl:mx-[74px] text-[14px] md:text-[18px] leading-[24px]  md:leading-[30px] text-4">
                   <h1 className="about-title mb-5">{t("tittle1")}</h1>
                   <p className='indent-two-chars' style={{ whiteSpace: 'pre-line'}}>
                     {t('part1')}
@@ -60,7 +60,7 @@ export default function AboutPage() {
           </div>
 
           <div className='w-full pt-10 md:pt-25'>
-            <div className=" max-w-main mx-auto flex flex-wrap w-full ">
+            <div className=" main-container flex flex-wrap">
               <div className="flex items-center w-full md:w-1/2 p-5">
                 <Image
                   src="/about/2.webp"
@@ -73,7 +73,7 @@ export default function AboutPage() {
               </div>
 
               <div className="w-full md:w-1/2 p-5">
-                <div className="flex flex-col gap-2 h-full xl:mx-[74px] text-[14px] leading-[24px] md:text-[18px] md:leading-[30px] text-4">
+                <div className="flex flex-col gap-2 h-full lg:mx-8 xl:mx-10 2xl:mx-[74px] text-[14px] leading-[24px] md:text-[18px] md:leading-[30px] text-4">
                   <h1 className="about-title mb-5">{t("tittle2")}</h1>
                   <p style={{ whiteSpace: 'pre-line' }}>
                     {t('part2')}
@@ -84,9 +84,9 @@ export default function AboutPage() {
           </div>
 
           <div className='w-full pt-10 md:pt-20 pb-25'>
-            <div className=" max-w-main mx-auto flex flex-wrap w-full ">
+            <div className=" main-container flex flex-wrap">
               <div className="w-full md:w-1/2 p-5">
-                <div className="flex flex-col gap-2 h-full xl:mx-[74px] text-[14px] leading-[24px] md:text-[18px] md:leading-[30px] text-4">
+                <div className="flex flex-col gap-2 h-full lg:mx-8 xl:mx-10 2xl:mx-[74px] text-[14px] leading-[24px] md:text-[18px] md:leading-[30px] text-4">
                   <h1 className="about-title mb-5">{t("tittle3")}</h1>
                   <p style={{ whiteSpace: 'pre-line' }}>
                     {t('part3')}

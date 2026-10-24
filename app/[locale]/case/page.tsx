@@ -41,15 +41,15 @@ export default function CasePage() {
             src="/images/product.webp"
             width={1800}
             height={1800}
-            className='w-full object-cover h-100 md:h-200 bg-scale'
+            className='w-full object-cover page-hero bg-scale'
           />
         </section>
 
-        <div className='w-full h-90 md:h-180'>
+        <div className='w-full page-hero-spacer'>
         </div>
 
         <div className='bg-9 py-10 md:py-20'>
-          <div className='max-w-main mx-auto px-5'>
+          <div className='main-container'>
             <CaseList cases={cases.reverse()} />
           </div>
         </div>

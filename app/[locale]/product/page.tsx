@@ -88,28 +88,26 @@ export default function ProductPage() {
                         src="/images/product.webp"
                         width={1500}
                         height={1000}
-                        className='w-full object-cover h-100 md:h-200 bg-scale'
+                        className='w-full object-cover page-hero bg-scale'
                     />
                 </section>
 
-                <div className='w-full md:h-180'>
+                <div className='w-full page-hero-spacer'>
                 </div>
 
                 <div className='bg-9  py-6 md:py-15'>
-                    <div className='max-w-main mx-auto '>
-                        <div className='px-5 xl:px-0'>
-                            <div>
-                                <h1 className='section-title'>{t("product")}</h1>
-                            </div>
-                            <div>
-                                <p className='text-2 text-[14px] md:w-[50%] md:text-[18px]'>
-                                    {t('description')}
-                                </p>
-                            </div>
+                    <div className='main-container'>
+                        <div>
+                            <h1 className='section-title'>{t("product")}</h1>
                         </div>
                         <div>
-                            <ProductComponent products={products} tittle='section' />
+                            <p className='text-2 text-[14px] md:w-[50%] md:text-[18px]'>
+                                {t('description')}
+                            </p>
                         </div>
+                    </div>
+                    <div>
+                        <ProductComponent products={products} tittle='section' />
                     </div>
                 </div>
             </div>

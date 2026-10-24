@@ -141,6 +141,40 @@
   }
 }
 
+@layer components {
+  /*
+   * Shared page shell.
+   *
+   * `max-w-main` alone collapses to the full viewport between 1280px and
+   * 1675px, which made every section touch the screen edge on 14"/16"
+   * laptops (1512px / 1728px). Keeping a fluid gutter until the viewport is
+   * wide enough for the 1675px canvas gives those sizes proper breathing room
+   * without changing the layout on large desktop screens.
+   */
+  .main-container {
+    width: min(calc(100% - clamp(40px, 6vw, 80px)), 1675px);
+    margin-inline: auto;
+  }
+
+  /*
+   * Banner image + the spacer that reserves its height on the inner pages.
+   * Both must always keep the same height, otherwise the fixed background
+   * image peeks out under the content or gets cropped. The height also scales
+   * down with the viewport so the banner does not eat a whole 14" screen.
+   */
+  .page-hero,
+  .page-hero-spacer {
+    height: 400px;
+  }
+
+  @media (min-width: 768px) {
+    .page-hero,
+    .page-hero-spacer {
+      height: clamp(400px, 46vw, 800px);
+    }
+  }
+}
+
 .h1-tittle {
   @apply flex h-9 md:h-13  text-start text-size18;
 }

@@ -33,8 +33,8 @@ export default function HonorsPage() {
     "/honor/12.webp",
   ]
   return (
-    <div className='max-w-main mx-auto py-10 md:py-20'>
-      <div className='px-5 hidden md:block'>
+    <div className='main-container py-10 md:py-20'>
+      <div className='hidden md:block'>
         <BackButton />
       </div>
       <div  className=''>

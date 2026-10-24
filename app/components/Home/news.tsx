@@ -27,7 +27,7 @@ export default function News({ items }: { items: IMeteData[] }) {
 
     return (
         <div className='w-full mt-10 md:mt-20 py-[40px] md:py-[65px]'>
-            <div className='max-w-main mx-auto px-5 lg:px-0'>
+            <div className='main-container'>
                 <h1 className='section-title'>{t("nav.news")}</h1>
                 <div className='my-5 md:my-10'>
                     <JumpComponent text='news' link='/news' />
@@ -70,7 +70,7 @@ export default function News({ items }: { items: IMeteData[] }) {
                                 <SwiperSlide key={index}>
                                     <Links href={`/news/${item.slug}`}>
                                         <div className='group bg-white rounded-2xl overflow-hidden cursor-pointer'>
-                                            <div className='h-[340px] overflow-hidden'>
+                                            <div className='h-[clamp(240px,22vw,340px)] overflow-hidden'>
                                                 <Image
                                                     src={item.cover}
                                                     width={1200}

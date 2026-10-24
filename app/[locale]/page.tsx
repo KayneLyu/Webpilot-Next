@@ -73,7 +73,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <section>
         <SwiperComponent />
       </section>
-      <section className='max-w-main mx-auto px-[10px] my-8 md:my-24'>
+      <section className='main-container my-8 md:my-24'>
         <AboutComponent />
       </section>
       <section>

@@ -31,7 +31,7 @@ export default function Honors() {
     return (
         <>
             <div className="w-full bg-5/60 py-[70px] md:py-[80px]">
-                <div className="max-w-main mx-auto text-center px-6 xl:px-0">
+                <div className="main-container text-center">
                     <div className="w-full text-start">
                         <h1 className="section-title">{t("brief")}</h1>
                     </div>
@@ -39,7 +39,7 @@ export default function Honors() {
                         {
                             honors.map((item, index) => (
                                 <li key={index} className="flex flex-col  items-center">
-                                    <div className="w-[130px] md:w-full text-center md:px-15 mx-2">
+                                    <div className="w-[130px] md:w-full text-center md:px-6 xl:px-15 mx-2">
                                         <div>
                                             <Image className="mx-auto w-[50px] md:w-[100px] h-auto" src={item.icons} alt="honor" width={100} height={100} />
                                         </div>
