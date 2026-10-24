@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 
 import { routing } from '../../i18n/routing'
+import { pageKeywords, productKeywords, SITE_KEYWORDS, type SeoPage } from './keywords'
 
 /**
  * Canonical origin of the public site (apex, no www — www is permanently
@@ -9,19 +10,13 @@ import { routing } from '../../i18n/routing'
  */
 export const SITE_URL = 'https://jinjiutech.com'
 
-/** Site-wide keywords. Google ignores them; Bing gives them little weight. */
-export const SITE_KEYWORDS = [
-    'air ring',
-    'auto air ring',
-    'automatic air ring',
-    '风环',
-    '自动风环',
-    '测厚仪',
-    '吹膜机',
-    '吹膜自动化',
-    'jinjiu',
-    '金久',
-]
+/**
+ * Site-wide keyword fallback. Google ignores the keywords meta tag, so the
+ * page-level entries in ./keywords.ts are also the terminology source for
+ * titles, descriptions and on-page copy. Re-exported here so existing imports
+ * from '@/lib/seo' keep working.
+ */
+export { SITE_KEYWORDS }
 
 /**
  * Absolute canonical URL for a locale + path pair.
@@ -39,6 +34,30 @@ export function languageAlternates(path: string, locales: readonly string[] = ro
     return languages
 }
 
+/** Map a route path to the keyword cluster that should own it. */
+function pageFromPath(path: string): SeoPage {
+    if (path.startsWith('/product')) return 'products'
+    if (path.startsWith('/case')) return 'cases'
+    if (path.startsWith('/news')) return 'news'
+    if (path.startsWith('/about')) return 'about'
+    if (path.startsWith('/contact')) return 'contact'
+    if (path.startsWith('/honor')) return 'honor'
+    if (path.startsWith('/privacy')) return 'privacy'
+    return 'home'
+}
+
+/**
+ * Pick keywords from the route instead of making every caller repeat them.
+ * Product detail pages get their own product cluster plus the product name.
+ */
+function resolveKeywords(locale: string, path: string, title: string): string[] {
+    if (path.startsWith('/product/')) {
+        const slug = path.split('/')[2] ?? ''
+        return productKeywords(locale, slug, title)
+    }
+    return pageKeywords(locale, pageFromPath(path))
+}
+
 /**
  * Metadata for a single page.
  *
@@ -54,7 +73,7 @@ export function pageMetadata({
     title,
     description,
     siteName,
-    keywords = SITE_KEYWORDS,
+    keywords,
     type = 'website',
     locales,
 }: {
@@ -64,6 +83,7 @@ export function pageMetadata({
     description: string
     /** Brand name shown by social cards (`seo.brand`). */
     siteName: string
+    /** Optional override; defaults to the cluster for this route. */
     keywords?: string[]
     type?: 'website' | 'article'
     /** Locales that actually publish this page; defaults to every locale. */
@@ -73,7 +93,7 @@ export function pageMetadata({
     return {
         title,
         description,
-        keywords,
+        keywords: keywords ?? resolveKeywords(locale, path, title),
         alternates: { canonical: url, languages: languageAlternates(path, locales) },
         openGraph: {
             url,

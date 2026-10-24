@@ -43,10 +43,10 @@
         "lift_automatic_air_ring": "Vòng gió điều chỉnh độ cao",
         "Cross-Direction_Scanning_Thickness_Gauge": "Cảm biến đo độ dày theo chiều ngang",
         "rotary_thickness_gauge": "Cảm biến đo độ dày quay",
-        "dosing": "Định lượng",
+        "dosing": "Hệ thống định lượng trọng lượng",
         "X-Ray_rotary_thickness_gauge": "Cảm biến đo độ dày quay X-Scan",
         "product": "Sản phẩm",
-        "solutions": "giải pháp",
+        "solutions": "Giải pháp tự động hóa màng thổi",
         "more": "Tìm hiểu thêm",
         "tips": "Chúng tôi hỗ trợ tất cả các loại dây chuyền sản xuất màng thổi và cung cấp các giải pháp tự động hóa hoàn toàn tùy chỉnh đáp ứng nhu cầu cụ thể của bạn."
     },
@@ -240,21 +240,22 @@
             "description": "Tìm hiểu thêm về Tự động hóa JINJIU – nhà cung cấp đáng tin cậy về vòng gió tự động và hệ thống điều khiển thông minh cho ngành sản xuất màng thổi."
         },
         "products": {
-            "title": "Sản phẩm & Giải pháp | Vòng gió tự động cho màng thổi | JINJIU",
+            "title": "Sản phẩm & Giải pháp | Vòng gió tự động cho màng thổi",
             "description": "Khám phá các sản phẩm vòng gió tự động và giải pháp kiểm soát thông minh của JINJIU nhằm tối ưu hóa chất lượng và hiệu suất sản xuất film."
         },
         "cases": {
-            "title": "Dự án khách hàng | Ứng dụng vòng gió tự động | JINJIU",
+            "title": "Dự án khách hàng | Ứng dụng vòng gió tự động",
             "description": "Xem cách hệ thống vòng gió tự động của JINJIU được áp dụng thành công tại các nhà máy sản xuất màng thổi khắp thế giới."
         },
         "news": {
-            "title": "Tin tức & Cập nhật | Ngành sản xuất màng thổi | JINJIU",
+            "title": "Tin tức & Cập nhật | Ngành sản xuất màng thổi",
             "description": "Luôn cập nhật những tin tức mới nhất, phân tích ngành, ra mắt sản phẩm và các hội chợ triển lãm từ JINJIU."
         },
         "contact": {
-            "title": "Liên hệ | Tư vấn vòng gió tự động | JINJIU",
+            "title": "Liên hệ | Tư vấn vòng gió tự động",
             "description": "Liên hệ với Tự động hóa JINJIU để nhận tư vấn chuyên nghiệp và giải pháp tùy chỉnh cho hệ thống vòng gió tự động."
         },
+        "productDescription": "{name} — giải pháp tự động hóa cho dây chuyền màng thổi, giúp cải thiện độ đồng đều độ dày, giảm hao phí nguyên liệu và tăng năng suất.",
         "honor": {
             "title": "Giải thưởng & Chứng nhận",
             "description": "Bằng sáng chế, giải thưởng và chứng nhận đứng sau công nghệ vòng gió tự động và kiểm soát độ dày màng của JINJIU."

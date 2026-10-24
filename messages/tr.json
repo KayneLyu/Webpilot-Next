@@ -43,10 +43,10 @@
         "lift_automatic_air_ring": "Yükseklik Ayarlanabilir Hava Halkası",
         "Cross-Direction_Scanning_Thickness_Gauge": "En Boyunda Tarama Kalınlık Ölçer",
         "rotary_thickness_gauge": "Döner Kalınlık Ölçer",
-        "dosing": "Dozajlama",
+        "dosing": "Gravimetrik Dozajlama Sistemi",
         "X-Ray_rotary_thickness_gauge": "X-Scan Döner Kalınlık Ölçer",
         "product": "Ürünler",
-        "solutions": "çözümler",
+        "solutions": "Üfleme Film Otomasyon Çözümleri",
         "more": "Daha fazla bilgi",
         "tips": "Tüm esnek film üretim hatlarını destekliyoruz ve özel ihtiyaçlarınıza uygun tamamen özelleştirilmiş otomasyon çözümleri sunuyoruz."
     },
@@ -240,21 +240,22 @@
             "description": "Üfleme film endüstrisi için güvenilir otomatik hava halkası ve akıllı kontrol sistemleri geliştiren JINJIU Otomasyon hakkında daha fazla bilgi edinin."
         },
         "products": {
-            "title": "Ürünler & Çözümler | Üfleme Film Hava Halkaları | JINJIU",
+            "title": "Ürünler & Çözümler | Üfleme Film Hava Halkaları",
             "description": "Film kalitesini ve üretim performansını optimize etmek için JINJIU'nun otomatik hava halkası ürünleri ve akıllı kontrol çözümlerini keşfedin."
         },
         "cases": {
-            "title": "Müşteri Vakaları | Otomatik Hava Halkası Uygulamaları | JINJIU",
+            "title": "Müşteri Vakaları | Otomatik Hava Halkası Uygulamaları",
             "description": "JINJIU'nun otomatik hava halkası sistemlerinin dünya çapındaki üfleme film fabrikalarında nasıl başarıyla uygulandığını görün."
         },
         "news": {
-            "title": "Haberler & Güncellemeler | Üfleme Film Endüstrisi | JINJIU",
+            "title": "Haberler & Güncellemeler | Üfleme Film Endüstrisi",
             "description": "JINJIU'dan en son haberler, endüstri içgörüleriniz, yeni ürün tanıtımları ve fuar katılımlarıyla güncel kalın."
         },
         "contact": {
-            "title": "İletişim | Otomatik Hava Halkası Danışmanlığı | JINJIU",
+            "title": "İletişim | Otomatik Hava Halkası Danışmanlığı",
             "description": "Otomatik hava halkası sistemleri konusunda profesyonel danışmanlık ve özel çözümler için JINJIU Otomasyon ile iletişime geçin."
         },
+        "productDescription": "{name} — üfleme film hattı için otomasyon çözümü; film kalınlığı homojenliğini artırır, hammadde israfını azaltır ve üretkenliği yükseltir.",
         "honor": {
             "title": "Ödüller & Sertifikalar",
             "description": "JINJIU'nun otomatik hava halkası ve film kalınlık kontrolü teknolojisinin arkasındaki patentler, ödüller ve sertifikalar."

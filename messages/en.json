@@ -43,10 +43,10 @@
         "lift_automatic_air_ring": "Height-Adjustable Air Ring",
         "Cross-Direction_Scanning_Thickness_Gauge": "Cross-Direction Thickness Gauge",
         "rotary_thickness_gauge": "Rotary Thickness Gauge",
-        "dosing": "Dosing",
-        "X-Ray_rotary_thickness_gauge": "X-Scan Rotary Thickness Gauge",
+        "dosing": "Gravimetric Dosing System",
+        "X-Ray_rotary_thickness_gauge": "X-Ray Rotary Thickness Gauge",
         "product": "Products",
-        "solutions": "solutions",
+        "solutions": "Blown Film Solutions",
         "more": "Learn More",
         "tips": "We support all types of blown film production lines and offer fully customized automation solutions to meet your specific needs."
     },
@@ -232,29 +232,30 @@
         "defaultTitle": "JINJIU Automation - Auto Air Ring & Film Control Solutions",
         "defaultDescription": "JINJIU provides auto air rings and smart film control systems for the blown film industry.",
         "home": {
-            "title": "Home | Auto Air Ring | JINJIU Automation",
-            "description": "JINJIU Automation specializes in auto air rings and smart film thickness control systems for the blown film industry."
+            "title": "Automatic Air Ring for Blown Film | JINJIU Automation",
+            "description": "JINJIU is a manufacturer of automatic air rings and smart film thickness control systems for blown film lines."
         },
         "about": {
             "title": "About JINJIU | Automatic Air Ring Manufacturer",
-            "description": "Learn more about JINJIU Automation, a trusted developer of auto air rings and smart control systems for the blown film industry."
+            "description": "JINJIU Automation is an automatic air ring manufacturer in China, supplying blown film thickness control and gravimetric dosing systems worldwide."
         },
         "products": {
-            "title": "Products & Solutions | Blown Film Air Rings | JINJIU",
-            "description": "Explore JINJIU's auto air ring products and smart control solutions to optimize film quality and production performance."
+            "title": "Blown Film Air Rings & Thickness Control",
+            "description": "Automatic air rings, online thickness gauges, and gravimetric dosing systems for blown film lines — engineered by JINJIU."
         },
         "cases": {
-            "title": "Customer Cases | Automatic Air Ring Applications | JINJIU",
-            "description": "See how JINJIU's auto air ring systems are successfully applied in blown film factories across the globe."
+            "title": "Auto Air Ring Case Studies | Blown Film",
+            "description": "See how JINJIU automatic air rings improve thickness uniformity and output in blown film plants worldwide."
         },
         "news": {
-            "title": "News & Updates | Blown Film Industry | JINJIU",
-            "description": "Stay updated with JINJIU's latest news, industry insights, product launches, and exhibitions."
+            "title": "Blown Film Industry News & Exhibitions",
+            "description": "Blown film industry news, air ring technology insights, exhibitions, and JINJIU product updates."
         },
         "contact": {
-            "title": "Contact Us | Auto Air Ring Consultation | JINJIU",
-            "description": "Get in touch with JINJIU Automation for professional advice and custom solutions on auto air ring systems."
+            "title": "Auto Air Ring Quote & Consultation",
+            "description": "Request an automatic air ring quote, selection advice, or a custom blown film control solution from JINJIU."
         },
+        "productDescription": "{name} for blown film lines — improve thickness uniformity, reduce material waste, and increase output. Contact JINJIU for a tailored solution.",
         "honor": {
             "title": "Honors & Certifications",
             "description": "Patents, awards and certifications behind JINJIU's automatic air ring and film thickness control technology."

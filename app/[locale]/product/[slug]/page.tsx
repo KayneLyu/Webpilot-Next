@@ -6,19 +6,24 @@ import ProductSpecial from '@/components/common/ProductDetail';
 import MoreCases from './components/cases';
 import AutomaticAirRing from "./components/airRing";
 import { pageMetadata } from '@/lib/seo';
+import { PRODUCT_SEO } from '@/lib/keywords';
 
 // Without this the route would inherit the layout's canonical, i.e. every
 // product page would tell search engines it is a copy of the home page.
 export const generateMetadata = async ({ params }: { params: Promise<{ locale: string; slug: string }> }): Promise<Metadata> => {
     const t = await getTranslations();
     const { locale, slug } = await params;
+    const name = t(`product.${slug}`)
+    // Overseas search copy is curated in English; other locales keep their
+    // translated name + description instead of showing English to visitors.
+    const englishSeo = locale === 'en' ? PRODUCT_SEO[slug] : undefined
     return pageMetadata({
         locale,
         path: `/product/${slug}`,
-        title: t(`product.${slug}`),
+        title: englishSeo?.title ?? name,
         // Prefixing the product name keeps each detail page's description unique
         // instead of sharing the product-index wording verbatim.
-        description: `${t(`product.${slug}`)} — ${t('seo.products.description')}`,
+        description: englishSeo?.description ?? t('seo.productDescription', { name }),
         siteName: t('seo.brand'),
     });
 };
