@@ -79,7 +79,7 @@ export default function LoopSection({ content }: { content: LandingContent['loop
                             dark section instead of letting the screenshot float. */}
                         <div className='mt-8 overflow-hidden rounded-md border border-white/10 bg-white shadow-[0_18px_50px_rgba(0,0,0,0.25)]'>
                             <Image
-                                src='/case/charts_case.webp'
+                                src='/case/charts_case.png'
                                 alt={`${content.chart.title}. ${content.chart.closedLabel}`}
                                 width={1000}
                                 height={519}
