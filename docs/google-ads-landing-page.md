@@ -10,6 +10,10 @@
 | --- | --- |
 | ![案例区](screenshots/landing-case-study.png) | ![询盘表单](screenshots/landing-desktop-form.png) |
 
+| 侧边目录（桌面） | 侧边目录（移动） |
+| --- | --- |
+| ![侧边目录桌面](screenshots/landing-section-nav.png) | ![侧边目录移动](screenshots/landing-section-nav-mobile.png) |
+
 ## 1. 页面地址
 
 | 语言 | URL |
@@ -40,6 +44,14 @@
 | 10 | 底部 CTA：表单入口、WhatsApp、邮箱、电话 | `FinalCta.tsx` |
 
 所有文案、案例数据、型号表、FAQ 都在 `app/lib/landing.ts`，按 `en` / `zh` 两个对象维护。改文案不需要动组件。
+
+页面右侧有一条固定的 10 区块目录：
+
+- ≥1366px：右边缘固定 tab，点击后在 tab 左侧弹出悬浮目录面板；
+- <1366px：同一面板变为右侧抽屉，带背景遮罩并锁定页面滚动；
+- 滚动时自动高亮当前区块，tab 左侧细线显示阅读进度，底部显示 `当前区块 / 10` 与百分比；
+- 锚点 id 依次为 `top`、`problems`、`loop`、`system`、`cases`、`advantages`、`specs`、`faq`、`quote`、`next-step`。
+- 移动端左右各预留 32px 内容边距，目录 tab 始终落在右侧留白里，不遮挡正文和表单。
 
 ## 3. 表单与线索
 

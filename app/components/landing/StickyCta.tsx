@@ -14,14 +14,14 @@ export default function StickyCta({ content }: { content: LandingContent['sticky
                     href={whatsappHref}
                     target='_blank'
                     rel='noopener noreferrer'
-                    className='flex flex-1 items-center justify-center gap-2 bg-[#0f7a40] px-3 py-3.5 text-[14px] font-semibold text-white'
+                    className='flex flex-1 items-center justify-center gap-2 whitespace-nowrap bg-[#0f7a40] px-3 py-3.5 text-[14px] font-semibold text-white'
                 >
                     <WhatsAppIcon className='h-[18px] w-[18px]' />
                     {content.whatsapp}
                 </a>
                 <a
                     href='#quote'
-                    className='flex flex-[1.4] items-center justify-center gap-2 bg-[#0270c2] px-3 py-3.5 text-[14px] font-semibold text-white'
+                    className='flex flex-[1.4] items-center justify-center gap-2 whitespace-nowrap bg-[#0270c2] px-3 py-3.5 text-[14px] font-semibold text-white'
                 >
                     {content.quote}
                 </a>

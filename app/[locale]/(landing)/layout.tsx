@@ -3,6 +3,7 @@ import type { ReactNode } from 'react'
 
 import LandingHeader from '@/components/landing/LandingHeader'
 import LandingFooter from '@/components/landing/LandingFooter'
+import LandingSectionNav from '@/components/landing/LandingSectionNav'
 import StickyCta from '@/components/landing/StickyCta'
 import { getLandingContent, isLandingLocale } from '@/lib/landing'
 
@@ -31,6 +32,7 @@ export default async function LandingLayout({
             <main>{children}</main>
             <LandingFooter content={content.footer} locale={locale} />
             <StickyCta content={content.sticky} />
+            <LandingSectionNav content={content.nav} />
         </div>
     )
 }

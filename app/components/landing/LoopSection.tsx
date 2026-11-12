@@ -3,6 +3,7 @@ import { Cpu, ScanLine, Wind } from 'lucide-react'
 import type { LandingContent } from '@/lib/landing'
 import SectionHeading from './SectionHeading'
 import { sectionWrap } from './ui'
+import Image from 'next/image'
 
 const STEP_ICONS = [ScanLine, Cpu, Wind]
 
@@ -73,58 +74,17 @@ export default function LoopSection({ content }: { content: LandingContent['loop
                             </div>
                         </div>
 
-                        <svg
-                            viewBox='0 0 640 200'
-                            className='mt-8 h-auto w-full'
-                            role='img'
-                            aria-label={`${content.chart.title}. ${content.chart.caption}`}
-                        >
-                            <title>{content.chart.title}</title>
-                            {[20, 60, 140, 180].map((y) => (
-                                <line key={y} x1='0' y1={y} x2='640' y2={y} stroke='rgba(255,255,255,0.07)' strokeWidth='1' />
-                            ))}
-                            {[80, 160, 240, 320, 400, 480, 560].map((x) => (
-                                <line key={x} x1={x} y1='0' x2={x} y2='200' stroke='rgba(255,255,255,0.05)' strokeWidth='1' />
-                            ))}
-
-                            <line
-                                x1='0'
-                                y1='100'
-                                x2='640'
-                                y2='100'
-                                stroke='rgba(255,255,255,0.28)'
-                                strokeWidth='1'
-                                strokeDasharray='5 5'
+                        <div className=''>
+                            <Image
+                                src={content.src}
+                                alt='charts_case'
+                                fill
+                                sizes='30vw'
+                                className='object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]'
                             />
-                            <text
-                                x='634'
-                                y='86'
-                                textAnchor='end'
-                                fill='rgba(255,255,255,0.4)'
-                                fontSize='9'
-                                letterSpacing='2'
-                                fontFamily='var(--font-geist-mono)'
-                            >
-                                TARGET
-                            </text>
+                        </div>
 
-                            <path
-                                d='M0 100 L20 78 L40 122 L60 88 L80 132 L100 70 L120 112 L140 84 L160 136 L180 74 L200 118 L220 92 L240 128 L260 66 L280 110 L300 86 L320 138 L340 78 L360 120 L380 90 L400 126 L420 72 L440 116 L460 94 L480 132 L500 80 L520 124 L540 86 L560 130 L580 76 L600 118 L620 92 L640 104'
-                                fill='none'
-                                stroke='#7b83a8'
-                                strokeWidth='1.6'
-                                strokeLinejoin='round'
-                            />
-                            <path
-                                d='M0 103 C30 101 60 99 90 101 S150 103 180 100 S240 98 270 101 S330 102 360 99 S420 100 450 101 S510 99 540 101 S600 100 640 100'
-                                fill='none'
-                                stroke='#5ec8ff'
-                                strokeWidth='2.4'
-                                strokeLinecap='round'
-                            />
 
-                            <circle cx='640' cy='100' r='3.5' fill='#5ec8ff' />
-                        </svg>
 
                         <p className='mt-5 border-t border-white/10 pt-4 text-[11px] leading-[1.6] text-white/50'>
                             {content.chart.caption}

@@ -26,7 +26,7 @@ export default function LandingHeader({
         <header className='sticky top-0 z-40 border-b border-[#0a0a36]/10 bg-[#f4f1ec]/90 backdrop-blur-md'>
             <div className={`${sectionWrap} flex h-16 items-center justify-between gap-4 md:h-20`}>
                 <Link href={localePath(locale, '/')} aria-label={content.mainSite} className='flex shrink-0 items-center'>
-                    <Image src={Logo} alt='JINJIU Automation' className='h-8 w-auto md:h-14' priority />
+                    <Image src={Logo} alt='JINJIU Automation' className='h-12 w-auto md:h-14' priority />
                 </Link>
 
                 <div className='flex items-center gap-1.5 sm:gap-3'>
@@ -42,13 +42,13 @@ export default function LandingHeader({
                         href={localePath(otherLocale, LANDING_PATH)}
                         hrefLang={otherLocale}
                         aria-label={content.switchLabel}
-                        className='flex items-center gap-1.5 px-2 py-2 text-[13px] font-semibold text-[#0a0a36]/70 transition-colors hover:text-[#0a0a36]'
+                        className='flex items-center gap-1.5 whitespace-nowrap px-2 py-2 text-[13px] font-semibold text-[#0a0a36]/70 transition-colors hover:text-[#0a0a36]'
                     >
                         <Globe2 size={15} aria-hidden='true' />
                         {content.switchTo}
                     </Link>
 
-                    <a href='#quote' className={`${btnPrimary} px-4 py-2.5 text-[13px]`}>
+                    <a href='#quote' className={`${btnPrimary} whitespace-nowrap px-4 py-2.5 text-[13px]`}>
                         {content.quote}
                     </a>
                 </div>

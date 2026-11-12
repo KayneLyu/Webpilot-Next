@@ -36,6 +36,13 @@ export type LandingContent = {
         switchLabel: string
         mainSite: string
     }
+    nav: {
+        title: string
+        subtitle: string
+        trigger: string
+        close: string
+        items: { id: string; label: string }[]
+    }
     hero: {
         eyebrow: string
         titleBefore: string
@@ -59,6 +66,7 @@ export type LandingContent = {
     loop: SectionHead & {
         badge: string
         steps: { tag: string; title: string; body: string; spec: string }[]
+        src: string
         chart: {
             title: string
             manualLabel: string
@@ -210,6 +218,24 @@ const en: LandingContent = {
         switchLabel: 'Switch to Chinese',
         mainSite: 'Main website',
     },
+    nav: {
+        title: 'On this page',
+        subtitle: '10 sections',
+        trigger: 'Open section navigation',
+        close: 'Close section navigation',
+        items: [
+            { id: 'top', label: 'Overview' },
+            { id: 'problems', label: 'Pain points' },
+            { id: 'loop', label: 'Closed loop' },
+            { id: 'system', label: 'System' },
+            { id: 'cases', label: 'Case study' },
+            { id: 'advantages', label: 'Advantages' },
+            { id: 'specs', label: 'Specs' },
+            { id: 'faq', label: 'FAQ' },
+            { id: 'quote', label: 'Get a quote' },
+            { id: 'next-step', label: 'Next step' },
+        ],
+    },
     hero: {
         eyebrow: 'Automatic air ring · Blown film thickness control',
         titleBefore: 'The automatic air ring that holds film thickness to ',
@@ -271,6 +297,7 @@ const en: LandingContent = {
         subtitle:
             'A gauge on its own only tells you what went wrong. The value is in the loop that acts on it — in under a second.',
         badge: 'Loop active',
+        src: '/case/charts_case.webp',
         steps: [
             {
                 tag: 'Measure',
@@ -373,14 +400,14 @@ const en: LandingContent = {
                 tag: 'Project 02 · 3-layer agricultural film · Indonesia',
                 title: '2,000 mm width, ±8.5% → ±3.2%',
                 result: 'Waste 11.0% → 4.5% · output +11%',
-                image: '/case/air_ring2.webp',
+                image: '/case/air_ring3.webp',
                 imageAlt: 'Automatic air ring on a 3-layer agricultural film line',
             },
             {
-                tag: 'Project 03 · Single-layer shrink film · Türkiye',
+                tag: 'Project 03 · automatic air ring for downward-blown film · Türkiye',
                 title: '25 µm thin film, ±6.9% → ±2.4%',
                 result: 'Scrap 7.5% → 2.8% · output +9%',
-                image: '/case/air_ring3.webp',
+                image: '/case/downward_blowing_automatic_air_ring.webp',
                 imageAlt: 'Air ring retrofit on a single-layer shrink film line',
             },
         ],
@@ -621,6 +648,24 @@ const zh: LandingContent = {
         switchLabel: '切换到英文',
         mainSite: '返回官网',
     },
+    nav: {
+        title: '页面导航',
+        subtitle: '共 10 个区块',
+        trigger: '打开区块导航',
+        close: '关闭区块导航',
+        items: [
+            { id: 'top', label: '首屏' },
+            { id: 'problems', label: '生产痛点' },
+            { id: 'loop', label: '闭环原理' },
+            { id: 'system', label: '产品组合' },
+            { id: 'cases', label: '客户案例' },
+            { id: 'advantages', label: '技术优势' },
+            { id: 'specs', label: '参数适配' },
+            { id: 'faq', label: '常见问题' },
+            { id: 'quote', label: '获取报价' },
+            { id: 'next-step', label: '下一步' },
+        ],
+    },
     hero: {
         eyebrow: '自动风环 · 吹膜厚度闭环控制',
         titleBefore: '把薄膜厚度稳定在 ',
@@ -676,6 +721,7 @@ const zh: LandingContent = {
     loop: {
         index: '03',
         kicker: '闭环控制原理',
+        src: '/case/charts_case.webp',
         title: '测、算、调，每一圈都在发生。',
         subtitle: '单靠测厚仪，只能告诉你“已经偏了”。真正的价值在于回路——在 1 秒内完成修正。',
         badge: '闭环运行中',
@@ -778,14 +824,14 @@ const zh: LandingContent = {
                 tag: '项目 02 · 3 层农膜 · 印尼',
                 title: '2,000 mm 幅宽，±8.5% → ±3.2%',
                 result: '废料 11.0% → 4.5% · 产量 +11%',
-                image: '/case/air_ring2.webp',
+                image: '/case/air_ring3.webp',
                 imageAlt: '3 层农膜产线上的自动风环',
             },
             {
-                tag: '项目 03 · 单层收缩膜 · 土耳其',
+                tag: '项目 03 · 下吹自动风环 · 土耳其',
                 title: '25 µm 薄膜，±6.9% → ±2.4%',
                 result: '废料 7.5% → 2.8% · 产量 +9%',
-                image: '/case/air_ring3.webp',
+                image: '/case/downward_blowing_automatic_air_ring.webp',
                 imageAlt: '单层收缩膜产线的风环改造',
             },
         ],

@@ -10,7 +10,7 @@ export default function FinalCta({ content }: { content: LandingContent['final']
     const phone = siteContact.mobiles[0]
 
     return (
-        <section className='relative overflow-hidden bg-[#0270c2] py-16 text-white md:py-24'>
+        <section id='next-step' className='relative scroll-mt-24 overflow-hidden bg-[#0270c2] py-16 text-white md:py-24'>
             <div className='lp-blueprint pointer-events-none absolute inset-0 opacity-20' aria-hidden='true' />
             <div
                 className='pointer-events-none absolute -right-24 -top-24 h-[420px] w-[420px] rounded-full bg-[#5ec8ff]/20 blur-[120px]'

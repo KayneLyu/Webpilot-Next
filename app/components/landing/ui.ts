@@ -16,5 +16,13 @@ export const btnPrimary =
 export const btnOnDark =
     `inline-flex items-center justify-center gap-2.5 border border-white/25 bg-white/[0.06] px-6 py-3.5 text-[15px] font-semibold leading-none text-white transition-colors duration-200 hover:border-white/50 hover:bg-white/[0.12] ${FOCUS}`
 
+/**
+ * Page gutter.
+ *
+ * Mobile reserves 32px on each side instead of the usual 20px: the fixed
+ * section-navigation tab is 32px wide and lives in that right gutter, so it
+ * never covers headline or form text. Tablets/desktop use the wider 40px+
+ * gutter.
+ */
 export const sectionWrap =
-    'mx-auto w-[min(calc(100%-2.5rem),1240px)] md:w-[min(calc(100%-5rem),1240px)]'
+    'mx-auto w-[min(calc(100%-4rem),1240px)] md:w-[min(calc(100%-5rem),1240px)]'
