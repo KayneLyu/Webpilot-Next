@@ -297,7 +297,7 @@ const en: LandingContent = {
         subtitle:
             'A gauge on its own only tells you what went wrong. The value is in the loop that acts on it — in under a second.',
         badge: 'Loop active',
-        src: '/case/charts_case.webp',
+        src: '/case/charts_case.png',
         steps: [
             {
                 tag: 'Measure',
@@ -721,7 +721,7 @@ const zh: LandingContent = {
     loop: {
         index: '03',
         kicker: '闭环控制原理',
-        src: '/case/charts_case.webp',
+        src: '/case/charts_case.png',
         title: '测、算、调，每一圈都在发生。',
         subtitle: '单靠测厚仪，只能告诉你“已经偏了”。真正的价值在于回路——在 1 秒内完成修正。',
         badge: '闭环运行中',

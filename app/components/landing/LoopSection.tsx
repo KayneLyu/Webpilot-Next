@@ -1,9 +1,9 @@
+import Image from 'next/image'
 import { Cpu, ScanLine, Wind } from 'lucide-react'
 
 import type { LandingContent } from '@/lib/landing'
 import SectionHeading from './SectionHeading'
 import { sectionWrap } from './ui'
-import Image from 'next/image'
 
 const STEP_ICONS = [ScanLine, Cpu, Wind]
 
@@ -11,8 +11,8 @@ const STEP_ICONS = [ScanLine, Cpu, Wind]
  * 03 — Closed-loop principle.
  *
  * The three steps are the actual control chain (gauge → controller → air ring).
- * The chart underneath makes the outcome visible without a marketing claim:
- * one jagged manual profile and one flat closed-loop profile against a target.
+ * The controller screenshot underneath shows the resulting profile against the
+ * target, so the outcome is evidence rather than a marketing claim.
  */
 export default function LoopSection({ content }: { content: LandingContent['loop'] }) {
     return (
@@ -74,17 +74,20 @@ export default function LoopSection({ content }: { content: LandingContent['loop
                             </div>
                         </div>
 
-                        <div className=''>
+                        {/* Real controller screen supplied by the client. The
+                            light frame keeps the UI labels legible against the
+                            dark section instead of letting the screenshot float. */}
+                        <div className='mt-8 overflow-hidden rounded-md border border-white/10 bg-white shadow-[0_18px_50px_rgba(0,0,0,0.25)]'>
                             <Image
-                                src={content.src}
-                                alt='charts_case'
-                                fill
-                                sizes='30vw'
-                                className='object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]'
+                                src='/case/charts_case.webp'
+                                alt={`${content.chart.title}. ${content.chart.closedLabel}`}
+                                width={1000}
+                                height={519}
+                                sizes='(min-width: 1280px) 1100px, (min-width: 768px) 90vw, 100vw'
+                                quality={90}
+                                className='block h-auto w-full'
                             />
                         </div>
-
-
 
                         <p className='mt-5 border-t border-white/10 pt-4 text-[11px] leading-[1.6] text-white/50'>
                             {content.chart.caption}
