@@ -1,10 +1,5 @@
 
 import { NextIntlClientProvider, hasLocale } from 'next-intl'
-import { Header } from "@/components/Header"
-import { Footer } from "@/components/Footer"
-import BackTop from "@/components/common/BackTop";
-import SideBar from "@/components/common/SideBar";
-import BrowserCheck from "@/components/BrowserCheck";
 import { SITE_KEYWORDS, SITE_URL, languageAlternates, localeUrl } from "@/lib/seo";
 import { routing } from '../../i18n/routing';
 import { notFound } from 'next/navigation'
@@ -42,6 +37,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
+/**
+ * Locale shell.
+ *
+ * Only the providers live here. The public website chrome (header, footer,
+ * floating contact rail) is in the (site) route group, so the Google Ads
+ * landing page in (landing) can render a focused, navigation-free shell while
+ * still sharing locale validation and next-intl context.
+ */
 export default async function RootLayout({
   children,
   params,
@@ -54,17 +57,8 @@ export default async function RootLayout({
     notFound();
   }
   return (
-    <div className='relative flex flex-col'>
-      <NextIntlClientProvider>
-        <Header />
-        <BackTop />
-        <SideBar />
-        <main className="flex-1">
-          {children}
-          <BrowserCheck />
-        </main>
-        <Footer />
-      </NextIntlClientProvider>
-    </div>
+    <NextIntlClientProvider>
+      {children}
+    </NextIntlClientProvider>
   );
 }

@@ -117,7 +117,7 @@
         "title": "用户留言隐私政策与服务条款",
         "section1": {
             "title": "一、信息收集 / Information Collection",
-            "content": "我们通过留言表单收集您主动填写的以下信息：姓名、电子邮箱、留言内容。\nWe collect the following information you voluntarily provide via our contact form: your name, email address, and message content."
+            "content": "我们通过联系表单和询价表单收集您主动填写的信息：姓名、公司名称、电子邮箱、电话或 WhatsApp、国家/地区，以及您选择填写的产线参数（原料、膜宽、层数、模头直径、厚度偏差、目标厚度、产量）。我们还会收到您提交表单时的页面 URL，以及访问链接中可能包含的 Google Ads 点击标识（gclid）和广告系列参数。\nWe collect the information you voluntarily provide through our contact and quote forms: your name, company name, email address, phone or WhatsApp number, country/region, and the production-line parameters you choose to share (material, film width, layers, die diameter, thickness deviation, target thickness and output). We also receive the page URL you submitted from and, where present, the Google Ads click identifier (gclid) and campaign parameters in the link you followed."
         },
         "section2": {
             "title": "二、信息用途 / Purpose of Use",

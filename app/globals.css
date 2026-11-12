@@ -259,3 +259,77 @@
     transform: scale(1);
   }
 }
+/* ---------------------------------------------------------------------------
+ * Google Ads landing page (/lp/automatic-air-ring)
+ *
+ * Isolated utility classes so the textured hero and the animated loop marker
+ * cannot leak into the rest of the site.
+ * ------------------------------------------------------------------------- */
+.lp-blueprint {
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.055) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+
+@keyframes lp-flow {
+  0% {
+    left: 0%;
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  92% {
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+.lp-flow-dot {
+  animation: lp-flow 4.2s linear infinite;
+}
+
+@keyframes lp-rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.lp-rise {
+  animation: lp-rise 0.75s cubic-bezier(0.2, 0.7, 0.3, 1) both;
+}
+
+.lp-rise-1 {
+  animation-delay: 0.08s;
+}
+
+.lp-rise-2 {
+  animation-delay: 0.16s;
+}
+
+.lp-rise-3 {
+  animation-delay: 0.24s;
+}
+
+.lp-rise-4 {
+  animation-delay: 0.32s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lp-rise,
+  .lp-flow-dot {
+    animation: none;
+  }
+}
