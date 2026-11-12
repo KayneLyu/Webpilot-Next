@@ -14,9 +14,11 @@
 
 | 语言 | URL |
 | --- | --- |
-| 英文（广告主推） | `https://jinjiutech.com/en/lp/automatic-air-ring` |
+| 英文（广告主推，无前缀） | `https://jinjiutech.com/lp/automatic-air-ring` |
 | 中文 | `https://jinjiutech.com/zh/lp/automatic-air-ring` |
 
+- 站点以英语为主：`/` 就是英文首页，英语页面一律不带 `/en`；其他语言才带前缀。
+- 旧链接 `/en/...` 会由 `next.config.ts` 以 308 永久重定向到去掉 `/en` 的地址。
 - 路由文件：`app/[locale]/(landing)/lp/automatic-air-ring/page.tsx`
 - 只发布 `en` / `zh`；其他语言访问该路径返回 404（由 `(landing)/layout.tsx` 控制）。
 - 页面使用独立外壳，**不显示**全站导航、悬浮客服和全站页脚，避免广告点击从导航流失。
@@ -55,7 +57,7 @@
 
 ## 4. Google Ads 设置建议
 
-1. **最终到达网址**：`https://jinjiutech.com/en/lp/automatic-air-ring`
+1. **最终到达网址**：`https://jinjiutech.com/lp/automatic-air-ring`（不要再用 `/en/...`；旧 URL 会 308 到新地址）
 2. **显示网址**：`jinjiutech.com/automatic-air-ring`
 3. **转化操作**：使用“网站”转化，触发条件选自定义事件 `generate_lead`（需先装 gtag）。当前提交成功是内联状态、不会产生新 URL，所以不能直接靠“页面浏览”统计；如需页面浏览转化，要另建 `/thank-you` 页面并跳转。
 4. **电话附加信息**：`+86 186 0769 1396`（页面页脚、底部 CTA、桌面端页头都有）。
@@ -82,7 +84,8 @@
 npx tsc --noEmit
 npx next build
 npx next start -p 3100
-# http://127.0.0.1:3100/en/lp/automatic-air-ring
+# http://127.0.0.1:3100/lp/automatic-air-ring
+# http://127.0.0.1:3100/zh/lp/automatic-air-ring
 # http://127.0.0.1:3100/zh/lp/automatic-air-ring
 ```
 

@@ -4,6 +4,7 @@ import { SITE_KEYWORDS, SITE_URL, languageAlternates, localeUrl } from "@/lib/se
 import { routing } from '../../i18n/routing';
 import { notFound } from 'next/navigation'
 import { getTranslations } from 'next-intl/server'
+import LocaleHtmlLang from '@/components/common/LocaleHtmlLang'
 import type { Metadata } from "next";
 
 // meta data
@@ -58,6 +59,7 @@ export default async function RootLayout({
   }
   return (
     <NextIntlClientProvider>
+      <LocaleHtmlLang locale={locale} />
       {children}
     </NextIntlClientProvider>
   );

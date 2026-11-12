@@ -17,8 +17,7 @@ import {
     NavigationMenuList,
 } from "../ui/navigation-menu"
 import { useTranslations } from 'next-intl'
-import { usePathname } from 'next/navigation'
-import { useLocale } from 'next-intl'
+import { usePathname } from '../../../i18n/navigation';
 import { cn } from "@/lib/utils" // shadcn 提供的合并类名工具
 import LanguageComponent from '@/components/common/Language';
 import EmailAddress from '@/components/common/EAddress';
@@ -26,10 +25,10 @@ import Links from "@/components/common/Links";
 
 export default function Navigation() {
     const t = useTranslations('nav')
+    // next-intl's usePathname already strips the locale prefix, so this is
+    // `/product` for both the English and the Chinese product page.
     const pathname = usePathname()
-    const locale = useLocale()
-    // 去掉语言前缀后的路径
-    const logicalPath = pathname.replace(`/${locale}`, '') || '/'
+    const logicalPath = pathname || '/'
     const navItems = [
         { name: "home", href: "/" },
         { name: "about", href: "/about" },

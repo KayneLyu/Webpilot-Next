@@ -3,7 +3,11 @@ import {routing} from './i18n/routing';
  
 export default createMiddleware({
   ...routing,
-  localeDetection: true
+  // The bare domain must stay English. Automatic Accept-Language redirects
+  // would send Chinese/Russian browsers to /zh or /ru before they can see the
+  // English homepage, which is the opposite of an English-primary site.
+  // Visitors switch language explicitly from the header.
+  localeDetection: false
 });
  
 export const config = {

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { ArrowUpRight, Info } from 'lucide-react'
 
 import type { LandingContent, LandingLocale } from '@/lib/landing'
+import { localePath } from '@/lib/locale'
 import SectionHeading from './SectionHeading'
 import { sectionWrap } from './ui'
 
@@ -130,7 +131,7 @@ export default function CaseSection({
                         {content.disclaimer}
                     </p>
                     <Link
-                        href={`/${locale}${content.cta.href}`}
+                        href={localePath(locale, content.cta.href)}
                         className='group inline-flex shrink-0 items-center gap-2 border-b border-[#0a0a36]/30 pb-1 text-[12.5px] font-semibold text-[#0a0a36] transition-colors hover:border-[#0270c2] hover:text-[#0270c2]'
                     >
                         {content.cta.label}

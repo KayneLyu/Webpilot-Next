@@ -18,6 +18,20 @@ const nextConfig: NextConfig = {
         destination: `https://${CANONICAL_HOST}/:path*`,
         permanent: true,
       },
+      {
+        // English is the default locale and is served from the bare domain.
+        // next-intl already normalises /en/* in middleware with a temporary
+        // redirect; these permanent rules give search engines and old ad
+        // links a single, cacheable hop to the unprefixed URL instead.
+        source: '/en',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/en/:path*',
+        destination: '/:path*',
+        permanent: true,
+      },
     ];
   },
 };

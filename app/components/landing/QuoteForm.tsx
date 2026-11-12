@@ -21,6 +21,7 @@ import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Checkbox } from '@/components/ui/checkbox'
 import type { LandingContent, LandingLocale } from '@/lib/landing'
+import { localePath } from '@/lib/locale'
 import { mailtoHref, siteContact, whatsappHref } from '@/lib/site'
 import SectionHeading from './SectionHeading'
 import { sectionWrap } from './ui'
@@ -365,7 +366,7 @@ function ConsentText({ content, locale }: { content: LandingContent['form']; loc
                 {content.consentBefore}
             </label>
             <Link
-                href={`/${locale}/privacy-policy`}
+                href={localePath(locale, '/privacy-policy')}
                 target='_blank'
                 rel='noopener noreferrer'
                 className='underline decoration-[#0a0a36]/30 underline-offset-2 hover:text-[#0270c2]'

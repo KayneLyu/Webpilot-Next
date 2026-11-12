@@ -12,12 +12,22 @@ import { pageMetadata } from '@/lib/seo';
 export const generateMetadata = async ({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> => {
   const t = await getTranslations();
   const { locale } = await params;
+  // `seo.home.title` already ends with the brand in every locale, while the
+  // locale layout's title template appends it once more. Strip the duplicate
+  // here so the homepage does not ship "… | JINJIU Automation | JINJIU Automation".
+  const brand = t('seo.brand')
+  const fullTitle = t('seo.home.title')
+  const brandSuffix = ` | ${brand}`
+  const title = fullTitle.endsWith(brandSuffix)
+    ? fullTitle.slice(0, -brandSuffix.length)
+    : fullTitle
+
   return pageMetadata({
     locale,
     path: '/',
-    title: t('seo.home.title'),
+    title,
     description: t('seo.home.description'),
-    siteName: t('seo.brand'),
+    siteName: brand,
   });
 };
 

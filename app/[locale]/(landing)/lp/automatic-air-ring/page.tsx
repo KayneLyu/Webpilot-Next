@@ -18,7 +18,7 @@ import {
     getLandingContent,
     isLandingLocale,
 } from '@/lib/landing'
-import { pageMetadata, SITE_URL } from '@/lib/seo'
+import { pageMetadata, SITE_URL, localeUrl } from '@/lib/seo'
 import { siteContact } from '@/lib/site'
 
 /**
@@ -80,7 +80,7 @@ export default async function AutomaticAirRingLandingPage({
     if (!isLandingLocale(locale)) notFound()
 
     const content = getLandingContent(locale)
-    const pageUrl = `${SITE_URL}/${locale}${LANDING_PATH}`
+    const pageUrl = localeUrl(locale, LANDING_PATH)
 
     const jsonLd = {
         '@context': 'https://schema.org',

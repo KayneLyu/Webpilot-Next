@@ -1,5 +1,8 @@
 import { useLocale } from 'next-intl';
 import Link from "next/link"
+
+import { localePath } from '@/lib/locale';
+
 export default function LocalizedLink({ href, children, className, ...props }: {
     href: string,
     children: React.ReactNode,
@@ -7,17 +10,22 @@ export default function LocalizedLink({ href, children, className, ...props }: {
     [key: string]: any
 }) {
     const locale = useLocale();
-    // 如果是外部链接，不处理
-    if (href.startsWith('http') || href.startsWith('#')) {
+    // External links, hashes, mailto: and tel: are not localized.
+    if (
+        href.startsWith('http') ||
+        href.startsWith('#') ||
+        href.startsWith('mailto:') ||
+        href.startsWith('tel:')
+    ) {
         return (
             <a href={href} className={className} {...props}>
                 {children}
             </a>
         );
     }
-    // 如果是内部链接，加上语言前缀
+    // English has no prefix; other locales get /zh, /ru, …
     return (
-        <Link href={`/${locale + href}`} className={className} {...props}>
+        <Link href={localePath(locale, href)} className={className} {...props}>
             {children}
         </Link>
     );

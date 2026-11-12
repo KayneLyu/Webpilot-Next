@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { ArrowUpRight } from 'lucide-react'
 
 import type { LandingContent, LandingLocale } from '@/lib/landing'
+import { localePath } from '@/lib/locale'
 import SectionHeading from './SectionHeading'
 import { sectionWrap } from './ui'
 
@@ -56,7 +57,7 @@ export default function ProductStack({
                                 </ul>
 
                                 <Link
-                                    href={`/${locale}${item.href}`}
+                                    href={localePath(locale, item.href)}
                                     className='mt-6 inline-flex items-center justify-between gap-2 border-t border-[#0a0a36]/12 pt-4 text-[12.5px] font-semibold text-[#0a0a36] transition-colors hover:text-[#0270c2]'
                                 >
                                     {item.cta}

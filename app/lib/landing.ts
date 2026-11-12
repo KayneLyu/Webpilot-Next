@@ -213,7 +213,7 @@ const en: LandingContent = {
     hero: {
         eyebrow: 'Automatic air ring · Blown film thickness control',
         titleBefore: 'The automatic air ring that holds film thickness to ',
-        titleAccent: '±2–5%',
+        titleAccent: '±2–4%',
         titleAfter: '.',
         description:
             'Close the loop between your thickness gauge and your air ring — on the line you already run. JINJIU measures the full bubble, corrects every zone, and stops your team from running film thick just to stay in spec.',
@@ -222,7 +222,7 @@ const en: LandingContent = {
         link: { label: 'See how the loop works', href: '#loop' },
         micro: ['Reply within 24 hours', '1–2 day retrofit', '1,000+ lines worldwide'],
         stats: [
-            { value: '±2–5%', label: 'thickness deviation at 2σ' },
+            { value: '±2–4%', label: 'thickness deviation at 2σ' },
             { value: '15–25%', label: 'raw material saved' },
             { value: '10–20%', label: 'higher output' },
             { value: '1,000+', label: 'lines running worldwide' },
@@ -624,7 +624,7 @@ const zh: LandingContent = {
     hero: {
         eyebrow: '自动风环 · 吹膜厚度闭环控制',
         titleBefore: '把薄膜厚度稳定在 ',
-        titleAccent: '±2–5%',
+        titleAccent: '±2–4%',
         titleAfter: ' 的自动风环',
         description:
             '在你现有的吹膜线上，打通测厚仪与风环之间的闭环：金久实时扫描整个膜泡，逐个风区自动修正，让操作工不必再靠“做厚一点”来保合格。',
@@ -633,7 +633,7 @@ const zh: LandingContent = {
         link: { label: '看看闭环怎么工作', href: '#loop' },
         micro: ['24 小时内回复', '1–2 天完成改造', '全球 1,000+ 条产线'],
         stats: [
-            { value: '±2–5%', label: '厚度偏差（2σ）' },
+            { value: '±2–4%', label: '厚度偏差（2σ）' },
             { value: '15–25%', label: '原料节省' },
             { value: '10–20%', label: '产能提升' },
             { value: '1,000+', label: '全球运行产线' },

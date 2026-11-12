@@ -4,6 +4,7 @@ import { ArrowUp, Mail, MapPin, Phone } from 'lucide-react'
 
 import Logo from '@/assets/images/logo/logo.webp'
 import type { LandingContent, LandingLocale } from '@/lib/landing'
+import { localePath } from '@/lib/locale'
 import { mailtoHref, siteContact, whatsappHref } from '@/lib/site'
 import { sectionWrap } from './ui'
 import { WhatsAppIcon } from './WhatsAppIcon'
@@ -67,13 +68,13 @@ export default function LandingFooter({
                             {content.linksLabel}
                         </p>
                         <div className='mt-4 flex flex-col gap-3 text-[13.5px]'>
-                            <Link href={`/${locale}`} className='text-white/70 transition-colors hover:text-white'>
+                            <Link href={localePath(locale, '/')} className='text-white/70 transition-colors hover:text-white'>
                                 {content.mainSite}
                             </Link>
-                            <Link href={`/${locale}/case`} className='text-white/70 transition-colors hover:text-white'>
+                            <Link href={localePath(locale, '/case')} className='text-white/70 transition-colors hover:text-white'>
                                 {content.caseLabel}
                             </Link>
-                            <Link href={`/${locale}/privacy-policy`} className='text-white/70 transition-colors hover:text-white'>
+                            <Link href={localePath(locale, '/privacy-policy')} className='text-white/70 transition-colors hover:text-white'>
                                 {content.privacy}
                             </Link>
                             <a href='#top' className='mt-2 inline-flex items-center gap-1.5 text-white/55 transition-colors hover:text-white'>

@@ -20,10 +20,16 @@ export { SITE_KEYWORDS }
 
 /**
  * Absolute canonical URL for a locale + path pair.
- * The home page lives at /<locale> (no trailing slash) — /<locale>/ redirects to it.
+ *
+ * English is the default locale and has no prefix (`https://jinjiutech.com/about`);
+ * every other locale keeps one (`https://jinjiutech.com/zh/about`). This must
+ * match `localePrefix: 'as-needed'` in i18n/routing.ts.
  */
 export function localeUrl(locale: string, path: string) {
-    return `${SITE_URL}/${locale}${path === '/' ? '' : path}`
+    const suffix = path === '/' ? '' : path
+    return locale === routing.defaultLocale
+        ? `${SITE_URL}${suffix}`
+        : `${SITE_URL}/${locale}${suffix}`
 }
 
 /** hreflang map for the locales we actually publish this path in. */

@@ -8,12 +8,16 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import Image from 'next/image';
-import { usePathname, useRouter } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import { useLocale, useTranslations } from 'next-intl'
+import { usePathname } from '../../../i18n/navigation';
+import { localePath } from '@/lib/locale';
 
 export default function DropdownMenuRadioGroupDemo() {
     const locale = useLocale()
 
+    // next-intl's usePathname strips the locale prefix, so it returns
+    // `/about` for both `/about` (English) and `/zh/about`.
     const pathname = usePathname();
     const router = useRouter();
 
@@ -53,10 +57,8 @@ export default function DropdownMenuRadioGroupDemo() {
 
 
     const handleSwitch = (targetLocale: string) => {
-        const segments = pathname.split('/');
-        segments[1] = targetLocale;
-        const newPath = segments.join('/');
-        router.push(newPath); // ✅ 客户端无感跳转
+        // English resolves to the bare path; other locales get their prefix.
+        router.push(localePath(targetLocale, pathname || '/'));
     };
 
     return (
